@@ -7,4 +7,4 @@ categories: []
 tags: []
 ---
 
-Creating this blog to journal my progress towards becoming an applied statistician.
+Creating this blog to journal my progress towards becoming an applied statistician. Testing minor change.
