@@ -1,0 +1,32 @@
+---
+title: Doing Data Science (Book)
+author: jonthelaion
+date: '2018-03-31 23:30:00'
+slug: doing-data-science-book
+categories:
+  - R
+  - datascience
+tags:
+  - R
+  - datascience
+---
+
+### Chapter 1 - Introduction: What Is Data Science?
+
+With many years of experience in both academia and industry, authors Cathy O'Neil & Rachel Schutt look beyond the hype to explore what the data science discipline looks like in practice. 
+
+They also explore an idea that is often overlooked when speaking about data science - that building models and working with data is not value-neutral. You choose the problems you will work on, you make assumptions in those models, you choose metrics, and you design the algorithms. This is particularly pertinent today in the wake of the Cambridge Analytica scandal.
+
+An academic data scientist, trained in anything from social science to biology, who works with large amounts of data, and must grapple with computational problems posed by the structure, size, messiness, and the comoplexity and nature of the data, while simultaneously solving a real world problem.
+
+An industry data scientist is omeone who knows how to extract meaning from and interpret data, which requires both tools and methods.
+
+Skills required for data scientists include:
+
+- Computer science
+- Math
+- Statistics
+- Machine learning
+- Domain expertise
+- Communication and presentation skills
+- Data visualisation

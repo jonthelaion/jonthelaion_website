@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datascience on your-site-name</title>
+    <link>/tags/datascience/</link>
+    <description>Recent content in Datascience on your-site-name</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>your-email (jonthelaion)</managingEditor>
+    <webMaster>your-email (jonthelaion)</webMaster>
+    <lastBuildDate>Sat, 31 Mar 2018 23:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/datascience/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Doing Data Science (Book)</title>
+      <link>/post/doing-data-science-book/</link>
+      <pubDate>Sat, 31 Mar 2018 23:30:00 +0000</pubDate>
+      <author>your-email (jonthelaion)</author>
+      <guid>/post/doing-data-science-book/</guid>
+      <description>Chapter 1 - Introduction: What Is Data Science?With many years of experience in both academia and industry, authors Cathy O’Neil &amp;amp; Rachel Schutt look beyond the hype to explore what the data science discipline looks like in practice.
+They also explore an idea that is often overlooked when speaking about data science - that building models and working with data is not value-neutral. You choose the problems you will work on, you make assumptions in those models, you choose metrics, and you design the algorithms.</description>
+    </item>
+    
+  </channel>
+</rss>

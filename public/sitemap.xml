@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/post/doing-data-science-book/</loc>
+    <lastmod>2018-03-31T23:30:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/r-resources/</loc>
+    <lastmod>2018-03-31T21:53:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/hello-world/</loc>
+    <lastmod>2018-03-31T20:33:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/datascience/</loc>
+    <lastmod>2018-03-31T23:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/datascience/</loc>
+    <lastmod>2018-03-31T23:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2018-03-31T23:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2018-03-31T23:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2018-03-31T23:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/resources/</loc>
+    <lastmod>2018-03-31T21:53:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/resources/</loc>
+    <lastmod>2018-03-31T21:53:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2018-03-31T23:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-03-31T23:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

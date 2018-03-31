@@ -1,0 +1,39 @@
+---
+title: R Resources
+author: jonthelaion
+date: '2018-03-31 21:53:00'
+slug: r-resources
+categories:
+  - R
+  - resources
+tags:
+  - R
+  - resources
+---
+
+#### Blogs
+- <a href="https://mathbabe.org/" target="_blank">Cathy O'Neil Blog</a>
+- <a href="https://www.datasciencecentral.com/" target="_blank">Data Science Central</a>
+
+#### R Markdown
+- <a href="https://bookdown.org/yihui/blogdown/" target="_blank">Creating Websites with R Markdown</a> (Currently Reading)
+
+#### General Data Science
+- Doing Data Science
+- <a href="https://columbia-applied-data-science.github.io/appdatasci.pdf" target="_blank">Columbia - Applied Data Science</a>
+
+#### Learning R
+- The Art of R Programming - Norman Matloff (No Starch Press)
+- R for Everyone: Advanced Analytics and Graphics
+
+#### Learning Python
+- Learning Python - Mark Lutz and David Ascher (O'Reilley)
+- Python for Data Analysis - Wes McKinney (O'Reilley)
+
+#### Math
+- Linear Algebra and Its Applications - Gilbert Strang (Cengage Learning)
+
+#### Visualisation
+- The Elements of Grpahing Data - William Cleveland (Hobart Press)
+- Visualize This: The FLowingData Guide to Design, Visualization, and Statistics - Nathan Yau (Wiley)
+- The VIsual Display of Quantitative Information - Edward Tufte (Graphics Press)
