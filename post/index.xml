@@ -8,7 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Sat, 31 Mar 2018 23:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Apr 2018 17:30:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
     <item>
       <title>Doing Data Science (Book)</title>
       <link>/post/doing-data-science-book/</link>
-      <pubDate>Sat, 31 Mar 2018 23:30:00 +0000</pubDate>
+      <pubDate>Sun, 01 Apr 2018 17:30:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/doing-data-science-book/</guid>
       <description>With years of experience in both academia and industry, authors Cathy O&amp;rsquo;Neil &amp;amp; Rachel Schutt look beyond the hype to explore what the data science discipline entails and looks like in practice.
@@ -38,7 +38,7 @@ They also explore an idea that is often overlooked when speaking about data scie
       <pubDate>Sat, 31 Mar 2018 20:33:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/hello-world/</guid>
-      <description>Creating this blog to journal my progress towards becoming a data scientist an applied statistician. While my interest in this field was initially piqued by the data science hype train, I feel that my view of this discipline is more closely aligned with the traditional school of applied statistics, rather than the newer “hacker-culture” school of data science. I hope that one day I can learn enough about the art of working with data in an imperfect and uncertain world to be able to use modern statistical techniques and make a positive contribution to society.</description>
+      <description>I am creating this blog to journal my progress towards becoming a data scientist an applied statistician. While my interest was initially piqued by the data science hype train, I feel that after a year or so of dipping my toes into the resources available online, my view of this discipline is more closely aligned with the traditional school of applied statistics, rather than the newer “hacker-culture” school of data science.</description>
     </item>
     
   </channel>

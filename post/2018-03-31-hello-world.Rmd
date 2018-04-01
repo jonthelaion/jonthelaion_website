@@ -7,9 +7,9 @@ categories: []
 tags: []
 ---
 
-Creating this blog to journal my progress towards becoming ~~a data scientist~~ an applied statistician. While my interest in this field was initially piqued by the data science hype train, I feel that my view of this discipline is more closely aligned with the traditional school of applied statistics, rather than the newer "hacker-culture" school of data science. I hope that one day I can learn enough about the art of working with data in an imperfect and uncertain world to be able to use modern statistical techniques and make a positive contribution to society. 
+I am creating this blog to journal my progress towards becoming ~~a data scientist~~ an applied statistician. While my interest was initially piqued by the data science hype train, I feel that after a year or so of dipping my toes into the resources available online, my view of this discipline is more closely aligned with the traditional school of applied statistics, rather than the newer "hacker-culture" school of data science.  
 
-The other appeal of working in the field of statistics / data science is that the skills gained are industry-agnostic and presents me with the opportunity to work in a variety of fields. Examples of some areas that are personally meaningful to me include:
+One major appeal of working in statistics / data science is that the skills gained are largely industry-agnostic and presents me with an opportunity to work in a variety of fields. Ultimately, I hope to be able to use modern statistical techniques and technologies to make a positive contribution to society in one or more of the following areas:
 
 - education and learning analytics;
 - mental health;
