@@ -21,7 +21,7 @@ They also explore an idea that is often overlooked when speaking about data scie
 
 # Chapter 1 - Introduction: What Is Data Science?
 
-While there is not a clear definition of what a data scientist is, they generally have knowledge and experience in the following key areas:
+Data scientists generally have knowledge and experience in the following areas:
 
 - Computer science
 - Math
@@ -31,7 +31,7 @@ While there is not a clear definition of what a data scientist is, they generall
 - Communication and presentation skills
 - Data visualisation
 
-In practice, data science problems are formed by teams with individuals from various backgrounds (e.g. statistician, software engineers, social scientists) and with various degrees of capabilities in the 7 areas identified above. Depending on the industry and problem at hand, certain skills may be more or less important.
+In practice, data science problems are solved by teams of individuals from various backgrounds (e.g. statistician, software engineers, social scientists) and with various degrees of capabilities in the 7 areas identified above. Depending on the industry and problem at hand, certain skills may be more or less important.
 
 An academic data scientist works with large amounts of data, and must grapple with computational problems posed by the structure, size, messiness, and the complexity and nature of the data, while simultaneously solving a real world problem. They can be trained in anything from social science to biology.
 

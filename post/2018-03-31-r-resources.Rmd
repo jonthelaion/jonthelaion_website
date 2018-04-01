@@ -15,8 +15,13 @@ tags:
 - <a href="https://mathbabe.org/" target="_blank">Cathy O'Neil Blog</a>
 - <a href="https://www.datasciencecentral.com/" target="_blank">Data Science Central</a>
 
+#### Online Courses
+- <a href="https://medium.freecodecamp.org/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0" target="_blank">List of Machine Learning Courses</a>
+
 #### R Markdown
 - <a href="https://bookdown.org/yihui/blogdown/" target="_blank">Creating Websites with R Markdown</a> (Currently Reading)
+- <a href="http://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf" target="_blank">R Markdown Reference Guide</a>
+- <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank">LaTeX</a>
 
 #### General Data Science
 - Doing Data Science
