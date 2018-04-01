@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>your-site-name</title>
+    <title>jonthelaion</title>
     <link>/</link>
-    <description>Recent content on your-site-name</description>
+    <description>Recent content on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>your-email (jonthelaion)</managingEditor>
-    <webMaster>your-email (jonthelaion)</webMaster>
+    <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
+    <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
     <lastBuildDate>Sat, 31 Mar 2018 23:30:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
@@ -17,9 +17,9 @@
       <title>Doing Data Science (Book)</title>
       <link>/post/doing-data-science-book/</link>
       <pubDate>Sat, 31 Mar 2018 23:30:00 +0000</pubDate>
-      <author>your-email (jonthelaion)</author>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/doing-data-science-book/</guid>
-      <description>Chapter 1 - Introduction: What Is Data Science?With years of experience in both academia and industry, authors Cathy O’Neil &amp;amp; Rachel Schutt look beyond the hype to explore what the data science discipline entails and looks like in practice.
+      <description>With years of experience in both academia and industry, authors Cathy O&amp;rsquo;Neil &amp;amp; Rachel Schutt look beyond the hype to explore what the data science discipline entails and looks like in practice.
 They also explore an idea that is often overlooked when speaking about data science - that building models and working with data is not value-neutral. You choose the problems you will work on, you make assumptions in those models, you choose metrics, and you design the algorithms.</description>
     </item>
     
@@ -27,18 +27,18 @@ They also explore an idea that is often overlooked when speaking about data scie
       <title>R Resources</title>
       <link>/post/r-resources/</link>
       <pubDate>Sat, 31 Mar 2018 21:53:00 +0000</pubDate>
-      <author>your-email (jonthelaion)</author>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/r-resources/</guid>
-      <description>BlogsCathy O’Neil BlogData Science CentralR MarkdownCreating Websites with R Markdown (Currently Reading)General Data ScienceDoing Data ScienceColumbia - Applied Data ScienceLearning RThe Art of R Programming - Norman Matloff (No Starch Press)R for Everyone: Advanced Analytics and GraphicsLearning PythonLearning Python - Mark Lutz and David Ascher (O’Reilley)Python for Data Analysis - Wes McKinney (O’Reilley)MathLinear Algebra and Its Applications - Gilbert Strang (Cengage Learning)VisualisationThe Elements of Grpahing Data - William Cleveland (Hobart Press)Visualize This: The FLowingData Guide to Design, Visualization, and Statistics - Nathan Yau (Wiley)The VIsual Display of Quantitative Information - Edward Tufte (Graphics Press)</description>
+      <description>BlogsCathy O’Neil BlogData Science CentralR MarkdownCreating Websites with R Markdown (Currently Reading)General Data ScienceDoing Data ScienceColumbia - Applied Data ScienceLearning RThe Art of R Programming - Norman Matloff (No Starch Press)R for Everyone: Advanced Analytics and Graphics - Jared Lander (Addison-Wesley)R in a Nutshell - Joseph Adler (O’Reilly)Learning PythonLearning Python - Mark Lutz and David Ascher (O’Reilly)Python for Data Analysis - Wes McKinney (O’Reilly)MathLinear Algebra and Its Applications - Gilbert Strang (Cengage Learning)Convex Optimization - Stephen Boyd and Lieven Vandenberghe (Cambridge University Press)A First Course in Probability - Sheldon Ross (Academic Press)Data Analysis and Statistical InferenceStatistical Inference - George Casella and Roger L.</description>
     </item>
     
     <item>
       <title>Hello World</title>
       <link>/post/hello-world/</link>
       <pubDate>Sat, 31 Mar 2018 20:33:00 +0000</pubDate>
-      <author>your-email (jonthelaion)</author>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/hello-world/</guid>
-      <description>Creating this blog to journal my progress towards becoming an applied statistician. Testing minor change.</description>
+      <description>Creating this blog to journal my progress towards becoming a data scientist an applied statistician. While my interest in this field was initially piqued by the data science hype train, I feel that my view of this discipline is more closely aligned with the traditional school of applied statistics, rather than the newer “hacker-culture” school of data science. I hope that one day I can learn enough about the art of working with data in an imperfect and uncertain world to be able to use modern statistical techniques and make a positive contribution to society.</description>
     </item>
     
   </channel>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on your-site-name</title>
+    <title>Categories on jonthelaion</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on your-site-name</description>
+    <description>Recent content in Categories on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-KR</language>
-    <managingEditor>your-email (jonthelaion)</managingEditor>
-    <webMaster>your-email (jonthelaion)</webMaster>
+    <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
+    <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
       <title>Datascience</title>
       <link>/categories/datascience/</link>
       <pubDate>Sat, 31 Mar 2018 23:30:00 +0000</pubDate>
-      <author>your-email (jonthelaion)</author>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/datascience/</guid>
       <description></description>
     </item>
@@ -25,7 +25,7 @@
       <title>R</title>
       <link>/categories/r/</link>
       <pubDate>Sat, 31 Mar 2018 23:30:00 +0000</pubDate>
-      <author>your-email (jonthelaion)</author>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/r/</guid>
       <description></description>
     </item>
@@ -34,7 +34,7 @@
       <title>Resources</title>
       <link>/categories/resources/</link>
       <pubDate>Sat, 31 Mar 2018 21:53:00 +0000</pubDate>
-      <author>your-email (jonthelaion)</author>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/resources/</guid>
       <description></description>
     </item>
