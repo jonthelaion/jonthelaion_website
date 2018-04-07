@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/r-programming/</loc>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/data-visualisation-in-r/</loc>
+    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/getting-and-cleaning-data/</loc>
+    <lastmod>2018-04-07T20:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/the-data-scientist-s-toolbox-coursera/</loc>
+    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/data-quality/</loc>
+    <lastmod>2018-04-05T21:15:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/data-framed/</loc>
+    <lastmod>2018-04-04T06:40:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/doing-data-science-book/</loc>
     <lastmod>2018-04-01T17:30:00+00:00</lastmod>
   </url>
@@ -18,37 +48,114 @@
   </url>
   
   <url>
+    <loc>/post/profile/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>/tags/coursera/</loc>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/coursera/</loc>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dataquality/</loc>
+    <lastmod>2018-04-05T21:15:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/datascience/</loc>
-    <lastmod>2018-04-01T17:30:00+00:00</lastmod>
+    <lastmod>2018-04-07T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/datascience/</loc>
-    <lastmod>2018-04-01T17:30:00+00:00</lastmod>
+    <lastmod>2018-04-07T20:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dataviz/</loc>
+    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/dataviz/</loc>
+    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ggplot2/</loc>
+    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mooc/</loc>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/mooc/</loc>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/podcast/</loc>
+    <lastmod>2018-04-04T06:40:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/podcast/</loc>
+    <lastmod>2018-04-04T06:40:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-04-01T17:30:00+00:00</lastmod>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/profile/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/profile/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2018-04-01T17:30:00+00:00</lastmod>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2018-04-01T17:30:00+00:00</lastmod>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -66,13 +173,13 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-04-01T17:30:00+00:00</lastmod>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-04-01T17:30:00+00:00</lastmod>
+    <lastmod>2018-04-08T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

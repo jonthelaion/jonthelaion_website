@@ -1,0 +1,47 @@
+---
+title: Profile
+author: jonthelaion
+date: '2018-01-01'
+slug: profile
+categories:
+  - profile
+tags:
+  - profile
+---
+
+# About Me
+
+jon. sydney. australia. hokkien. chinese. earthling. dreamer. lefty. penspinner. nerd. early bird. night owl. afternoon zombie. book sniffer. star&cloudgazer. gamefreak. basketball. old fashioned. retro lover. walking anachronism. tree climber. amatog.
+
+I believe
+
+* that beauty is more than skin deep
+* that chivalry ain’t dead
+* that family is not just defined by blood
+* that in the sky, there is no distinction of east or west
+* that buddhism is more of a philosophy than a religion
+* that pluto is a planet
+* that cheez tv was the greatest show ever
+* that simplicity is the ultimate sophistication
+
+# Purpose
+
+To observe, capture and understand the complexities of life;  
+Express these complexities in a manner that is elegant in its simplicity;  
+Thereby creating environments which are genuine, inspiring and fun;  
+And ultimately making the world a better place as a result of my actions.
+
+# Skills
+
+Here is a self-assessment of my skills in line with the areas outlined in <a href="https://jonthelaion.rbind.io/post/doing-data-science-book/" target="_blank">Doing Data Science</a>.
+
+```{r echo=FALSE}
+library(ggplot2)
+```
+
+```{r echo=FALSE}
+profile_df <- data.frame(cbind(c('Computer Science', 'Math', 'Statistics', 'Machine Learning', 'Domain Expertise', 'Communication and Presentation Skills', 'Data Visualisation'),c(0,1,1,0,2,2,2)))
+names(profile_df) <- c('Area','Rating')
+ggplot(profile_df, aes(x=Area, y=Rating)) +
+    geom_col()
+```

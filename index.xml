@@ -8,10 +8,69 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Sun, 01 Apr 2018 17:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Apr 2018 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R Programming</title>
+      <link>/post/r-programming/</link>
+      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/r-programming/</guid>
+      <description>R Basics R has five basic/atomic classes of objects:
+ character numeric (real numbers) integer complex logical (True/False)  R objects have attributes and can be accessed by using the attributes() function.
+Numerics are generally treated as double precision real numbers.
+Integers are obtained by specifying the L suffix (e.g. 1L).
+There is also a special number Inf which represents infinity and NaN represents an undefined value.
+Vectors Vectors can be created with either vector() or c().</description>
+    </item>
+    
+    <item>
+      <title>Data Visualisation in R</title>
+      <link>/post/data-visualisation-in-r/</link>
+      <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/data-visualisation-in-r/</guid>
+      <description>library(ggplot2)  Data Layer  Make sure data adheres to tidy data principles to make plotting easier. This means that each row should represent one observation and each column one variable.  library(tidyr)  head(iris)  ## Sepal.Length Sepal.Width Petal.Length Petal.Width Species ## 1 5.1 3.5 1.4 0.2 setosa ## 2 4.9 3.0 1.4 0.2 setosa ## 3 4.7 3.2 1.3 0.2 setosa ## 4 4.6 3.1 1.5 0.2 setosa ## 5 5.</description>
+    </item>
+    
+    <item>
+      <title>Getting and Cleaning Data</title>
+      <link>/post/getting-and-cleaning-data/</link>
+      <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/getting-and-cleaning-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Data Scientist&#39;s Toolbox (Coursera)</title>
+      <link>/post/the-data-scientist-s-toolbox-coursera/</link>
+      <pubDate>Sat, 07 Apr 2018 00:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/the-data-scientist-s-toolbox-coursera/</guid>
+      <description>Introduction  Question should come first; data should come second Rarely will you have full, complete and clean data that you need to answer the question Statistics is the science of learning from data and is used wherever there is uncertainty What do data scientists do?  Define the question Define the ideal question set Determine what data you can access Obtain the data Clean the data Exploratory data analysis Statistical prediction/modeling Interpret results Challenge results Synthesize/write up results Create reproducible code Distribute results to other people  Key characteristics of &amp;ldquo;hackers&amp;rdquo;  Willing to find answers on their own Knowledgeable about where to find answers on their own Unintimidated by new data types or packages Unafraid to say they don&amp;rsquo;t know the answer In summary: Polite but relentless   Command Line Interface  CLI commands follow this recipe: command flags arguments pwd: prints working directory clear: clears CLI screen ls: lists all files in current directory  -a: lists both hidden and unhidden files -l: lists details of unhidden files al: lists details of both hidden and unhidden files  cd &amp;lt;path&amp;gt;: change directory to path  cd &amp;lt;blank&amp;gt;: go to home directory cd .</description>
+    </item>
+    
+    <item>
+      <title>Data Quality</title>
+      <link>/post/data-quality/</link>
+      <pubDate>Thu, 05 Apr 2018 21:15:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/data-quality/</guid>
+      <description>HBR - If your data is bad your machine learning tools are useless  Link: https://hbr.org/2018/04/if-your-data-is-bad-your-machine-learning-tools-are-useless &amp;ldquo;Garbage-in garbage-out&amp;rdquo; adage is equally applicable to machine learning. The quality demands of machine learning are steep - both at the training stage and when using the model in production. To properly train a predictive model, historical data must meet exceptionally broad and high quality standards:  The data must be correct, properly labelled, deduped etc.</description>
+    </item>
+    
+    <item>
+      <title>Data Framed</title>
+      <link>/post/data-framed/</link>
+      <pubDate>Wed, 04 Apr 2018 06:40:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/data-framed/</guid>
+      <description>Data Framed is a great podcast at DataCamp hosted by Hugo Bowne-Anderson and can be found here. Each week, he invites working data scientists from various backgrounds onto his podcast to talk about their own experiences; how they got to where they are; and all other things data. For me, it&amp;rsquo;s inspiring to hear about all the great work that is being done in the industry and also comforting to know that others have often taken a meandering path by following their interests to get to where they are.</description>
+    </item>
     
     <item>
       <title>Doing Data Science (Book)</title>
@@ -29,7 +88,7 @@ They also explore an idea that is often overlooked when speaking about data scie
       <pubDate>Sat, 31 Mar 2018 21:53:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/r-resources/</guid>
-      <description>BlogsCathy O’Neil BlogData Science CentralOnline CoursesList of Machine Learning CoursesR MarkdownCreating Websites with R Markdown (Currently Reading)R Markdown Reference GuideLaTeXGeneral Data ScienceDoing Data ScienceColumbia - Applied Data ScienceLearning RThe Art of R Programming - Norman Matloff (No Starch Press)R for Everyone: Advanced Analytics and Graphics - Jared Lander (Addison-Wesley)R in a Nutshell - Joseph Adler (O’Reilly)Learning PythonLearning Python - Mark Lutz and David Ascher (O’Reilly)Python for Data Analysis - Wes McKinney (O’Reilly)MathLinear Algebra and Its Applications - Gilbert Strang (Cengage Learning)Convex Optimization - Stephen Boyd and Lieven Vandenberghe (Cambridge University Press)A First Course in Probability - Sheldon Ross (Academic Press)Data Analysis and Statistical InferenceStatistical Inference - George Casella and Roger L.</description>
+      <description>BlogsCathy O’Neil BlogData Science Centralhttp://www.bytemining.com/http://www.datascience.university/Online CoursesList of Machine Learning CoursesBerkeleyX - Foundations of Data ScienceCoursera - John Hopkin’s University - Data Science SpecialisationThe Data Scientists’s Toolbox (Complete)R ProgrammingGetting and Cleaning DataExploratory Data AnalysisReproducible ResearchStatistical InferenceRegression ModelsPractical Machine LearningDeveloping Data ProductsR MarkdownCreating Websites with R Markdown (Currently Reading)R Markdown Reference GuideLaTeXGeneral Data ScienceDoing Data ScienceColumbia - Applied Data ScienceData for Good InitiativesDriven DataData KindLearning RThe Art of R Programming - Norman Matloff (No Starch Press)R for Everyone: Advanced Analytics and Graphics - Jared Lander (Addison-Wesley)R in a Nutshell - Joseph Adler (O’Reilly)Learning PythonLearning Python - Mark Lutz and David Ascher (O’Reilly)Python for Data Analysis - Wes McKinney (O’Reilly)MathLinear Algebra and Its Applications - Gilbert Strang (Cengage Learning)Convex Optimization - Stephen Boyd and Lieven Vandenberghe (Cambridge University Press)A First Course in Probability - Sheldon Ross (Academic Press)A career in statistics: beyond the numbers - Gerald J.</description>
     </item>
     
     <item>
@@ -39,6 +98,16 @@ They also explore an idea that is often overlooked when speaking about data scie
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/hello-world/</guid>
       <description>I am creating this blog to journal my progress towards becoming a data scientist an applied statistician. While my interest was initially piqued by the data science hype train, I feel that after a year or so of dipping my toes into the resources available online, my view of this discipline is more closely aligned with the traditional school of applied statistics, rather than the newer “hacker-culture” school of data science.</description>
+    </item>
+    
+    <item>
+      <title>Profile</title>
+      <link>/post/profile/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/profile/</guid>
+      <description>Skills Here is a self-assessment of my skills in line with the areas outlined in Doing Data Science.
+Still a ways to go for me, but it&amp;rsquo;s a journey I&amp;rsquo;m looking forward to embarking on.</description>
     </item>
     
   </channel>

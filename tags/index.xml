@@ -8,24 +8,87 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Sun, 01 Apr 2018 17:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Apr 2018 09:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Coursera</title>
+      <link>/tags/coursera/</link>
+      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/coursera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dataquality</title>
+      <link>/tags/dataquality/</link>
+      <pubDate>Thu, 05 Apr 2018 21:15:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/dataquality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Datascience</title>
       <link>/tags/datascience/</link>
-      <pubDate>Sun, 01 Apr 2018 17:30:00 +0000</pubDate>
+      <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/tags/datascience/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Dataviz</title>
+      <link>/tags/dataviz/</link>
+      <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/dataviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mooc</title>
+      <link>/tags/mooc/</link>
+      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/mooc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Podcast</title>
+      <link>/tags/podcast/</link>
+      <pubDate>Wed, 04 Apr 2018 06:40:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/podcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Profile</title>
+      <link>/tags/profile/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/profile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Sun, 01 Apr 2018 17:30:00 +0000</pubDate>
+      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/tags/r/</guid>
       <description></description>

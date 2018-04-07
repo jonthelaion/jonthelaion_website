@@ -13,18 +13,63 @@
     
     
     <item>
+      <title>Coursera</title>
+      <link>/categories/coursera/</link>
+      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/categories/coursera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Datascience</title>
       <link>/categories/datascience/</link>
-      <pubDate>Sun, 01 Apr 2018 17:30:00 +0000</pubDate>
+      <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/datascience/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Dataviz</title>
+      <link>/categories/dataviz/</link>
+      <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/categories/dataviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mooc</title>
+      <link>/categories/mooc/</link>
+      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/categories/mooc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Podcast</title>
+      <link>/categories/podcast/</link>
+      <pubDate>Wed, 04 Apr 2018 06:40:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/categories/podcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Profile</title>
+      <link>/categories/profile/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/categories/profile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Sun, 01 Apr 2018 17:30:00 +0000</pubDate>
+      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/r/</guid>
       <description></description>

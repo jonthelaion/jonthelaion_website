@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Profile on jonthelaion</title>
+    <link>/tags/profile/</link>
+    <description>Recent content in Profile on jonthelaion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
+    <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
+    <lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/profile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Profile</title>
+      <link>/post/profile/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/profile/</guid>
+      <description>Skills Here is a self-assessment of my skills in line with the areas outlined in Doing Data Science.
+Still a ways to go for me, but it&amp;rsquo;s a journey I&amp;rsquo;m looking forward to embarking on.</description>
+    </item>
+    
+  </channel>
+</rss>

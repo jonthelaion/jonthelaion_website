@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-116669869-1');
+  </script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>The Data Scientist&#39;s Toolbox (Coursera)  &middot; jonthelaion</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="/post/the-data-scientist-s-toolbox-coursera/">
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="/" class="logo-title">HOME</a></li>
+      <li><a href="/categories">CATEGORIES</a></li>
+      <li><a href="/tags">TAGS</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="title">
+      <a href="/">
+        <img src="/images/logo.png" width="260px" height="48px" />
+      </a>
+    </div>
+
+
+<a href="/post/the-data-scientist-s-toolbox-coursera/">
+  <div class="post-title">
+    <img src="/images/post-title-icon.png" />
+    <div class="post-meta">
+      <time>07 Apr 2018, 00:00</time>
+      <h1>The Data Scientist&#39;s Toolbox (Coursera)</h1>
+    </div>
+  </div>
+</a>
+
+<div class="post-toc">
+  <span class="title">
+    Table of contents
+  </span>
+  <nav id="TableOfContents">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#command-line-interface">Command Line Interface</a></li>
+<li><a href="#conceptual-ideas">Conceptual Ideas</a></li>
+<li><a href="#experimental-design">Experimental Design</a></li>
+</ul>
+</nav>
+</div>
+
+<section class="post-content">
+  
+
+<h1 id="introduction">Introduction</h1>
+
+<ul>
+<li>Question should come first; data should come second</li>
+<li>Rarely will you have full, complete and clean data that you need to answer the question</li>
+<li>Statistics is the science of learning from data and is used wherever there is uncertainty</li>
+<li>What do data scientists do?
+
+<ul>
+<li>Define the question</li>
+<li>Define the ideal question set</li>
+<li>Determine what data you can access</li>
+<li>Obtain the data</li>
+<li>Clean the data</li>
+<li>Exploratory data analysis</li>
+<li>Statistical prediction/modeling</li>
+<li>Interpret results</li>
+<li>Challenge results</li>
+<li>Synthesize/write up results</li>
+<li>Create reproducible code</li>
+<li>Distribute results to other people</li>
+</ul></li>
+<li>Key characteristics of &ldquo;hackers&rdquo;
+
+<ul>
+<li>Willing to find answers on their own</li>
+<li>Knowledgeable about where to find answers on their own</li>
+<li>Unintimidated by new data types or packages</li>
+<li>Unafraid to say they don&rsquo;t know the answer</li>
+<li>In summary: Polite but relentless</li>
+</ul></li>
+</ul>
+
+<h1 id="command-line-interface">Command Line Interface</h1>
+
+<ul>
+<li>CLI commands follow this recipe: <code>command</code> <code>flags</code> <code>arguments</code></li>
+<li><code>pwd</code>: prints working directory</li>
+<li><code>clear</code>: clears CLI screen</li>
+<li><code>ls</code>: lists all files in current directory
+
+<ul>
+<li><code>-a</code>: lists both hidden and unhidden files</li>
+<li><code>-l</code>: lists details of unhidden files</li>
+<li><code>al</code>: lists details of both hidden and unhidden files</li>
+</ul></li>
+<li><code>cd &lt;path&gt;</code>: change directory to path
+
+<ul>
+<li><code>cd &lt;blank&gt;</code>: go to home directory</li>
+<li><code>cd ..</code>: go up one level</li>
+</ul></li>
+<li><code>mkdir</code>: make directory in working directory</li>
+<li><code>touch &lt;file-name&gt;</code>: creates an empty file in working directory</li>
+<li><code>cp &lt;file-to-copy&gt; &lt;dir-to-copy-to&gt;</code>: to copy single file</li>
+<li><code>cp -r &lt;dir-to-copy&gt; &lt;dir-to-copy-to&gt;</code>: this copy entire folder</li>
+<li><code>rm &lt;file-to-delete&gt;</code>: to delete single file</li>
+<li><code>rm -r &lt;dir-to-delete&gt;</code>: to delete entire folder (Note: no way to undo this, so use with caution)</li>
+<li><code>mv &lt;file-to-move&gt; &lt;dir-to-move-to&gt;</code>: to move single file</li>
+<li><code>mv &lt;file-to-rename&gt; &lt;file-new-name&gt;</code>: to rename single file</li>
+<li><code>echo &lt;text&gt;</code>: prints text</li>
+<li><code>date</code>: prints current date and time</li>
+</ul>
+
+<h1 id="conceptual-ideas">Conceptual Ideas</h1>
+
+<ul>
+<li>Types of data science questions in approximate order of difficulty:
+
+<ul>
+<li><strong>Descriptive:</strong> Describe data and interpret what it means. Descriptions usually cannot be generalised without additional statistical modeling. Example: Census data, Google Ngram Viewer</li>
+<li><strong>Exploratory:</strong> Find relationships you didn&rsquo;t know about. Good for discovering new connections and defining future studies. Exploratory analyses are usually not the final say and should not be used for generalising/predicting alone. Correlation does not imply causation.</li>
+<li><strong>Inferential:</strong> Use a relativly small sample of data to say something about a larger population. Common goal of statistical analysis and involves estimating both the quantity you care about and the uncertainty about your estimate. Inference depends heavily on both the population and the sampling scheme. Example: Study showing the effect of air pollution control on life expectancy</li>
+<li><strong>Predictive:</strong> Use data on some objects to predict values on other objects. If X predicts Y, it does not mean that X causes Y. Accurate prediction depends heavily on measuring the right variables. Although there are better and worse prediction models, more data and a simple model works really well. Prediction is very hard, especially about the future references. Example: Prediction of presedential elections</li>
+<li><strong>Causal:</strong> To find out what happens to one variable when you make another variable change. Usually randomised studies are required to identify causation. There are approaches to inferring causation in non-randomised studies, but they are complicated and sensitive to assumptions. Causal relationships are usually identified as average effect, but may not apply to every individual. Causal models are usually the gold standard for data analysis.</li>
+<li><strong>Mechanistic:</strong> To understand the exact changes in variables that lead to changes in other varaibles for individual objects. Incredibly hard to infer, except in simple situations. Usually modelled by a deterministic set of equations (physical/engineering science). Generally the random component of the data is measurement error If the equations are known but the parameters are not, they may be inferred with data analysis.</li>
+</ul></li>
+<li>What is data?
+
+<ul>
+<li>&ldquo;Data are values of qualitative or quantitative variables, belonging to a set of items.&rdquo;</li>
+<li>Data can come in a variety of formats e.g. Excel table format, genome sequencing data, Twitter API, medical data, videos files, images.</li>
+<li>Data is the second most important thing - the most important is the question.</li>
+<li>Often the data will limit or enable the questions, but having data can&rsquo;t save you if you don&rsquo;t have a question.</li>
+<li>&ldquo;The data may not contain the answer. The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.&rdquo; -John Tukey.</li>
+</ul></li>
+</ul>
+
+<h1 id="experimental-design">Experimental Design</h1>
+
+<ul>
+<li>Know and care about the analysis design</li>
+<li>Have a plan for data and code sharing</li>
+<li>Formulate your question in advance</li>
+<li>Statistical inference - inference from sample to population</li>
+<li>Consider variability - ideally want small variability on existing and new results</li>
+<li>Confounding variables - paying attention to what other variable may be causing the relationship (e.g. age is a confounding variable for &ldquo;relationship&rdquo; observed between shoe size and literacy)</li>
+<li>Randomisation and blocking:
+
+<ul>
+<li>If you can (and want to) fix a variable</li>
+<li>If you don&rsquo;t fix a variable, stratify it</li>
+<li>If you can&rsquo;t fix or stratify varaible, randomise it</li>
+</ul></li>
+<li>Prediction versus inference
+
+<ul>
+<li>For prediction, the distributions should be relatively separated</li>
+</ul></li>
+<li>Prediction key quantities
+
+<ul>
+<li>Sensitivity: Pr(positive test | disease)</li>
+<li>Sepecificity: Pr(negative test | no disease)</li>
+<li>Positive predictive value: Pr(disease | positive test)</li>
+<li>Negative predictive value: Pr(no disease | negative test)</li>
+<li>Accuracy: Pr(correct outcome)</li>
+</ul></li>
+<li>Good experiments:
+
+<ul>
+<li>Have replication</li>
+<li>Measure variability</li>
+<li>Generalise to the problem you care about</li>
+<li>Are transparent</li>
+</ul></li>
+<li>Prediction is not inference
+
+<ul>
+<li>Both can be important</li>
+</ul></li>
+<li>Beware data dredging</li>
+</ul>
+
+</section>
+
+<div class="share">
+  <a href="http://www.facebook.com/sharer.php?src=bm&u=%2fpost%2fthe-data-scientist-s-toolbox-coursera%2f&t=The%20Data%20Scientist%27s%20Toolbox%20%28Coursera%29" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+  <a href="http://twitter.com/intent/tweet?url=%2fpost%2fthe-data-scientist-s-toolbox-coursera%2f&text=The%20Data%20Scientist%27s%20Toolbox%20%28Coursera%29&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+  <a href="https://plus.google.com/share?url=%2fpost%2fthe-data-scientist-s-toolbox-coursera%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+  <a href="http://getpocket.com/edit?url=%2fpost%2fthe-data-scientist-s-toolbox-coursera%2f&title=The%20Data%20Scientist%27s%20Toolbox%20%28Coursera%29" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+</div>
+
+<div class="post-meta-code">
+  <div class="desc">
+    public string description() {
+    <div class="desc">val author = "
+    
+        jonthelaion
+    ";
+    </div>
+    
+    <div class="desc">
+      val categories = [
+      
+      
+      <a href="//categories/datascience">"datascience"</a>
+      
+      <a href="//categories/r">"R"</a>
+      
+      <a href="//categories/mooc">"mooc"</a>
+      
+      <a href="//categories/coursera">"coursera"</a>
+      
+      ];
+    </div>
+    
+    }
+  </div>
+  <div class="desc">
+    public string tags() {
+      <div class="desc">
+        val tags = [
+        
+          
+          <a href="/tags/datascience">"datascience"</a>
+          
+          <a href="/tags/r">"R"</a>
+          
+          <a href="/tags/mooc">"mooc"</a>
+          
+          <a href="/tags/coursera">"coursera"</a>
+          
+        
+        ];
+      </div>
+    }
+  </div>
+</div>
+
+
+<div class="post-comment">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jonthelaion" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<div class="paging post-paging">
+  
+  <a class="left" href="/post/getting-and-cleaning-data/" rel="prev">
+    <i class="fa fa-caret-left" aria-hidden="true"></i> <span>Getting and Cleaning Data</span>
+  </a>
+  
+  
+  <a class="right" href="/post/data-quality/" rel="next">
+    <span>Data Quality</span> <i class="fa fa-caret-right" aria-hidden="true"></i>
+  </a>
+  
+</div>
+
+<footer class="footer">
+  COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG</a>. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>
+

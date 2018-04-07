@@ -1,0 +1,45 @@
+---
+title: Data Framed
+author: jonthelaion
+date: '2018-04-04 06:40:00'
+slug: data-framed
+categories:
+  - datascience
+  - podcast
+tags:
+  - datascience
+  - podcast
+---
+
+Data Framed is a great podcast at DataCamp hosted by Hugo Bowne-Anderson and can be found <a href="https://www.datacamp.com/community/podcast" target="_blank">here</a>. Each week, he invites working data scientists from various backgrounds onto his podcast to talk about their own experiences; how they got to where they are; and all other things data. For me, it's inspiring to hear about all the great work that is being done in the industry and also comforting to know that others have often taken a meandering path by following their interests to get to where they are.
+
+# Episode 16 - Data Nerdism at Large
+
+**Guest:** Mara Averick
+
+- When solving data problems, it's important to understand the "business" context - to speak to SME's and people on the ground in order to be able to see the problem holistically and as more than just data.
+- Some questions to keep in mind include: Is it operationally significant? Is it something people want to change? Data science is about iterative feedback, an developing something with the people it affects.
+- There is often distrust between scientific community and the public due to misunderstandings 
+- Good idea to attend conferences - puts you in touch with other data-minded
+- Good idea to keep an eye on R hashtags on Twitter - supportive community
+- <a href="https://www.drivendata.org/" target="_blank">Driven Data</a>
+- Visualisation is an excellent method of communication and can be used to represent uncertainty. 
+- It is important to obtain an outsider's perspective to evaluate how effective a visualisation is.
+
+# Episode 15 - Building Data Science Teams
+
+**Guest:** Drew Conway
+
+<img src="/img/Data_Science_VD.png" alt="">
+
+- Creator of the data science venn diagram:
+ - Do you have coding (hacking) skills to build a minimum viable product (MVP)? (Note: This does not necessarily mean that you have to be a software engineer.)
+ - Do you have enough knowledge of math/statistics to understand the underlying methodologies and be able to interpret the results?
+ - Do you have substantive expertise in the subject matter to be able to ask good questions?
+- Common misinterpretation of this venn diagram is that you will find the mythical data scientist at the intersection of these three circles. The reality is that the venn diagram describes the data science discipline as a whole rather than at an individual level. It is also applicable to data science teams when viewed in aggregation.
+- When designing a data product think about the optimal point at which business expertise takes over. Computers are good at sifting through large amounts of data (data discovery) but not as great with understanding and interpreting the data (data reasoning). The reverse holds true for people - good at reasoning with data but not as good with dealing with large amounts of data. There should also be a feedback loop so that computers can learn from the results of human data reasoning.
+- Some questions for a company to ask when considering a data science strategy:
+ 1. Do we actually need data scientists? Do you need a model? Do you require prediction or classification?
+ 2. What sort of data scientist is important for the company?
+- Currently we don't have a good theory of data science managmeent nor metrics for measuring success.
+- Get out there and put your name out in the data science community (e.g. by writing or speaking at meetups).

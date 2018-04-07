@@ -1,0 +1,31 @@
+---
+title: Profile
+author: jonthelaion
+date: '2018-01-01'
+slug: profile
+categories:
+  - profile
+tags:
+  - profile
+---
+
+# Skills
+
+Here is a self-assessment of my skills in line with the areas outlined in <a href="https://jonthelaion.rbind.io/post/doing-data-science-book/" target="_blank">Doing Data Science</a>.
+
+Still a ways to go for me, but it's a journey I'm looking forward to embarking on.
+
+```{r echo=FALSE}
+library(ggplot2)
+```
+
+```{r echo=FALSE, warning=FALSE}
+profile_df <- data.frame(cbind(c('Computer Science', 'Math', 'Statistics', 'Machine Learning', 'Domain Expertise', 'Communication and Presentation Skills', 'Data Visualisation'),c(0.5,1,1,0.25,1.5,2)), stringsAsFactors = FALSE)
+names(profile_df) <- c('Area','Rating')
+profile_df$Area <- factor(profile_df$Area, levels=c('Computer Science', 'Math', 'Statistics', 'Machine Learning', 'Domain Expertise', 'Communication and Presentation Skills', 'Data Visualisation'))
+profile_df$Rating <- as.numeric(profile_df$Rating)
+ggplot(profile_df, aes(x=Area, y=Rating)) +
+    geom_col(fill="#00B2A0") +
+    coord_cartesian(ylim = c(0, 4)) +
+    theme(axis.text.x=element_text(angle=90,hjust=1))
+```
