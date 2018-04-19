@@ -1,0 +1,85 @@
+---
+title: Shiny App Example - Data table
+author: jonthelaion
+date: '2018-04-19'
+output: html_document
+runtime: shiny
+slug: shiny-app-example-data-table
+categories:
+  - R
+  - shiny
+tags:
+  - R
+  - shiny
+---
+
+
+```{r}
+library(shiny)
+library(ggplot2)
+library(dplyr)
+library(DT)
+load("../../data/movies.Rdata")
+```
+
+
+```{r}
+n_total <- nrow(movies)
+all_studios <- sort(unique(movies$studio))
+
+# Define UI for application that plots features of movies
+ui <- fluidPage(
+
+  # Sidebar layout with a input and output definitions
+  sidebarLayout(
+
+    # Inputs
+    sidebarPanel(
+
+      # Text instructions
+      HTML(paste("Enter a value between 1 and", n_total)),
+
+      # Numeric input for sample size
+      numericInput(inputId = "n",
+                   label = "Sample size:",
+                   value = 5,
+                   min = 1, max = n_total,
+                   step = 1),
+      
+      # Allowing for multiple selections
+      selectInput(inputId = "studio",
+                  label = "Select studio:",
+                  choices = all_studios,
+                  selected = "20th Century Fox",
+                  selectize = TRUE,
+                  multiple = TRUE)
+
+    ),
+
+    # Output: Show data table
+    mainPanel(
+      DT::dataTableOutput(outputId = "moviestable")
+    )
+  )
+)
+
+# Define server function required to create the scatterplot
+server <- function(input, output) {
+
+  # Create data table
+  output$moviestable <- DT::renderDataTable({
+    req(input$n)
+    movies_sample <- movies %>%
+      filter(studio %in% input$studio) %>%
+      sample_n(input$n) %>%
+      select(title:studio)
+    DT::datatable(data = movies_sample,
+                  options = list(pageLength = 10),
+                  rownames = FALSE)
+  })
+
+}
+
+# Create a Shiny app object
+shinyApp(ui = ui, server = server)
+```

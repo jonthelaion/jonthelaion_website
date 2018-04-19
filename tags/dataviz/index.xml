@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Sun, 08 Apr 2018 08:50:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Apr 2018 07:04:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building Web Applications in R with Shiny (Datacamp)</title>
+      <link>/post/building-web-applications-in-r-with-shiny-datacamp/</link>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/building-web-applications-in-r-with-shiny-datacamp/</guid>
+      <description>Helpful Linkswww.rstudio.com/resources/cheatsheetsshiny.rstudio.comTipsAlways run the entire script; not just at the point that you are developing codeSometimes the best way to troubleshoot is to run your code and then review errorsWatch out for commas!Anatomy of a Shiny AppExample: Shiny Applibrary(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &amp;#39;DT&amp;#39;## The following objects are masked from &amp;#39;package:shiny&amp;#39;:## ## dataTableOutput, renderDataTableload(&amp;quot;.</description>
+    </item>
     
     <item>
       <title>Data Visualisation in R</title>
@@ -19,7 +28,8 @@
       <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/data-visualisation-in-r/</guid>
-      <description>library(ggplot2)  Data Layer  Make sure data adheres to tidy data principles to make plotting easier. This means that each row should represent one observation and each column one variable.  library(tidyr)  head(iris)  ## Sepal.Length Sepal.Width Petal.Length Petal.Width Species ## 1 5.1 3.5 1.4 0.2 setosa ## 2 4.9 3.0 1.4 0.2 setosa ## 3 4.7 3.2 1.3 0.2 setosa ## 4 4.6 3.1 1.5 0.2 setosa ## 5 5.</description>
+      <description>ggplot2 Reference Guide Reference Guide
+Aesthetics Best Practices  Form follows function:  Consider whether the graph is for exploratory or explanatory purposes and who the audience is. The intention should never be about making your graph &amp;ldquo;pretty&amp;rdquo; or impressing the audience  For continuous variables:  Scatter plots are an effective means of communication Ensure that y-axes are aligned if they are being displayed side-by-side  For categorical variables:  Colour can be quite effective Remove unnecessary visual elements (e.</description>
     </item>
     
   </channel>

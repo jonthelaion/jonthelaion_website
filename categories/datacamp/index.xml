@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Datacamp on jonthelaion</title>
+    <link>/categories/datacamp/</link>
+    <description>Recent content in Datacamp on jonthelaion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-KR</language>
+    <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
+    <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
+    <lastBuildDate>Thu, 19 Apr 2018 07:04:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/datacamp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building Web Applications in R with Shiny (Datacamp)</title>
+      <link>/post/building-web-applications-in-r-with-shiny-datacamp/</link>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/building-web-applications-in-r-with-shiny-datacamp/</guid>
+      <description>Helpful Linkswww.rstudio.com/resources/cheatsheetsshiny.rstudio.comTipsAlways run the entire script; not just at the point that you are developing codeSometimes the best way to troubleshoot is to run your code and then review errorsWatch out for commas!Anatomy of a Shiny AppExample: Shiny Applibrary(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &amp;#39;DT&amp;#39;## The following objects are masked from &amp;#39;package:shiny&amp;#39;:## ## dataTableOutput, renderDataTableload(&amp;quot;.</description>
+    </item>
+    
+  </channel>
+</rss>

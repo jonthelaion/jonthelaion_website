@@ -8,7 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Sun, 08 Apr 2018 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 19:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/coursera/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,7 +16,7 @@
     <item>
       <title>R Programming</title>
       <link>/post/r-programming/</link>
-      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Apr 2018 19:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/r-programming/</guid>
       <description>R Basics R has five basic/atomic classes of objects:
@@ -33,7 +33,7 @@ Vectors Vectors can be created with either vector() or c().</description>
       <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/getting-and-cleaning-data/</guid>
-      <description></description>
+      <description>Raw versus Processed Data  Raw data  The original source of the data Often hard to use for data analysis Data analysis includes processing Raw data may only need to be processed once  Processed data  Data that is ready for analysis Processing can include merging, subsetting, transforming, etc. There may be standards for processing All steps should be recorded.   The components of tidy data  The four things you should have:  The raw data The tidy data set A code book describing each variable and its values in the tidy data set (a.</description>
     </item>
     
     <item>

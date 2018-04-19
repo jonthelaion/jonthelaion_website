@@ -70,6 +70,7 @@ tags:
 - The Elements of Grpahing Data - William Cleveland (Hobart Press)
 - Visualize This: The FLowingData Guide to Design, Visualization, and Statistics - Nathan Yau (Wiley)
 - The VIsual Display of Quantitative Information - Edward Tufte (Graphics Press)
+- https://rpubs.com/gjeffroy/ggplotportfolio
 
 #### Artificial Intelligence and Machine Learning
 - Pattern Recognition and Machine Learning - Christopher Bishop (Springer)

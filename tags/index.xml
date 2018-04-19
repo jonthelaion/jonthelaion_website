@@ -8,7 +8,7 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Sun, 08 Apr 2018 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 19:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,9 +16,18 @@
     <item>
       <title>Coursera</title>
       <link>/tags/coursera/</link>
-      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Apr 2018 19:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/tags/coursera/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Datacamp</title>
+      <link>/tags/datacamp/</link>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/datacamp/</guid>
       <description></description>
     </item>
     
@@ -34,7 +43,7 @@
     <item>
       <title>Datascience</title>
       <link>/tags/datascience/</link>
-      <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/tags/datascience/</guid>
       <description></description>
@@ -43,7 +52,7 @@
     <item>
       <title>Dataviz</title>
       <link>/tags/dataviz/</link>
-      <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/tags/dataviz/</guid>
       <description></description>
@@ -61,7 +70,7 @@
     <item>
       <title>Mooc</title>
       <link>/tags/mooc/</link>
-      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Apr 2018 19:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/tags/mooc/</guid>
       <description></description>
@@ -88,7 +97,7 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/tags/r/</guid>
       <description></description>
@@ -100,6 +109,15 @@
       <pubDate>Sat, 31 Mar 2018 21:53:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/tags/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>/tags/shiny/</link>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/tags/shiny/</guid>
       <description></description>
     </item>
     

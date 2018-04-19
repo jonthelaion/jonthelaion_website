@@ -45,11 +45,60 @@
 
 
 
+  <a href="/post/building-web-applications-in-r-with-shiny-datacamp/">
+  <div class="post-title">
+    <img src="/images/post-title-icon.png" />
+    <div class="post-meta">
+      <time>19 Apr 2018, 07:04</time>
+      <h1>Building Web Applications in R with Shiny (Datacamp)</h1>
+    </div>
+  </div>
+</a>
+<div class="summary-content">
+  Helpful Linkswww.rstudio.com/resources/cheatsheetsshiny.rstudio.comTipsAlways run the entire script; not just at the point that you are developing codeSometimes the best way to troubleshoot is to run your code and then review errorsWatch out for commas!Anatomy of a Shiny AppExample: Shiny Applibrary(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &#39;dplyr&#39;## The following objects are masked from &#39;package:stats&#39;:## ## filter, lag## The following objects are masked from &#39;package:base&#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &#39;DT&#39;## The following objects are masked from &#39;package:shiny&#39;:## ## dataTableOutput, renderDataTableload(&quot;.
+  
+  <a href="/post/building-web-applications-in-r-with-shiny-datacamp/" class="summary-more">READ MORE</a>
+  
+</div>
+  <hr class="summary-sep" />
+
+  <a href="/post/shiny-app-example-data-table/">
+  <div class="post-title">
+    <img src="/images/post-title-icon.png" />
+    <div class="post-meta">
+      <time>19 Apr 2018, 00:00</time>
+      <h1>Shiny App Example - Data table</h1>
+    </div>
+  </div>
+</a>
+<div class="summary-content">
+  library(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &#39;dplyr&#39;## The following objects are masked from &#39;package:stats&#39;:## ## filter, lag## The following objects are masked from &#39;package:base&#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &#39;DT&#39;## The following objects are masked from &#39;package:shiny&#39;:## ## dataTableOutput, renderDataTableload(&quot;../../data/movies.Rdata&quot;)n_total &lt;- nrow(movies)all_studios &lt;- sort(unique(movies$studio))# Define UI for application that plots features of moviesui &lt;- fluidPage(# Sidebar layout with a input and output definitionssidebarLayout(# InputssidebarPanel(# Text instructionsHTML(paste(&quot;Enter a value between 1 and&quot;, n_total)),# Numeric input for sample sizenumericInput(inputId = &quot;n&quot;,label = &quot;Sample size:&quot;,value = 5,min = 1, max = n_total,step = 1),# Allowing for multiple selectionsselectInput(inputId = &quot;studio&quot;,label = &quot;Select studio:&quot;,choices = all_studios,selected = &quot;20th Century Fox&quot;,selectize = TRUE,multiple = TRUE)),# Output: Show data tablemainPanel(DT::dataTableOutput(outputId = &quot;moviestable&quot;))))# Define server function required to create the scatterplotserver &lt;- function(input, output) {# Create data tableoutput$moviestable &lt;- DT::renderDataTable({req(input$n)movies_sample &lt;- movies %&gt;%filter(studio %in% input$studio) %&gt;%sample_n(input$n) %&gt;%select(title:studio)DT::datatable(data = movies_sample,options = list(pageLength = 10),rownames = FALSE)})}# Create a Shiny app objectshinyApp(ui = ui, server = server)
+  
+</div>
+  <hr class="summary-sep" />
+
+  <a href="/post/shiny-app-example-simple/">
+  <div class="post-title">
+    <img src="/images/post-title-icon.png" />
+    <div class="post-meta">
+      <time>19 Apr 2018, 00:00</time>
+      <h1>Shiny App Example - Simple</h1>
+    </div>
+  </div>
+</a>
+<div class="summary-content">
+  library(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &#39;dplyr&#39;## The following objects are masked from &#39;package:stats&#39;:## ## filter, lag## The following objects are masked from &#39;package:base&#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &#39;DT&#39;## The following objects are masked from &#39;package:shiny&#39;:## ## dataTableOutput, renderDataTableload(&quot;../../data/movies.Rdata&quot;)# Define UI for application that plots features of movies ui &lt;- fluidPage(# Sidebar layout with a input and output definitions sidebarLayout(# InputssidebarPanel(# Select variable for y-axisselectInput(inputId = &quot;y&quot;, label = &quot;Y-axis:&quot;,choices = c(&quot;imdb_rating&quot;, &quot;imdb_num_votes&quot;, &quot;critics_score&quot;, &quot;audience_score&quot;, &quot;runtime&quot;), selected = &quot;imdb_rating&quot;),# Select variable for x-axisselectInput(inputId = &quot;x&quot;, label = &quot;X-axis:&quot;,choices = c(&quot;imdb_rating&quot;, &quot;imdb_num_votes&quot;, &quot;critics_score&quot;, &quot;audience_score&quot;, &quot;runtime&quot;), selected = &quot;imdb_num_votes&quot;),# Set alpha levelsliderInput(inputId = &quot;alpha&quot;, label = &quot;Alpha:&quot;, min = 0, max = 1, value = 0.
+  
+  <a href="/post/shiny-app-example-simple/" class="summary-more">READ MORE</a>
+  
+</div>
+  <hr class="summary-sep" />
+
   <a href="/post/r-programming/">
   <div class="post-title">
     <img src="/images/post-title-icon.png" />
     <div class="post-meta">
-      <time>08 Apr 2018, 09:00</time>
+      <time>15 Apr 2018, 19:00</time>
       <h1>R Programming</h1>
     </div>
   </div>
@@ -77,7 +126,8 @@ Vectors Vectors can be created with either vector() or c().
   </div>
 </a>
 <div class="summary-content">
-  library(ggplot2)  Data Layer  Make sure data adheres to tidy data principles to make plotting easier. This means that each row should represent one observation and each column one variable.  library(tidyr)  head(iris)  ## Sepal.Length Sepal.Width Petal.Length Petal.Width Species ## 1 5.1 3.5 1.4 0.2 setosa ## 2 4.9 3.0 1.4 0.2 setosa ## 3 4.7 3.2 1.3 0.2 setosa ## 4 4.6 3.1 1.5 0.2 setosa ## 5 5.
+  ggplot2 Reference Guide Reference Guide
+Aesthetics Best Practices  Form follows function:  Consider whether the graph is for exploratory or explanatory purposes and who the audience is. The intention should never be about making your graph &ldquo;pretty&rdquo; or impressing the audience  For continuous variables:  Scatter plots are an effective means of communication Ensure that y-axes are aligned if they are being displayed side-by-side  For categorical variables:  Colour can be quite effective Remove unnecessary visual elements (e.
   
   <a href="/post/data-visualisation-in-r/" class="summary-more">READ MORE</a>
   
@@ -94,7 +144,9 @@ Vectors Vectors can be created with either vector() or c().
   </div>
 </a>
 <div class="summary-content">
+  Raw versus Processed Data  Raw data  The original source of the data Often hard to use for data analysis Data analysis includes processing Raw data may only need to be processed once  Processed data  Data that is ready for analysis Processing can include merging, subsetting, transforming, etc. There may be standards for processing All steps should be recorded.   The components of tidy data  The four things you should have:  The raw data The tidy data set A code book describing each variable and its values in the tidy data set (a.
   
+  <a href="/post/getting-and-cleaning-data/" class="summary-more">READ MORE</a>
   
 </div>
   <hr class="summary-sep" />
@@ -112,58 +164,6 @@ Vectors Vectors can be created with either vector() or c().
   Introduction  Question should come first; data should come second Rarely will you have full, complete and clean data that you need to answer the question Statistics is the science of learning from data and is used wherever there is uncertainty What do data scientists do?  Define the question Define the ideal question set Determine what data you can access Obtain the data Clean the data Exploratory data analysis Statistical prediction/modeling Interpret results Challenge results Synthesize/write up results Create reproducible code Distribute results to other people  Key characteristics of &ldquo;hackers&rdquo;  Willing to find answers on their own Knowledgeable about where to find answers on their own Unintimidated by new data types or packages Unafraid to say they don&rsquo;t know the answer In summary: Polite but relentless   Command Line Interface  CLI commands follow this recipe: command flags arguments pwd: prints working directory clear: clears CLI screen ls: lists all files in current directory  -a: lists both hidden and unhidden files -l: lists details of unhidden files al: lists details of both hidden and unhidden files  cd &lt;path&gt;: change directory to path  cd &lt;blank&gt;: go to home directory cd .
   
   <a href="/post/the-data-scientist-s-toolbox-coursera/" class="summary-more">READ MORE</a>
-  
-</div>
-  <hr class="summary-sep" />
-
-  <a href="/post/data-quality/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>05 Apr 2018, 21:15</time>
-      <h1>Data Quality</h1>
-    </div>
-  </div>
-</a>
-<div class="summary-content">
-  HBR - If your data is bad your machine learning tools are useless  Link: https://hbr.org/2018/04/if-your-data-is-bad-your-machine-learning-tools-are-useless &ldquo;Garbage-in garbage-out&rdquo; adage is equally applicable to machine learning. The quality demands of machine learning are steep - both at the training stage and when using the model in production. To properly train a predictive model, historical data must meet exceptionally broad and high quality standards:  The data must be correct, properly labelled, deduped etc.
-  
-  <a href="/post/data-quality/" class="summary-more">READ MORE</a>
-  
-</div>
-  <hr class="summary-sep" />
-
-  <a href="/post/data-framed/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>04 Apr 2018, 06:40</time>
-      <h1>Data Framed</h1>
-    </div>
-  </div>
-</a>
-<div class="summary-content">
-  Data Framed is a great podcast at DataCamp hosted by Hugo Bowne-Anderson and can be found here. Each week, he invites working data scientists from various backgrounds onto his podcast to talk about their own experiences; how they got to where they are; and all other things data. For me, it&rsquo;s inspiring to hear about all the great work that is being done in the industry and also comforting to know that others have often taken a meandering path by following their interests to get to where they are.
-  
-  <a href="/post/data-framed/" class="summary-more">READ MORE</a>
-  
-</div>
-  <hr class="summary-sep" />
-
-  <a href="/post/doing-data-science-book/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>01 Apr 2018, 17:30</time>
-      <h1>Doing Data Science (Book)</h1>
-    </div>
-  </div>
-</a>
-<div class="summary-content">
-  With years of experience in both academia and industry, authors Cathy O&rsquo;Neil &amp; Rachel Schutt look beyond the hype to explore what the data science discipline entails and looks like in practice.
-They also explore an idea that is often overlooked when speaking about data science - that building models and working with data is not value-neutral. You choose the problems you will work on, you make assumptions in those models, you choose metrics, and you design the algorithms.
-  
-  <a href="/post/doing-data-science-book/" class="summary-more">READ MORE</a>
   
 </div>
   <hr class="summary-sep" />

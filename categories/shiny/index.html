@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-116669869-1');
+  </script>
+  
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Shiny  &middot; jonthelaion</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="/categories/shiny/">
+  
+  <link href="/categories/shiny/index.xml" rel="alternate" type="application/rss+xml" title="Shiny" />
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="/" class="logo-title">HOME</a></li>
+      <li><a href="/categories">CATEGORIES</a></li>
+      <li><a href="/tags">TAGS</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="title">
+      <a href="/">
+        <img src="/images/logo.png" width="260px" height="48px" />
+      </a>
+    </div>
+
+
+
+  <a href="/post/building-web-applications-in-r-with-shiny-datacamp/">
+  <div class="post-title">
+    <img src="/images/post-title-icon.png" />
+    <div class="post-meta">
+      <time>19 Apr 2018, 07:04</time>
+      <h1>Building Web Applications in R with Shiny (Datacamp)</h1>
+    </div>
+  </div>
+</a>
+<div class="summary-content">
+  Helpful Linkswww.rstudio.com/resources/cheatsheetsshiny.rstudio.comTipsAlways run the entire script; not just at the point that you are developing codeSometimes the best way to troubleshoot is to run your code and then review errorsWatch out for commas!Anatomy of a Shiny AppExample: Shiny Applibrary(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &#39;dplyr&#39;## The following objects are masked from &#39;package:stats&#39;:## ## filter, lag## The following objects are masked from &#39;package:base&#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &#39;DT&#39;## The following objects are masked from &#39;package:shiny&#39;:## ## dataTableOutput, renderDataTableload(&quot;.
+  
+  <a href="/post/building-web-applications-in-r-with-shiny-datacamp/" class="summary-more">READ MORE</a>
+  
+</div>
+  <hr class="summary-sep" />
+
+  <a href="/post/shiny-app-example-data-table/">
+  <div class="post-title">
+    <img src="/images/post-title-icon.png" />
+    <div class="post-meta">
+      <time>19 Apr 2018, 00:00</time>
+      <h1>Shiny App Example - Data table</h1>
+    </div>
+  </div>
+</a>
+<div class="summary-content">
+  library(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &#39;dplyr&#39;## The following objects are masked from &#39;package:stats&#39;:## ## filter, lag## The following objects are masked from &#39;package:base&#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &#39;DT&#39;## The following objects are masked from &#39;package:shiny&#39;:## ## dataTableOutput, renderDataTableload(&quot;../../data/movies.Rdata&quot;)n_total &lt;- nrow(movies)all_studios &lt;- sort(unique(movies$studio))# Define UI for application that plots features of moviesui &lt;- fluidPage(# Sidebar layout with a input and output definitionssidebarLayout(# InputssidebarPanel(# Text instructionsHTML(paste(&quot;Enter a value between 1 and&quot;, n_total)),# Numeric input for sample sizenumericInput(inputId = &quot;n&quot;,label = &quot;Sample size:&quot;,value = 5,min = 1, max = n_total,step = 1),# Allowing for multiple selectionsselectInput(inputId = &quot;studio&quot;,label = &quot;Select studio:&quot;,choices = all_studios,selected = &quot;20th Century Fox&quot;,selectize = TRUE,multiple = TRUE)),# Output: Show data tablemainPanel(DT::dataTableOutput(outputId = &quot;moviestable&quot;))))# Define server function required to create the scatterplotserver &lt;- function(input, output) {# Create data tableoutput$moviestable &lt;- DT::renderDataTable({req(input$n)movies_sample &lt;- movies %&gt;%filter(studio %in% input$studio) %&gt;%sample_n(input$n) %&gt;%select(title:studio)DT::datatable(data = movies_sample,options = list(pageLength = 10),rownames = FALSE)})}# Create a Shiny app objectshinyApp(ui = ui, server = server)
+  
+</div>
+  <hr class="summary-sep" />
+
+  <a href="/post/shiny-app-example-simple/">
+  <div class="post-title">
+    <img src="/images/post-title-icon.png" />
+    <div class="post-meta">
+      <time>19 Apr 2018, 00:00</time>
+      <h1>Shiny App Example - Simple</h1>
+    </div>
+  </div>
+</a>
+<div class="summary-content">
+  library(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &#39;dplyr&#39;## The following objects are masked from &#39;package:stats&#39;:## ## filter, lag## The following objects are masked from &#39;package:base&#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &#39;DT&#39;## The following objects are masked from &#39;package:shiny&#39;:## ## dataTableOutput, renderDataTableload(&quot;../../data/movies.Rdata&quot;)# Define UI for application that plots features of movies ui &lt;- fluidPage(# Sidebar layout with a input and output definitions sidebarLayout(# InputssidebarPanel(# Select variable for y-axisselectInput(inputId = &quot;y&quot;, label = &quot;Y-axis:&quot;,choices = c(&quot;imdb_rating&quot;, &quot;imdb_num_votes&quot;, &quot;critics_score&quot;, &quot;audience_score&quot;, &quot;runtime&quot;), selected = &quot;imdb_rating&quot;),# Select variable for x-axisselectInput(inputId = &quot;x&quot;, label = &quot;X-axis:&quot;,choices = c(&quot;imdb_rating&quot;, &quot;imdb_num_votes&quot;, &quot;critics_score&quot;, &quot;audience_score&quot;, &quot;runtime&quot;), selected = &quot;imdb_num_votes&quot;),# Set alpha levelsliderInput(inputId = &quot;alpha&quot;, label = &quot;Alpha:&quot;, min = 0, max = 1, value = 0.
+  
+  <a href="/post/shiny-app-example-simple/" class="summary-more">READ MORE</a>
+  
+</div>
+  <hr class="summary-sep" />
+
+
+<div class="paging">
+  
+  PAGE 1 / 1
+  
+</div>
+
+<footer class="footer">
+  COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG</a>. ALL RIGHTS RESERVED.
+</footer>
+
+</body>
+</html>
+

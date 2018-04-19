@@ -55,11 +55,137 @@
   <span class="title">
     Table of contents
   </span>
-  
+  <nav id="TableOfContents">
+<ul>
+<li><a href="#raw-versus-processed-data">Raw versus Processed Data</a></li>
+<li><a href="#the-components-of-tidy-data">The components of tidy data</a></li>
+<li><a href="#downloading-files">Downloading Files</a>
+<ul>
+<li><a href="#example-checking-to-see-if-directory-exists-and-creating-it-if-it-doesn-t">Example: Checking to see if directory exists and creating it if it doesn&rsquo;t</a></li>
+<li><a href="#example-downloading-files-using-script">Example: Downloading files using script</a></li>
+</ul></li>
+</ul>
+</nav>
 </div>
 
 <section class="post-content">
   
+
+<h1 id="raw-versus-processed-data">Raw versus Processed Data</h1>
+
+<ul>
+<li>Raw data
+
+<ul>
+<li>The original source of the data</li>
+<li>Often hard to use for data analysis</li>
+<li>Data analysis includes processing</li>
+<li>Raw data may only need to be processed once</li>
+</ul></li>
+<li>Processed data
+
+<ul>
+<li>Data that is ready for analysis</li>
+<li>Processing can include merging, subsetting, transforming, etc.</li>
+<li>There may be standards for processing</li>
+<li><strong>All steps should be recorded.</strong></li>
+</ul></li>
+</ul>
+
+<h1 id="the-components-of-tidy-data">The components of tidy data</h1>
+
+<ul>
+<li>The four things you should have:
+
+<ol>
+<li>The raw data</li>
+<li>The tidy data set</li>
+<li>A code book describing each variable and its values in the tidy data set (a.k.a. metadata)</li>
+<li>An explicit and exact recipe you used to go from 1 -&gt; 2,3.</li>
+</ol></li>
+<li><strong>Raw data</strong>
+
+<ul>
+<li>Ran no software on the data</li>
+<li>Did not manipulate any of the numbers in the data</li>
+<li>You did not remove any data from the data set</li>
+<li>You did not summarise the data in any way</li>
+</ul></li>
+<li><strong>Tidy data</strong>
+
+<ul>
+<li>Each variable you measure should be in one column</li>
+<li>Eech different observation of that variable should be in a different row</li>
+<li>There should be one table for each &ldquo;kind&rdquo; of variable</li>
+<li>If you have multiple tables, they should include a column in the table that allows them to be linked</li>
+</ul></li>
+<li>Some other important tips when processing data:
+
+<ul>
+<li>Include a row at the top of each file with variable names</li>
+<li>Make variable names human readable e.g. AgeAtDiagnosis instead of AgeDx</li>
+<li>In general data should be saved in one file per table</li>
+</ul></li>
+<li><strong>The code book</strong>
+
+<ul>
+<li>Information about the variables (including units) in the data set not contained in the tidy data</li>
+<li>Information about the summary choices you made</li>
+<li>Information about the experimental study design you used</li>
+</ul></li>
+<li>Some other important tips:
+
+<ul>
+<li>A common format for this document is Word/txt file (or Markdown file)</li>
+<li>There should be a section called &ldquo;Study Design&rdquo; that has a thorough description of how you collected the data</li>
+<li>There must be a section called &ldquo;Code Book&rdquo; that describes each variable and its units</li>
+</ul></li>
+<li><strong>Instruction List</strong>
+
+<ul>
+<li>Ideally a computer script</li>
+<li>The input for the script is the raw data</li>
+<li>The output is the processed, tidy data</li>
+<li>There are no parameters to the scriptx</li>
+<li>In some cases, it will not be possible to script every step. In those situations, it is important to be as explicit and detailed as possible, including version numbers, parameter values etc.</li>
+</ul></li>
+</ul>
+
+<h1 id="downloading-files">Downloading Files</h1>
+
+<ul>
+<li>A basic component of working with data is getting/setting your working directory.</li>
+<li><code>getwd()</code> and <code>setwd()</code> are two functions that do this.</li>
+<li>Be aware of relative vs absolute path:
+
+<ul>
+<li>Relative: <code>setwd(&quot;./data&quot;)</code>, <code>setwd(&quot;../&quot;)</code></li>
+<li>Absolute: <code>setwd(&quot;/Users/Jon/data&quot;)</code>, <code>setwd(&quot;C:\\Users\\Jon\\Downloads&quot;)</code></li>
+</ul></li>
+</ul>
+
+<h2 id="example-checking-to-see-if-directory-exists-and-creating-it-if-it-doesn-t">Example: Checking to see if directory exists and creating it if it doesn&rsquo;t</h2>
+
+<pre><code class="language-r">&gt; # if (!file.exists(&quot;data&quot;)) {
+&gt; #    dir.create(&quot;data&quot;)
+&gt; # }
+</code></pre>
+
+<ul>
+<li>While you can right-click and save to download a file, using a script (e.g. the <code>download.file()</code> function) will aid in reproducibility.</li>
+<li>Important parameters are <code>url</code>, <code>destfile</code> and <code>method</code>.</li>
+</ul>
+
+<h2 id="example-downloading-files-using-script">Example: Downloading files using script</h2>
+
+<pre><code class="language-r">&gt; # fileUrl &lt;- &quot;https://data.gov.au/dataset/f2b7c2c1-f4ef-4ae9-aba5-45c19e4d3038/resource/2156cb99-3358-4847-8b5b-fcd2f0d3c4e2/download/financialadvisers201804.xlsx&quot;
+&gt; # download.file(fileUrl, destfile=&quot;./data/financialadvisers201804.xlsx&quot;, method=&quot;curl&quot;)
+&gt; # list.files(&quot;./data&quot;)
+&gt; 
+&gt; # dateDownloaded &lt;- date()
+&gt; # dateDownloaded
+</code></pre>
+
 </section>
 
 <div class="share">

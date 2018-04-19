@@ -15,16 +15,25 @@
     <item>
       <title>Coursera</title>
       <link>/categories/coursera/</link>
-      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Apr 2018 19:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/coursera/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Datacamp</title>
+      <link>/categories/datacamp/</link>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/categories/datacamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Datascience</title>
       <link>/categories/datascience/</link>
-      <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/datascience/</guid>
       <description></description>
@@ -33,7 +42,7 @@
     <item>
       <title>Dataviz</title>
       <link>/categories/dataviz/</link>
-      <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/dataviz/</guid>
       <description></description>
@@ -42,7 +51,7 @@
     <item>
       <title>Mooc</title>
       <link>/categories/mooc/</link>
-      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Apr 2018 19:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/mooc/</guid>
       <description></description>
@@ -69,7 +78,7 @@
     <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Sun, 08 Apr 2018 09:00:00 +0000</pubDate>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/r/</guid>
       <description></description>
@@ -81,6 +90,15 @@
       <pubDate>Sat, 31 Mar 2018 21:53:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/categories/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shiny</title>
+      <link>/categories/shiny/</link>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/categories/shiny/</guid>
       <description></description>
     </item>
     

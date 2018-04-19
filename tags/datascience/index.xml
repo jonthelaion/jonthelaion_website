@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Sat, 07 Apr 2018 20:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Apr 2018 07:04:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/datascience/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Building Web Applications in R with Shiny (Datacamp)</title>
+      <link>/post/building-web-applications-in-r-with-shiny-datacamp/</link>
+      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/building-web-applications-in-r-with-shiny-datacamp/</guid>
+      <description>Helpful Linkswww.rstudio.com/resources/cheatsheetsshiny.rstudio.comTipsAlways run the entire script; not just at the point that you are developing codeSometimes the best way to troubleshoot is to run your code and then review errorsWatch out for commas!Anatomy of a Shiny AppExample: Shiny Applibrary(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &amp;#39;DT&amp;#39;## The following objects are masked from &amp;#39;package:shiny&amp;#39;:## ## dataTableOutput, renderDataTableload(&amp;quot;.</description>
+    </item>
     
     <item>
       <title>Getting and Cleaning Data</title>
@@ -19,7 +28,7 @@
       <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
       <author>jonthelaion@icloud.com (jonthelaion)</author>
       <guid>/post/getting-and-cleaning-data/</guid>
-      <description></description>
+      <description>Raw versus Processed Data  Raw data  The original source of the data Often hard to use for data analysis Data analysis includes processing Raw data may only need to be processed once  Processed data  Data that is ready for analysis Processing can include merging, subsetting, transforming, etc. There may be standards for processing All steps should be recorded.   The components of tidy data  The four things you should have:  The raw data The tidy data set A code book describing each variable and its values in the tidy data set (a.</description>
     </item>
     
     <item>

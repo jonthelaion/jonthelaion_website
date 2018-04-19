@@ -3,6 +3,7 @@ title: Data Visualisation in R
 author: jonthelaion
 date: '2018-04-08 8:50:00'
 slug: data-visualisation-in-r
+output: "html"
 categories:
   - R
   - dataviz
@@ -12,14 +13,44 @@ tags:
   - ggplot2
 ---
 
+# ggplot2 Reference Guide
+
+<a href="http://ggplot2.tidyverse.org/reference/" target="_blank">Reference Guide</a>
+
+# Aesthetics Best Practices
+
+- Form follows function:
+ - Consider whether the graph is for exploratory or explanatory purposes and who the audience is.
+ - The intention should never be about making your graph "pretty" or impressing the audience
+- For continuous variables:
+ - Scatter plots are an effective means of communication
+ - Ensure that y-axes are aligned if they are being displayed side-by-side
+- For categorical variables:
+ - Colour can be quite effective
+ - Remove unnecessary visual elements (e.g. don't do both shape and colour if one will suffice)
+
+# Basics
+
+`ggplot2` is a package for R developed with the language of graphics in mind. It was designed around the idea of visualisations being created through the overlay of different layers of information.
+
 ```{r}
 library(ggplot2)
 ```
 
+These layers include:
+
+- Data layer
+- Aesthetic layer
+- Geometry layer
+- Scale layer
+
+The `ggplot()` function is an object and thus can be assigned to a variable if desired.
+
 # Data Layer
 
-- Make sure data adheres to tidy data principles to make plotting easier.
+- Making sure that the underlying data adheres to tidy data principles makes plotting easier.
 - This means that each row should represent one observation and each column one variable.
+- This may mean that some data manipulation is required beforehands - often through the use of the `tidyr` package.
 
 ```{r}
 library(tidyr)
@@ -37,3 +68,189 @@ iris.tidy <- iris %>%
 head(iris.tidy)
 ```
 
+```{r}
+# Add column with unique ids (don't need to change)
+iris$Flower <- 1:nrow(iris)
+
+iris.wide <- iris %>%
+  gather(key, value, -Species, -Flower) %>%
+  separate(key, c("Part", "Measure"), "\\.") %>%
+  spread(Measure, value)
+
+head(iris.wide)
+```
+
+# Aesthetic Layer
+
+- This layer describes the mapping of the variables and the general syntax is: `ggplot(<data>, aes(..))`
+- Common aesthetics include:
+ - `x`
+ - `y`
+ - `colour`
+ - `fill`
+ - `size`
+ - `alpha`
+ - `linetype`
+ - `labels`: only applicable to categorical variables
+ - `shape`: only applicable to categorical variables; can have value from 1-25; 1-20 only accept colour aesthetic; 21-25 accepts both colour and fill aestheics
+- There is often some overlap with the attributes of the visualisation (which form part of the Geometry layer)
+- If aesthetic and attribute are set with the same argument, the attribute takes precedence
+
+# Geometry Layer
+
+The geometry layer determines the type of graph that is displayed.
+
+There are 37 geometries: abline, area, bar, bin2d, blank, boxplot, contour, crossbar, density, density2d, dotplot, errorbar, errorbarh, freqpoly, hex, histogram, hline, jitter, line, linerange, map, path, point, pointrange, polygon, quantile, raster, rect, ribbon, rug, segment, smooth, step, text, tile, violin, vline
+
+`aes()` can also be specified inside each `geom` function which allows for control of each layer independently.
+
+## Scatter Plots
+
+- `geom_point()`, `geom_jitter()`, `geom_abline()`
+- Requires `x` and `y` aesthetics.
+- Overplotting can be dealt with by using: `alpha`, `position="jitter"`, `size`, `shape=1`
+- Can discretise continuous variables to groups by using `cut()`.
+
+### Example: Discretising continuous variables into groups
+
+```{r}
+ggplot(mtcars, aes(y=mpg, x=cut(hp, breaks=5))) +
+    geom_point()
+
+ggplot(mtcars, aes(y=mpg, x=cut(hp, breaks=5))) +
+    geom_boxplot()
+```
+
+
+## Bar Plots
+
+- `geom_histogram()`, `geom_bar()`, `geom_errorbar()`
+- **Histograms** are a type of bar plot used for representing continuous values grouped into bins.
+ - Require only `x` aesthetic.
+ - `binwidth` controls the width of each bin and should be adjusted to best reflect your data.
+ - There is no space between the bar to represent that the values fall on a contiuous range.
+ - There is a summary table in the background.
+ - `fill` is used to change the colour; `colour` is used to change the outline
+ - `position` is used to adjust the column/bar type
+- **Bar plots** are used for categorical variables
+ - `geom_errorbar()` are not used very often
+- **Frequency Polygons**, formed using `geom_freqpoly()` can be used to display frequency polygons by the cateogrical variable rather than all stacked on a histogram.
+
+### Example: Bar plot of averages
+
+```{r}
+library(plyr)
+iris_summ <- ddply(iris.tidy[(iris.tidy$Part=="Sepal"&iris.tidy$Measure=="Width"),],"Species",summarise,avg=mean(Value),stdev=sd(Value))
+print(str(iris.tidy))
+str(iris_summ)
+ggplot(iris_summ, aes(x=Species, y=avg)) +
+    geom_bar(stat ="identity")
+```
+
+### Example: geom_errorbar()
+
+```{r}
+ggplot(iris_summ, aes(x=Species, y=avg)) +
+    geom_bar(stat="identity", fill="grey50") +
+    geom_errorbar(aes(ymin=avg-stdev, ymax=avg+stdev), width=0.2)
+```
+
+
+## Line Plots
+
+- `geom_line()` generates line graphs and is useful for plotting time-series data
+ - `colour` is best to encode third variable, followed by `linetype` and then `linewidth`
+- `geom_rect()` can be added to link other information e.g. recession boxes onto unemployment line
+- `geom_area()` fills in the area under the line as well.
+ - `position="fill"` gives proportion
+- `geom_ribbon()` allows for overlapping line plots that are filled in at the bottom.
+
+### Example: Basic line plot
+
+```{r}
+ggplot(economics, aes(x = date, y = unemploy/pop)) +
+  geom_line()
+
+# Expand the following command with geom_rect() to draw the recess periods
+#ggplot(economics, aes(x = date, y = unemploy/pop)) +
+#  geom_rect(data = recess,
+#         aes(xmin = begin, xmax = end, ymin = -Inf, ymax = +Inf),
+#         inherit.aes = FALSE, fill = "red", alpha = 0.2) +
+#  geom_line()
+```
+
+### Example: geom_ribbon()
+
+```{r}
+ggplot(economics, aes(x = date, y = unemploy)) +
+  geom_ribbon(aes(ymax=unemploy, ymin=0), alpha=0.3)
+```
+
+## Position
+
+The position attribute further tweaks the specified graph. For example, with scatter plots, it will determine how overlapping points are treaded where with column graphs, it will determine whether the columns are stacked, split or displayed as proportions. Remember that value assigned to the `position` attribute should usually be enclosed in quotes.
+
+```{r echo=FALSE}
+library(knitr)
+library(kableExtra)
+pos_df = data.frame(cbind(c('identity', 'dodge', 'stack', 'fill', 'jitter', 'jitterdodge'),
+                                  c('default', '','','','slight shift',''),
+                                  c('','side-by-side bar','default; stacked bar','proportionate bar','',''),
+                          c('split out but binned','','','','','')), stringsAsFactors = FALSE)
+names(pos_df) = c('Position', 'geom_point()', 'geom_bar()', 'geom_histogram()')
+kable(pos_df, "html") %>%
+    kable_styling(bootstrap_options="striped", font_size=10)
+```
+
+### Example: `jitter` with `geom_point()`
+ 
+```{r}
+posn.j <- position_jitter(width=0.1)
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, col=Species)) +
+    geom_point(position=posn.j)
+```
+ 
+# Scale Layer
+
+The scale layer is used for changing settings for x and y axes; legend etc. 
+ 
+ - `scale_x...`: e.g. scale_x_continuous
+ - `scale_y...`
+ - `scale_color...`: e.g. scale_color_discrete
+ - `scale_fill...`: e.g. scale_fill_brewer, scale_fill_manual
+ - `scale_shape...`
+ - `scale_linetype...`
+ 
+```{r}
+ggplot(iris, aes(x=Sepal.Length, y=Sepal.Width, col=Species)) +
+    geom_point(position="jitter") +
+    scale_x_continuous("Sepal Length", limits=c(2,8), breaks=seq(2,8,3),expand=c(0,0)) +
+    scale_color_discrete("Species", labels=c("Setosa", "Versicolour", "Virginica"))
+```
+
+### Example: Using `scale_fill_brewer`
+ 
+```{r}
+ggplot(mtcars, aes(x = cyl, fill = am)) +
+  geom_bar() +
+  scale_fill_brewer(palette = "Set1")
+```
+ 
+### Example: Using `scale_fill_manual`
+ 
+```{r}
+library(car)
+library(RColorBrewer)
+# Definition of a set of blue colors
+blues <- brewer.pal(9, "Blues") # from the RColorBrewer package
+
+# 1 - Make a color range using colorRampPalette() and the set of blues
+blue_range <- colorRampPalette(blues)
+
+# 2 - Use blue_range to adjust the color of the bars, use scale_fill_manual()
+ggplot(Vocab, aes(x = education, fill = vocabulary)) +
+    geom_bar(position = "fill") +
+    scale_fill_manual(values=blue_range(11))
+```
+ 
+ 

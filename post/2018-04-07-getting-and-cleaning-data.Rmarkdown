@@ -15,3 +15,83 @@ tags:
   - mooc
 ---
 
+# Raw versus Processed Data
+
+- Raw data
+ - The original source of the data
+ - Often hard to use for data analysis
+ - Data analysis includes processing
+ - Raw data may only need to be processed once
+- Processed data
+ - Data that is ready for analysis
+ - Processing can include merging, subsetting, transforming, etc.
+ - There may be standards for processing
+ - **All steps should be recorded.**
+ 
+# The components of tidy data
+
+- The four things you should have:
+ 1. The raw data
+ 2. The tidy data set
+ 3. A code book describing each variable and its values in the tidy data set (a.k.a. metadata)
+ 4. An explicit and exact recipe you used to go from 1 -> 2,3.
+- **Raw data**
+ - Ran no software on the data
+ - Did not manipulate any of the numbers in the data
+ - You did not remove any data from the data set
+ - You did not summarise the data in any way
+- **Tidy data**
+ - Each variable you measure should be in one column
+ - Eech different observation of that variable should be in a different row
+ - There should be one table for each "kind" of variable
+ - If you have multiple tables, they should include a column in the table that allows them to be linked
+- Some other important tips when processing data:
+ - Include a row at the top of each file with variable names
+ - Make variable names human readable e.g. AgeAtDiagnosis instead of AgeDx
+ - In general data should be saved in one file per table
+- **The code book**
+ - Information about the variables (including units) in the data set not contained in the tidy data
+ - Information about the summary choices you made
+ - Information about the experimental study design you used
+- Some other important tips:
+ - A common format for this document is Word/txt file (or Markdown file)
+ - There should be a section called "Study Design" that has a thorough description of how you collected the data
+ - There must be a section called "Code Book" that describes each variable and its units
+- **Instruction List**
+ - Ideally a computer script
+ - The input for the script is the raw data
+ - The output is the processed, tidy data
+ - There are no parameters to the scriptx
+ - In some cases, it will not be possible to script every step. In those situations, it is important to be as explicit and detailed as possible, including version numbers, parameter values etc.
+
+# Downloading Files
+
+- A basic component of working with data is getting/setting your working directory.
+- `getwd()` and `setwd()` are two functions that do this.
+- Be aware of relative vs absolute path:
+ - Relative: `setwd("./data")`, `setwd("../")`
+ - Absolute: `setwd("/Users/Jon/data")`, `setwd("C:\\Users\\Jon\\Downloads")`
+ 
+## Example: Checking to see if directory exists and creating it if it doesn't
+
+```{r prompt=TRUE}
+# if (!file.exists("data")) {
+#    dir.create("data")
+# }
+```
+
+- While you can right-click and save to download a file, using a script (e.g. the `download.file()` function) will aid in reproducibility.
+- Important parameters are `url`, `destfile` and `method`.
+
+## Example: Downloading files using script
+
+```{r prompt=TRUE}
+# fileUrl <- "https://data.gov.au/dataset/f2b7c2c1-f4ef-4ae9-aba5-45c19e4d3038/resource/2156cb99-3358-4847-8b5b-fcd2f0d3c4e2/download/financialadvisers201804.xlsx"
+# download.file(fileUrl, destfile="./data/financialadvisers201804.xlsx", method="curl")
+# list.files("./data")
+
+# dateDownloaded <- date()
+# dateDownloaded
+```
+
+

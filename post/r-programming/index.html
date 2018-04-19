@@ -45,7 +45,7 @@
   <div class="post-title">
     <img src="/images/post-title-icon.png" />
     <div class="post-meta">
-      <time>08 Apr 2018, 09:00</time>
+      <time>15 Apr 2018, 19:00</time>
       <h1>R Programming</h1>
     </div>
   </div>
@@ -61,6 +61,8 @@
 <li><a href="#vectors">Vectors</a></li>
 <li><a href="#matrices">Matrices</a></li>
 <li><a href="#lists">Lists</a></li>
+<li><a href="#factors">Factors</a></li>
+<li><a href="#missing-values">Missing Values</a></li>
 </ul>
 </nav>
 </div>
@@ -190,6 +192,55 @@ cbind(x,y)
 ## [1] 1+4i
 </code></pre>
 
+<h1 id="factors">Factors</h1>
+
+<ul>
+<li>Factors are used to represent cateogrical data.</li>
+<li>Factors can be unordered or ordered.</li>
+<li>One can think of a factor as an integer vector where each integer has a label.</li>
+<li>Factors are treaded specially by modelling functions like <code>lm()</code> and <code>glm()</code>.</li>
+<li>The order of the levels can be set using the levels argument to <code>factor()</code>. This can be important in linear modelling because the first level is used as the baseline level.</li>
+<li>Using gactors with labels is better than using integers because factors are self-describing; having a variable that has values <code>'Male'</code> and <code>'Female'</code> is better than a variable that has values <code>1</code> or <code>2</code>.</li>
+</ul>
+
+<pre><code class="language-r">x &lt;- factor(c(&quot;Yes&quot;,&quot;Yes&quot;,&quot;No&quot;,&quot;Yes&quot;,&quot;No&quot;))
+x
+</code></pre>
+
+<pre><code>## [1] Yes Yes No  Yes No 
+## Levels: No Yes
+</code></pre>
+
+<pre><code class="language-r">table(x)
+</code></pre>
+
+<pre><code>## x
+##  No Yes 
+##   2   3
+</code></pre>
+
+<pre><code class="language-r">unclass(x)
+</code></pre>
+
+<pre><code>## [1] 2 2 1 2 1
+## attr(,&quot;levels&quot;)
+## [1] &quot;No&quot;  &quot;Yes&quot;
+</code></pre>
+
+<pre><code class="language-r">levels(x)
+</code></pre>
+
+<pre><code>## [1] &quot;No&quot;  &quot;Yes&quot;
+</code></pre>
+
+<h1 id="missing-values">Missing Values</h1>
+
+<ul>
+<li>Missing values are denoted by <code>NA</code> or <code>NaN</code> for undefined mathematical operations.</li>
+<li><code>is.na()</code> is used to test objects if they are <code>NA</code>.</li>
+<li><code>is.nan()</code> is used to test for <code>NaN</code>.</li>
+</ul>
+
 </section>
 
 <div class="share">
@@ -267,6 +318,10 @@ cbind(x,y)
 </div>
 
 <div class="paging post-paging">
+  
+  <a class="left" href="/post/shiny-app-example-simple/" rel="prev">
+    <i class="fa fa-caret-left" aria-hidden="true"></i> <span>Shiny App Example - Simple</span>
+  </a>
   
   
   <a class="right" href="/post/data-visualisation-in-r/" rel="next">
