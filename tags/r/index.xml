@@ -8,37 +8,10 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Thu, 19 Apr 2018 07:04:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 19:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Building Web Applications in R with Shiny (Datacamp)</title>
-      <link>/post/building-web-applications-in-r-with-shiny-datacamp/</link>
-      <pubDate>Thu, 19 Apr 2018 07:04:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
-      <guid>/post/building-web-applications-in-r-with-shiny-datacamp/</guid>
-      <description>Helpful Linkswww.rstudio.com/resources/cheatsheetsshiny.rstudio.comTipsAlways run the entire script; not just at the point that you are developing codeSometimes the best way to troubleshoot is to run your code and then review errorsWatch out for commas!Anatomy of a Shiny AppExample: Shiny Applibrary(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &amp;#39;DT&amp;#39;## The following objects are masked from &amp;#39;package:shiny&amp;#39;:## ## dataTableOutput, renderDataTableload(&amp;quot;.</description>
-    </item>
-    
-    <item>
-      <title>Shiny App Example - Data table</title>
-      <link>/post/shiny-app-example-data-table/</link>
-      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
-      <guid>/post/shiny-app-example-data-table/</guid>
-      <description>library(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &amp;#39;DT&amp;#39;## The following objects are masked from &amp;#39;package:shiny&amp;#39;:## ## dataTableOutput, renderDataTableload(&amp;quot;../../data/movies.Rdata&amp;quot;)n_total &amp;lt;- nrow(movies)all_studios &amp;lt;- sort(unique(movies$studio))# Define UI for application that plots features of moviesui &amp;lt;- fluidPage(# Sidebar layout with a input and output definitionssidebarLayout(# InputssidebarPanel(# Text instructionsHTML(paste(&amp;quot;Enter a value between 1 and&amp;quot;, n_total)),# Numeric input for sample sizenumericInput(inputId = &amp;quot;n&amp;quot;,label = &amp;quot;Sample size:&amp;quot;,value = 5,min = 1, max = n_total,step = 1),# Allowing for multiple selectionsselectInput(inputId = &amp;quot;studio&amp;quot;,label = &amp;quot;Select studio:&amp;quot;,choices = all_studios,selected = &amp;quot;20th Century Fox&amp;quot;,selectize = TRUE,multiple = TRUE)),# Output: Show data tablemainPanel(DT::dataTableOutput(outputId = &amp;quot;moviestable&amp;quot;))))# Define server function required to create the scatterplotserver &amp;lt;- function(input, output) {# Create data tableoutput$moviestable &amp;lt;- DT::renderDataTable({req(input$n)movies_sample &amp;lt;- movies %&amp;gt;%filter(studio %in% input$studio) %&amp;gt;%sample_n(input$n) %&amp;gt;%select(title:studio)DT::datatable(data = movies_sample,options = list(pageLength = 10),rownames = FALSE)})}# Create a Shiny app objectshinyApp(ui = ui, server = server)</description>
-    </item>
-    
-    <item>
-      <title>Shiny App Example - Simple</title>
-      <link>/post/shiny-app-example-simple/</link>
-      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
-      <guid>/post/shiny-app-example-simple/</guid>
-      <description>library(shiny)library(ggplot2)library(dplyr)## ## Attaching package: &amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(DT)## ## Attaching package: &amp;#39;DT&amp;#39;## The following objects are masked from &amp;#39;package:shiny&amp;#39;:## ## dataTableOutput, renderDataTableload(&amp;quot;../../data/movies.Rdata&amp;quot;)# Define UI for application that plots features of movies ui &amp;lt;- fluidPage(# Sidebar layout with a input and output definitions sidebarLayout(# InputssidebarPanel(# Select variable for y-axisselectInput(inputId = &amp;quot;y&amp;quot;, label = &amp;quot;Y-axis:&amp;quot;,choices = c(&amp;quot;imdb_rating&amp;quot;, &amp;quot;imdb_num_votes&amp;quot;, &amp;quot;critics_score&amp;quot;, &amp;quot;audience_score&amp;quot;, &amp;quot;runtime&amp;quot;), selected = &amp;quot;imdb_rating&amp;quot;),# Select variable for x-axisselectInput(inputId = &amp;quot;x&amp;quot;, label = &amp;quot;X-axis:&amp;quot;,choices = c(&amp;quot;imdb_rating&amp;quot;, &amp;quot;imdb_num_votes&amp;quot;, &amp;quot;critics_score&amp;quot;, &amp;quot;audience_score&amp;quot;, &amp;quot;runtime&amp;quot;), selected = &amp;quot;imdb_num_votes&amp;quot;),# Set alpha levelsliderInput(inputId = &amp;quot;alpha&amp;quot;, label = &amp;quot;Alpha:&amp;quot;, min = 0, max = 1, value = 0.</description>
-    </item>
     
     <item>
       <title>R Programming</title>
