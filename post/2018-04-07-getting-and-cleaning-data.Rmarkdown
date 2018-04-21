@@ -94,4 +94,30 @@ tags:
 # dateDownloaded
 ```
 
+# Reading local flat files
 
+- `read.table()` is the main function for reading data into R.
+- It is flexible and robust but requires more parameters.
+- It reads data into RAM so big datasets can cause problems.
+- Important parameters: `file`, `header`, `sep`, `row.names`, `nrows`, `skip`, `quote`, `na.strings`
+- Related: `read.csv()`, `read.csv2()`
+- Often, the biggest trouble with reading flat files are quotation marks ' or " placed in data values, setting quote="" often resolves this.
+ 
+# Reading Excel files
+ 
+- Still most widely used format for sharing data
+- In the `xlsx` package, use the `read.xlsx()`, `read.xlsx2()` functions.
+- Parameters used include: `sheetIndex`, `header`
+- Can read specific rows and columns by setting up variables e.g. `colIndex <- 2:3` and `rowIndex <- 1:4` then `read.xlsx("data.xlsx", sheetIndex=1, colIndex=colIndex, rowIndex=rowIndex)`
+- `write.xlsx()` function will write out an Excel file with similar arguments.
+- `read.xlsx2()` is much faster than `read.xlsx()` but for reading subsets of rows may be slightly unstable
+- The `XLConnect` package has more options for writing and manipulating Excel files.
+- The **XLConnect vignette** is a good place to start for that package.
+- In general, it is advised to store your data in either a database or in comma separated files (.csv) or tab separated (.tab/.txt) as they are easier to distribute.
+ 
+# Reading XML
+
+- f
+ 
+ 
+ 

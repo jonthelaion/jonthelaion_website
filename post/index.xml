@@ -8,10 +8,19 @@
     <language>ko-KR</language>
     <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
     <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Sun, 15 Apr 2018 19:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ISLR (Book)</title>
+      <link>/post/islr-book/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <guid>/post/islr-book/</guid>
+      <description>Chapter 1: Introduction An overview of statistical learning:  Statistical learning refers to a vast set of tools for understanding data Supervised  Building a statistical model for predicting or estimating an output based on one or more inputs.  Unsupervised  Inputs, but no supervising output We can learn relationships and structure from such data   A brief history of statistical learning:  Method of least squares - linear regression for quantitative values Linear discriminant analysis, logistic regression (generalised linear models) - for qualitative values Classification and regression trees (generalised additive models) - non-linear relationships Purpose of ISLR  Many statistical learning methods are relevant and useful in a wide range of academic and non-academic disciplines, beyond just the statistical sciences Statistical learning should not be viewed as just a series of black boxes While it is important to know what job is performed by each cog, it is not necessary to have the skills to construct the machine inside the box!</description>
+    </item>
     
     <item>
       <title>R Programming</title>

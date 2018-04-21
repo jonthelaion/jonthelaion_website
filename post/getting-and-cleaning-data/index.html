@@ -64,6 +64,9 @@
 <li><a href="#example-checking-to-see-if-directory-exists-and-creating-it-if-it-doesn-t">Example: Checking to see if directory exists and creating it if it doesn&rsquo;t</a></li>
 <li><a href="#example-downloading-files-using-script">Example: Downloading files using script</a></li>
 </ul></li>
+<li><a href="#reading-local-flat-files">Reading local flat files</a></li>
+<li><a href="#reading-excel-files">Reading Excel files</a></li>
+<li><a href="#reading-xml">Reading XML</a></li>
 </ul>
 </nav>
 </div>
@@ -185,6 +188,37 @@
 &gt; # dateDownloaded &lt;- date()
 &gt; # dateDownloaded
 </code></pre>
+
+<h1 id="reading-local-flat-files">Reading local flat files</h1>
+
+<ul>
+<li><code>read.table()</code> is the main function for reading data into R.</li>
+<li>It is flexible and robust but requires more parameters.</li>
+<li>It reads data into RAM so big datasets can cause problems.</li>
+<li>Important parameters: <code>file</code>, <code>header</code>, <code>sep</code>, <code>row.names</code>, <code>nrows</code>, <code>skip</code>, <code>quote</code>, <code>na.strings</code></li>
+<li>Related: <code>read.csv()</code>, <code>read.csv2()</code></li>
+<li>Often, the biggest trouble with reading flat files are quotation marks &lsquo; or &ldquo; placed in data values, setting quote=&rdquo;&rdquo; often resolves this.</li>
+</ul>
+
+<h1 id="reading-excel-files">Reading Excel files</h1>
+
+<ul>
+<li>Still most widely used format for sharing data</li>
+<li>In the <code>xlsx</code> package, use the <code>read.xlsx()</code>, <code>read.xlsx2()</code> functions.</li>
+<li>Parameters used include: <code>sheetIndex</code>, <code>header</code></li>
+<li>Can read specific rows and columns by setting up variables e.g. <code>colIndex &lt;- 2:3</code> and <code>rowIndex &lt;- 1:4</code> then <code>read.xlsx(&quot;data.xlsx&quot;, sheetIndex=1, colIndex=colIndex, rowIndex=rowIndex)</code></li>
+<li><code>write.xlsx()</code> function will write out an Excel file with similar arguments.</li>
+<li><code>read.xlsx2()</code> is much faster than <code>read.xlsx()</code> but for reading subsets of rows may be slightly unstable</li>
+<li>The <code>XLConnect</code> package has more options for writing and manipulating Excel files.</li>
+<li>The <strong>XLConnect vignette</strong> is a good place to start for that package.</li>
+<li>In general, it is advised to store your data in either a database or in comma separated files (.csv) or tab separated (.tab/.txt) as they are easier to distribute.</li>
+</ul>
+
+<h1 id="reading-xml">Reading XML</h1>
+
+<ul>
+<li>f</li>
+</ul>
 
 </section>
 
