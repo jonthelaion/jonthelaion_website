@@ -1,77 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ISLR (Book)</title>
+        
+        <style>
 
-<head>
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-116669869-1');
-  </script>
-  
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>ISLR (Book)  &middot; jonthelaion</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="/post/islr-book/">
-  
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
 
-<body>
-  <div class="navbar">
-    <ul>
-      <li><a href="/" class="logo-title">HOME</a></li>
-      <li><a href="/categories">CATEGORIES</a></li>
-      <li><a href="/tags">TAGS</a></li>
-    </ul>
-  </div>
-  <div class="container">
-    <div class="title">
-      <a href="/">
-        <img src="/images/logo.png" width="260px" height="48px" />
-      </a>
-    </div>
+</style>
 
 
-<a href="/post/islr-book/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>20 Apr 2018, 00:00</time>
-      <h1>ISLR (Book)</h1>
-    </div>
-  </div>
-</a>
+<link rel="stylesheet" href="/css/main.css">
 
-<div class="post-toc">
-  <span class="title">
-    Table of contents
-  </span>
-  <nav id="TableOfContents">
-<ul>
-<li><a href="#chapter-1-introduction">Chapter 1: Introduction</a>
-<ul>
-<li><a href="#an-overview-of-statistical-learning">An overview of statistical learning:</a></li>
-<li><a href="#a-brief-history-of-statistical-learning">A brief history of statistical learning:</a></li>
-</ul></li>
-<li><a href="#chapter-2-statistical-learning">Chapter 2: Statistical Learning</a>
-<ul>
-<li><a href="#what-is-statistical-learning">What is statistical learning?</a></li>
-</ul></li>
-</ul>
-</nav>
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.37.1" />
+        
+
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116669869-1');
+        </script>
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">ISLR (Book)</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:jonthelaion@icloud.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.instagram.com/jonthelaion/"><i class="fa fa-instagram"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/islr-book/">ISLR (Book)</a></h4>
+    <h5>April 20, 2018</h5>
+    
+    <a href="/tags/statistics"><kbd class="item-tag">statistics</kbd></a>
+    
+    <a href="/tags/machinelearning"><kbd class="item-tag">machinelearning</kbd></a>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+
 </div>
 
-<section class="post-content">
-  
+
+    <br> <div class="text-justify">
 
 <h1 id="chapter-1-introduction">Chapter 1: Introduction</h1>
 
@@ -118,61 +200,201 @@
 
 <h2 id="what-is-statistical-learning">What is statistical learning?</h2>
 
-</section>
+<ul>
+<li><code>Y = f(X) + E</code>, where:
 
-<div class="share">
-  <a href="http://www.facebook.com/sharer.php?src=bm&u=%2fpost%2fislr-book%2f&t=ISLR%20%28Book%29" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-  <a href="http://twitter.com/intent/tweet?url=%2fpost%2fislr-book%2f&text=ISLR%20%28Book%29&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-  <a href="https://plus.google.com/share?url=%2fpost%2fislr-book%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-  <a href="http://getpocket.com/edit?url=%2fpost%2fislr-book%2f&title=ISLR%20%28Book%29" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+<ul>
+<li><code>Y</code>: quantitative response</li>
+<li><code>f()</code>: function describing the systematic information X provides about Y</li>
+<li><code>X</code>: (X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, &hellip;, X<sub>p</sub>)</li>
+<li><code>E</code>: random error term, which is independent of X and has mean 0</li>
+</ul></li>
+</ul>
+
+<h2 id="why-estimate-f">Why estimate f?</h2>
+
+<ul>
+<li>There are two main reasons that we may wish to estimate <code>f</code>:
+
+<ul>
+<li>Prediction</li>
+<li>Inference</li>
+</ul></li>
+<li><strong>Prediction</strong>
+
+<ul>
+<li>Prediction works on the basis that a model (black box) can be developed that will yield accurate predictions</li>
+<li>In this case, we are interested in accuracy of the output rather than how the model works.</li>
+<li>The accuracy depends on two quantities:</li>
+<li><strong>Reducible error:</strong> can be reduced by using the most appropriate statistical learning technique for estimation</li>
+<li><strong>Irreducible error:</strong> inherent variability/error due to factors that are e.g. not measured or even unmeasurable</li>
+</ul></li>
+<li><strong>Inference</strong>
+
+<ul>
+<li>We are often interested in understanding the way that Y is affected as X changes.</li>
+<li>In this situation, we wish to estimate f, but our goal is not necessarily to make predictions for Y</li>
+<li>We instead want to understand the relationship between X and Y, or more specifically, to understand how Y changes as a function of X</li>
+<li>Now f cannot be treated as a black box because we need to know its exact form</li>
+<li>Questions that may be interesting in this case:</li>
+<li>Which predictors are associated with the response? Only a small fraction of the available predictors may be substantially associated with Y and identifying the important ones may be extremely useful.</li>
+<li>What is the relationship between the response and each predictor? Some predictors may have a positive relationship and some may have a negative. Depending on the complexity of f, the relationship between the response and a given predictor may also depend on the values of the other predictors.</li>
+<li>Can the relationship between Y and each predictor be adequately summarised using a linear equation, or is the relationship more complicated?</li>
+</ul></li>
+<li>Depending on whether our ultimate goal is prediction, inference or a combination of the two, different models for estimating f may be appropriate. E.g. linear models allow for relatively simple and interpretable inference, but may not yield as accurate predictions as some other approaches. In contrast, some of the highly non-linear approaches that we discuss in the later chapters of this book can potentially provide quite accurate predictions for Y, but this comes at the expense of a less interpretable model for which inference is more challenging.</li>
+</ul>
+
+<h2 id="how-do-we-estimate-f">How do we estimate f?</h2>
+
+<ul>
+<li>Broadly speaking, most statistical learning methods for this task can be characterised as either parametric or non-parametric.</li>
+<li><strong>Parametric Methods:</strong> Usually involve a two-step model-based approach:
+
+<ul>
+<li>First, we make an assumption about the functional form, or shape, of f.</li>
+<li>E.g. linear model, estimate the p+1 coefficients</li>
+<li>Secondly, after a model has been selected, we need a procedure that uses the training data to fit or train the model.</li>
+<li>E.g. Using (ordinary) least squares approach to fit the model</li>
+<li>The potential disadvantage/risk of a parametric approach is the model chosen may not match the true unknown form of f.</li>
+<li>Linear model is almost never correct, but it gives a reasonable approximation and it can be supplemented e.g. adding quadratic to the model.</li>
+<li>More flexible/complex models may fit f more accurately but can also lead to overfitting.</li>
+</ul></li>
+<li><strong>Non-parametric Methods</strong>
+
+<ul>
+<li>Do not make explicit assumptions about the functional form of f.</li>
+<li>Instead they seek an estimate of f that gets as close to the data points as possible without being too rough or wiggly.</li>
+<li>Major disadvantage is that since they do not reduce the problem of estimating f to a small number of parameters, a very large number of observations (far more than is typically needed for a parametric approach) is required in order to obtain an accurate estimate for f. E.g. thin-plate spline</li>
+</ul></li>
+</ul>
+
+<h2 id="the-trade-off-between-prediction-accuracy-and-model-interpretability">The Trade-Off Between Prediction Accuracy and Model Interpretability</h2>
+
+<ul>
+<li>Examples of less restrictive but less interpretable models:
+
+<ul>
+<li>Boosting, SVM&rsquo;s, Bagging</li>
+</ul></li>
+<li>Examples of more restrictive but more interpretable models:
+
+<ul>
+<li>Least squares, Lasso</li>
+</ul></li>
+<li>Generalised Additive Models (GAM&rsquo;s) are in the middle (e.g. Trees)</li>
+<li>Other trade-offs:
+
+<ul>
+<li>Good fit versus over-fit or under-fit</li>
+<li>Parsimony versus Black Box</li>
+</ul></li>
+</ul>
+
+<h2 id="supervised-versus-unsupervised-learning">Supervised Versus Unsupervised Learning</h2>
+
+<ul>
+<li>Supervised learning
+
+<ul>
+<li>Where there is output that can be tested and validated against
+• Unsupervised learning
+○ No output to test and validate against, so the purpose is to identify relationships between the variables or observations
+○ E.g. cluster analysis
+• Semi-supervised learning
+○ Most problems fall quite clearly into one of the above categories, however there are exceptions.
+○ Suppose that we have a set of n observations. For m of the observations, where m &lt; n, we have both predictor measurements and a response measurement. For the remaining n - m observations, we have predictor measurements but no response measurement. Such a scenario can arise if the predictors can be measured relatively cheaply but the corresponding responses are much more expensive to collect. We refer to this setting as a semi-supervised learning problem. IN this setting, we wish to use a statistical learning method that can incorporate the m observations for which response measurements are available as well as the n-m observations for which they are not.</li>
+</ul></li>
+</ul>
+
+<p>Regression Versus Classification Problems
+    • Regression
+        ○ Used to predict a quantitative value
+        ○ E.g. least squares regression
+    • Classification
+        ○ Used to predict a qualitative value
+        ○ E.g. logistic regression for two-class / binary response
+    • Some statistical methods, such as K-nearest neighbours and boosting, can be used in the case of either quantitative or qualitative responses.
+        ○ Note: Nearest neighbour averaging can be pretty good for small p (i.e. p &lt;= 4) and large-ish N.</p>
 </div>
 
-<div class="post-meta-code">
-  <div class="desc">
-    public string description() {
-    <div class="desc">val author = "
     
-        jonthelaion
-    ";
-    </div>
     
-    <div class="desc">
-      val categories = [
-      
-      
-      <a href="//categories/statistics">"statistics"</a>
-      
-      <a href="//categories/machinelearning">"machinelearning"</a>
-      
-      <a href="//categories/r">"R"</a>
-      
-      ];
-    </div>
+
     
-    }
-  </div>
-  <div class="desc">
-    public string tags() {
-      <div class="desc">
-        val tags = [
-        
-          
-          <a href="/tags/statistics">"statistics"</a>
-          
-          <a href="/tags/machinelearning">"machinelearning"</a>
-          
-          <a href="/tags/r">"R"</a>
-          
-        
-        ];
-      </div>
-    }
-  </div>
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/r-programming/">R Programming</a></h4>
+    <h5>April 25, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/coursera"><kbd class="item-tag">coursera</kbd></a>
+    
+    <a href="/tags/mooc"><kbd class="item-tag">mooc</kbd></a>
+    
+
 </div>
+  <div class="item">
 
+    
+    
+    
 
-<div class="post-comment">
-  <div id="disqus_thread"></div>
+    
+    
+
+    <h4><a href="/post/data-visualisation-in-r/">Data Visualisation in R</a></h4>
+    <h5>April 8, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/dataviz"><kbd class="item-tag">dataviz</kbd></a>
+    
+    <a href="/tags/ggplot2"><kbd class="item-tag">ggplot2</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/getting-and-cleaning-data/">Getting and Cleaning Data</a></h4>
+    <h5>April 7, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/coursera"><kbd class="item-tag">coursera</kbd></a>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+    <a href="/tags/mooc"><kbd class="item-tag">mooc</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
     
@@ -192,21 +414,18 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
 
-<div class="paging post-paging">
-  
-  
-  <a class="right" href="/post/r-programming/" rel="next">
-    <span>R Programming</span> <i class="fa fa-caret-right" aria-hidden="true"></i>
-  </a>
-  
-</div>
+    
 
-<footer class="footer">
-  COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG</a>. ALL RIGHTS RESERVED.
-</footer>
+</main>
 
-</body>
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
 </html>
 

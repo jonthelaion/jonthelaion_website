@@ -42,3 +42,75 @@ tags:
 
 ## What is statistical learning?
 
+- `Y = f(X) + E`, where:
+ - `Y`: quantitative response
+ - `f()`: function describing the systematic information X provides about Y
+ - `X`: (X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, ..., X<sub>p</sub>)
+ - `E`: random error term, which is independent of X and has mean 0
+ 
+## Why estimate f?
+
+- There are two main reasons that we may wish to estimate `f`:
+ - Prediction
+ - Inference
+- **Prediction**
+ - Prediction works on the basis that a model (black box) can be developed that will yield accurate predictions
+ - In this case, we are interested in accuracy of the output rather than how the model works.
+ - The accuracy depends on two quantities:
+  - **Reducible error:** can be reduced by using the most appropriate statistical learning technique for estimation
+  - **Irreducible error:** inherent variability/error due to factors that are e.g. not measured or even unmeasurable
+- **Inference**
+ - We are often interested in understanding the way that Y is affected as X changes.
+ - In this situation, we wish to estimate f, but our goal is not necessarily to make predictions for Y
+ - We instead want to understand the relationship between X and Y, or more specifically, to understand how Y changes as a function of X
+ - Now f cannot be treated as a black box because we need to know its exact form
+ - Questions that may be interesting in this case:
+  - Which predictors are associated with the response? Only a small fraction of the available predictors may be substantially associated with Y and identifying the important ones may be extremely useful.
+  - What is the relationship between the response and each predictor? Some predictors may have a positive relationship and some may have a negative. Depending on the complexity of f, the relationship between the response and a given predictor may also depend on the values of the other predictors.
+  - Can the relationship between Y and each predictor be adequately summarised using a linear equation, or is the relationship more complicated?
+- Depending on whether our ultimate goal is prediction, inference or a combination of the two, different models for estimating f may be appropriate. E.g. linear models allow for relatively simple and interpretable inference, but may not yield as accurate predictions as some other approaches. In contrast, some of the highly non-linear approaches that we discuss in the later chapters of this book can potentially provide quite accurate predictions for Y, but this comes at the expense of a less interpretable model for which inference is more challenging.
+
+## How do we estimate f?
+- Broadly speaking, most statistical learning methods for this task can be characterised as either parametric or non-parametric.
+- **Parametric Methods:** Usually involve a two-step model-based approach:
+ - First, we make an assumption about the functional form, or shape, of f.
+  - E.g. linear model, estimate the p+1 coefficients
+ - Secondly, after a model has been selected, we need a procedure that uses the training data to fit or train the model.
+  - E.g. Using (ordinary) least squares approach to fit the model
+ - The potential disadvantage/risk of a parametric approach is the model chosen may not match the true unknown form of f.
+ - Linear model is almost never correct, but it gives a reasonable approximation and it can be supplemented e.g. adding quadratic to the model.
+ - More flexible/complex models may fit f more accurately but can also lead to overfitting.
+- **Non-parametric Methods**
+ - Do not make explicit assumptions about the functional form of f.
+ - Instead they seek an estimate of f that gets as close to the data points as possible without being too rough or wiggly.
+ - Major disadvantage is that since they do not reduce the problem of estimating f to a small number of parameters, a very large number of observations (far more than is typically needed for a parametric approach) is required in order to obtain an accurate estimate for f. E.g. thin-plate spline
+
+## The Trade-Off Between Prediction Accuracy and Model Interpretability
+- Examples of less restrictive but less interpretable models:
+ - Boosting, SVM's, Bagging
+- Examples of more restrictive but more interpretable models:
+ - Least squares, Lasso
+- Generalised Additive Models (GAM's) are in the middle (e.g. Trees)
+- Other trade-offs:
+ - Good fit versus over-fit or under-fit
+ - Parsimony versus Black Box
+
+## Supervised Versus Unsupervised Learning
+- Supervised learning
+ - Where there is output that can be tested and validated against
+	• Unsupervised learning
+		○ No output to test and validate against, so the purpose is to identify relationships between the variables or observations
+		○ E.g. cluster analysis
+	• Semi-supervised learning
+		○ Most problems fall quite clearly into one of the above categories, however there are exceptions.
+		○ Suppose that we have a set of n observations. For m of the observations, where m < n, we have both predictor measurements and a response measurement. For the remaining n - m observations, we have predictor measurements but no response measurement. Such a scenario can arise if the predictors can be measured relatively cheaply but the corresponding responses are much more expensive to collect. We refer to this setting as a semi-supervised learning problem. IN this setting, we wish to use a statistical learning method that can incorporate the m observations for which response measurements are available as well as the n-m observations for which they are not.
+
+Regression Versus Classification Problems
+	• Regression
+		○ Used to predict a quantitative value
+		○ E.g. least squares regression
+	• Classification
+		○ Used to predict a qualitative value
+		○ E.g. logistic regression for two-class / binary response
+	• Some statistical methods, such as K-nearest neighbours and boosting, can be used in the case of either quantitative or qualitative responses.
+		○ Note: Nearest neighbour averaging can be pretty good for small p (i.e. p <= 4) and large-ish N.

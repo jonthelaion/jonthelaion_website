@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/islr-book/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <loc>/post/reproducibility-and-the-philosophy-of-data/</loc>
+    <lastmod>2018-04-25T20:26:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/post/r-programming/</loc>
-    <lastmod>2018-04-15T19:00:00+00:00</lastmod>
+    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/the-art-of-possibility-book/</loc>
+    <lastmod>2018-04-23T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/islr-book/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -63,14 +73,14 @@
   </url>
   
   <url>
-    <loc>/categories/coursera/</loc>
-    <lastmod>2018-04-15T19:00:00+00:00</lastmod>
+    <loc>/tags/coursera/</loc>
+    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/coursera/</loc>
-    <lastmod>2018-04-15T19:00:00+00:00</lastmod>
+    <loc>/categories/coursera/</loc>
+    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,25 +91,25 @@
   </url>
   
   <url>
-    <loc>/categories/datascience/</loc>
-    <lastmod>2018-04-07T20:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/datascience/</loc>
     <lastmod>2018-04-07T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/dataviz/</loc>
-    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
+    <loc>/categories/datascience/</loc>
+    <lastmod>2018-04-07T20:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/dataviz/</loc>
+    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/dataviz/</loc>
     <lastmod>2018-04-08T08:50:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -111,8 +121,14 @@
   </url>
   
   <url>
-    <loc>/categories/machinelearning/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <loc>/tags/growth/</loc>
+    <lastmod>2018-04-23T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/growth/</loc>
+    <lastmod>2018-04-23T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -123,38 +139,38 @@
   </url>
   
   <url>
-    <loc>/categories/mooc/</loc>
-    <lastmod>2018-04-15T19:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mooc/</loc>
-    <lastmod>2018-04-15T19:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/podcast/</loc>
-    <lastmod>2018-04-04T06:40:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/podcast/</loc>
-    <lastmod>2018-04-04T06:40:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
+    <loc>/categories/machinelearning/</loc>
     <lastmod>2018-04-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/profile/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+    <loc>/tags/mooc/</loc>
+    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/mooc/</loc>
+    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/podcast/</loc>
+    <lastmod>2018-04-25T20:26:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/podcast/</loc>
+    <lastmod>2018-04-25T20:26:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2018-04-25T20:26:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -165,20 +181,20 @@
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <loc>/categories/profile/</loc>
+    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/resources/</loc>
-    <lastmod>2018-03-31T21:53:00+00:00</lastmod>
+    <loc>/categories/r/</loc>
+    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -189,8 +205,8 @@
   </url>
   
   <url>
-    <loc>/categories/statistics/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <loc>/categories/resources/</loc>
+    <lastmod>2018-03-31T21:53:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -201,14 +217,32 @@
   </url>
   
   <url>
+    <loc>/categories/statistics/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/</loc>
-    <lastmod>2018-04-15T19:00:00+00:00</lastmod>
+    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/twimlai/</loc>
+    <lastmod>2018-04-25T20:26:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/twimlai/</loc>
+    <lastmod>2018-04-25T20:26:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-25T20:26:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -5,9 +5,7 @@
     <link>/categories/</link>
     <description>Recent content in Categories on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-KR</language>
-    <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
-    <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
+    <language>en-us</language>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,8 +13,8 @@
     <item>
       <title>Coursera</title>
       <link>/categories/coursera/</link>
-      <pubDate>Sun, 15 Apr 2018 19:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <pubDate>Wed, 25 Apr 2018 18:00:00 +0000</pubDate>
+      
       <guid>/categories/coursera/</guid>
       <description></description>
     </item>
@@ -25,7 +23,7 @@
       <title>Datascience</title>
       <link>/categories/datascience/</link>
       <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      
       <guid>/categories/datascience/</guid>
       <description></description>
     </item>
@@ -34,8 +32,17 @@
       <title>Dataviz</title>
       <link>/categories/dataviz/</link>
       <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      
       <guid>/categories/dataviz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Growth</title>
+      <link>/categories/growth/</link>
+      <pubDate>Mon, 23 Apr 2018 09:00:00 +0000</pubDate>
+      
+      <guid>/categories/growth/</guid>
       <description></description>
     </item>
     
@@ -43,7 +50,7 @@
       <title>Machinelearning</title>
       <link>/categories/machinelearning/</link>
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      
       <guid>/categories/machinelearning/</guid>
       <description></description>
     </item>
@@ -51,8 +58,8 @@
     <item>
       <title>Mooc</title>
       <link>/categories/mooc/</link>
-      <pubDate>Sun, 15 Apr 2018 19:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <pubDate>Wed, 25 Apr 2018 18:00:00 +0000</pubDate>
+      
       <guid>/categories/mooc/</guid>
       <description></description>
     </item>
@@ -60,8 +67,8 @@
     <item>
       <title>Podcast</title>
       <link>/categories/podcast/</link>
-      <pubDate>Wed, 04 Apr 2018 06:40:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <pubDate>Wed, 25 Apr 2018 20:26:00 +0000</pubDate>
+      
       <guid>/categories/podcast/</guid>
       <description></description>
     </item>
@@ -70,7 +77,7 @@
       <title>Profile</title>
       <link>/categories/profile/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      
       <guid>/categories/profile/</guid>
       <description></description>
     </item>
@@ -78,8 +85,8 @@
     <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      <pubDate>Wed, 25 Apr 2018 18:00:00 +0000</pubDate>
+      
       <guid>/categories/r/</guid>
       <description></description>
     </item>
@@ -88,7 +95,7 @@
       <title>Resources</title>
       <link>/categories/resources/</link>
       <pubDate>Sat, 31 Mar 2018 21:53:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      
       <guid>/categories/resources/</guid>
       <description></description>
     </item>
@@ -97,8 +104,17 @@
       <title>Statistics</title>
       <link>/categories/statistics/</link>
       <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      
       <guid>/categories/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twimlai</title>
+      <link>/categories/twimlai/</link>
+      <pubDate>Wed, 25 Apr 2018 20:26:00 +0000</pubDate>
+      
+      <guid>/categories/twimlai/</guid>
       <description></description>
     </item>
     

@@ -5,19 +5,29 @@
     <link>/tags/podcast/</link>
     <description>Recent content in Podcast on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-KR</language>
-    <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
-    <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
-    <lastBuildDate>Wed, 04 Apr 2018 06:40:00 +0000</lastBuildDate>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Apr 2018 20:26:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/podcast/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Reproducibility and the Philosophy of Data</title>
+      <link>/post/reproducibility-and-the-philosophy-of-data/</link>
+      <pubDate>Wed, 25 Apr 2018 20:26:00 +0000</pubDate>
+      
+      <guid>/post/reproducibility-and-the-philosophy-of-data/</guid>
+      <description>Guest: Clare Gollnick
+Link: TWIMLAI Talk #121
+A very interesting talk about the reproducibility controversy that is rocking the scientific community. A “Nature” survey in 2016 showed that more than 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments.
+To a certain extent, this could be a result of the reliance on the p-value as the test of statistical significance in scientific studies.</description>
+    </item>
+    
+    <item>
       <title>Data Framed</title>
       <link>/post/data-framed/</link>
       <pubDate>Wed, 04 Apr 2018 06:40:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      
       <guid>/post/data-framed/</guid>
       <description>Data Framed is a great podcast at DataCamp hosted by Hugo Bowne-Anderson and can be found here. Each week, he invites working data scientists from various backgrounds onto his podcast to talk about their own experiences; how they got to where they are; and all other things data. For me, it&amp;rsquo;s inspiring to hear about all the great work that is being done in the industry and also comforting to know that others have often taken a meandering path by following their interests to get to where they are.</description>
     </item>

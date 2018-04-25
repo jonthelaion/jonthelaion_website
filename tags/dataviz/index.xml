@@ -5,9 +5,7 @@
     <link>/tags/dataviz/</link>
     <description>Recent content in Dataviz on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko-KR</language>
-    <managingEditor>jonthelaion@icloud.com (jonthelaion)</managingEditor>
-    <webMaster>jonthelaion@icloud.com (jonthelaion)</webMaster>
+    <language>en-us</language>
     <lastBuildDate>Sun, 08 Apr 2018 08:50:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/dataviz/index.xml" rel="self" type="application/rss+xml" />
@@ -17,7 +15,7 @@
       <title>Data Visualisation in R</title>
       <link>/post/data-visualisation-in-r/</link>
       <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
-      <author>jonthelaion@icloud.com (jonthelaion)</author>
+      
       <guid>/post/data-visualisation-in-r/</guid>
       <description>ggplot2 Reference Guide Reference Guide
 Aesthetics Best Practices  Form follows function:  Consider whether the graph is for exploratory or explanatory purposes and who the audience is. The intention should never be about making your graph &amp;ldquo;pretty&amp;rdquo; or impressing the audience  For continuous variables:  Scatter plots are an effective means of communication Ensure that y-axes are aligned if they are being displayed side-by-side  For categorical variables:  Colour can be quite effective Remove unnecessary visual elements (e.</description>

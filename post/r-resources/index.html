@@ -1,71 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>R Resources</title>
+        
+        <style>
 
-<head>
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-116669869-1');
-  </script>
-  
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>R Resources  &middot; jonthelaion</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="/post/r-resources/">
-  
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
 
-<body>
-  <div class="navbar">
-    <ul>
-      <li><a href="/" class="logo-title">HOME</a></li>
-      <li><a href="/categories">CATEGORIES</a></li>
-      <li><a href="/tags">TAGS</a></li>
-    </ul>
-  </div>
-  <div class="container">
-    <div class="title">
-      <a href="/">
-        <img src="/images/logo.png" width="260px" height="48px" />
-      </a>
-    </div>
+</style>
 
 
-<a href="/post/r-resources/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>31 Mar 2018, 21:53</time>
-      <h1>R Resources</h1>
-    </div>
-  </div>
-</a>
+<link rel="stylesheet" href="/css/main.css">
 
-<div class="post-toc">
-  <span class="title">
-    Table of contents
-  </span>
-  
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.37.1" />
+        
+
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116669869-1');
+        </script>
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">R Resources</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:jonthelaion@icloud.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.instagram.com/jonthelaion/"><i class="fa fa-instagram"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/r-resources/">R Resources</a></h4>
+    <h5>March 31, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/resources"><kbd class="item-tag">resources</kbd></a>
+    
+
 </div>
 
-<section class="post-content">
-  <div id="blogs" class="section level4">
+
+    <br> <div class="text-justify"><div id="articles-to-read" class="section level1">
+<h1>Articles To Read</h1>
+<ul>
+<li><a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing" class="uri">https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing</a></li>
+<li><a href="https://www.propublica.org/article/politic-il-insider-chicago-gang-database" class="uri">https://www.propublica.org/article/politic-il-insider-chicago-gang-database</a></li>
+<li><a href="https://medium.com/the-mission/the-best-books-to-understand-complex-systems-eb186610dff7" class="uri">https://medium.com/the-mission/the-best-books-to-understand-complex-systems-eb186610dff7</a></li>
+</ul>
+<div id="blogs" class="section level4">
 <h4>Blogs</h4>
 <ul>
 <li><a href="https://mathbabe.org/" target="_blank">Cathy O’Neil Blog</a></li>
 <li><a href="https://www.datasciencecentral.com/" target="_blank">Data Science Central</a></li>
 <li><a href="http://www.bytemining.com/" class="uri">http://www.bytemining.com/</a></li>
 <li><a href="http://www.datascience.university/" class="uri">http://www.datascience.university/</a></li>
+<li><a href="https://www.r-bloggers.com/" class="uri">https://www.r-bloggers.com/</a></li>
+<li><a href="http://www.statsoc.org.au/" class="uri">http://www.statsoc.org.au/</a></li>
 </ul>
 </div>
 <div id="online-courses" class="section level4">
@@ -168,58 +269,85 @@
 <li>Statistics for Experimenters: Design, Innovation, and Discovery - George E. P. Box (Wiley-Interscience)</li>
 </ul>
 </div>
-
-</section>
-
-<div class="share">
-  <a href="http://www.facebook.com/sharer.php?src=bm&u=%2fpost%2fr-resources%2f&t=R%20Resources" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-  <a href="http://twitter.com/intent/tweet?url=%2fpost%2fr-resources%2f&text=R%20Resources&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-  <a href="https://plus.google.com/share?url=%2fpost%2fr-resources%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-  <a href="http://getpocket.com/edit?url=%2fpost%2fr-resources%2f&title=R%20Resources" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+</div>
 </div>
 
-<div class="post-meta-code">
-  <div class="desc">
-    public string description() {
-    <div class="desc">val author = "
     
-        jonthelaion
-    ";
-    </div>
     
-    <div class="desc">
-      val categories = [
-      
-      
-      <a href="//categories/r">"R"</a>
-      
-      <a href="//categories/resources">"resources"</a>
-      
-      ];
-    </div>
+
     
-    }
-  </div>
-  <div class="desc">
-    public string tags() {
-      <div class="desc">
-        val tags = [
-        
-          
-          <a href="/tags/r">"R"</a>
-          
-          <a href="/tags/resources">"resources"</a>
-          
-        
-        ];
-      </div>
-    }
-  </div>
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/r-programming/">R Programming</a></h4>
+    <h5>April 25, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/coursera"><kbd class="item-tag">coursera</kbd></a>
+    
+    <a href="/tags/mooc"><kbd class="item-tag">mooc</kbd></a>
+    
+
 </div>
+  <div class="item">
 
+    
+    
+    
 
-<div class="post-comment">
-  <div id="disqus_thread"></div>
+    
+    
+
+    <h4><a href="/post/islr-book/">ISLR (Book)</a></h4>
+    <h5>April 20, 2018</h5>
+    
+    <a href="/tags/statistics"><kbd class="item-tag">statistics</kbd></a>
+    
+    <a href="/tags/machinelearning"><kbd class="item-tag">machinelearning</kbd></a>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/data-visualisation-in-r/">Data Visualisation in R</a></h4>
+    <h5>April 8, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/dataviz"><kbd class="item-tag">dataviz</kbd></a>
+    
+    <a href="/tags/ggplot2"><kbd class="item-tag">ggplot2</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
 <script>
     var disqus_config = function () {
     
@@ -239,25 +367,18 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
 
-<div class="paging post-paging">
-  
-  <a class="left" href="/post/doing-data-science-book/" rel="prev">
-    <i class="fa fa-caret-left" aria-hidden="true"></i> <span>Doing Data Science (Book)</span>
-  </a>
-  
-  
-  <a class="right" href="/post/hello-world/" rel="next">
-    <span>Hello World</span> <i class="fa fa-caret-right" aria-hidden="true"></i>
-  </a>
-  
-</div>
+    
 
-<footer class="footer">
-  COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG</a>. ALL RIGHTS RESERVED.
-</footer>
+</main>
 
-</body>
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
 </html>
 

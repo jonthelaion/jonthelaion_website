@@ -1,146 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Datascience</title>
+        
+        <style>
 
-<head>
-  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-116669869-1');
-  </script>
-  
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Datascience  &middot; jonthelaion</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="canonical" href="/tags/datascience/">
-  
-  <link href="/tags/datascience/index.xml" rel="alternate" type="application/rss+xml" title="Datascience" />
-  
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
-</head>
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
 
-<body>
-  <div class="navbar">
-    <ul>
-      <li><a href="/" class="logo-title">HOME</a></li>
-      <li><a href="/categories">CATEGORIES</a></li>
-      <li><a href="/tags">TAGS</a></li>
-    </ul>
-  </div>
-  <div class="container">
-    <div class="title">
-      <a href="/">
-        <img src="/images/logo.png" width="260px" height="48px" />
-      </a>
-    </div>
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
 
 
 
-  <a href="/post/getting-and-cleaning-data/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>07 Apr 2018, 20:00</time>
-      <h1>Getting and Cleaning Data</h1>
-    </div>
-  </div>
-</a>
-<div class="summary-content">
-  Raw versus Processed Data  Raw data  The original source of the data Often hard to use for data analysis Data analysis includes processing Raw data may only need to be processed once  Processed data  Data that is ready for analysis Processing can include merging, subsetting, transforming, etc. There may be standards for processing All steps should be recorded.   The components of tidy data  The four things you should have:  The raw data The tidy data set A code book describing each variable and its values in the tidy data set (a.
-  
-  <a href="/post/getting-and-cleaning-data/" class="summary-more">READ MORE</a>
-  
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.37.1" />
+        
+        <link href="/tags/datascience/index.xml" rel="alternate" type="application/rss+xml" title="jonthelaion" />
+        <link href="/tags/datascience/index.xml" rel="feed" type="application/rss+xml" title="jonthelaion" />
+        
+
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116669869-1');
+        </script>
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Datascience</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:jonthelaion@icloud.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.instagram.com/jonthelaion/"><i class="fa fa-instagram"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <h2>Datascience</h2>
+
+     <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/getting-and-cleaning-data/">Getting and Cleaning Data</a></h4>
+    <h5>April 7, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/coursera"><kbd class="item-tag">coursera</kbd></a>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+    <a href="/tags/mooc"><kbd class="item-tag">mooc</kbd></a>
+    
+
 </div>
-  <hr class="summary-sep" />
+  <div class="item">
 
-  <a href="/post/the-data-scientist-s-toolbox-coursera/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>07 Apr 2018, 00:00</time>
-      <h1>The Data Scientist&#39;s Toolbox (Coursera)</h1>
-    </div>
-  </div>
-</a>
-<div class="summary-content">
-  Introduction  Question should come first; data should come second Rarely will you have full, complete and clean data that you need to answer the question Statistics is the science of learning from data and is used wherever there is uncertainty What do data scientists do?  Define the question Define the ideal question set Determine what data you can access Obtain the data Clean the data Exploratory data analysis Statistical prediction/modeling Interpret results Challenge results Synthesize/write up results Create reproducible code Distribute results to other people  Key characteristics of &ldquo;hackers&rdquo;  Willing to find answers on their own Knowledgeable about where to find answers on their own Unintimidated by new data types or packages Unafraid to say they don&rsquo;t know the answer In summary: Polite but relentless   Command Line Interface  CLI commands follow this recipe: command flags arguments pwd: prints working directory clear: clears CLI screen ls: lists all files in current directory  -a: lists both hidden and unhidden files -l: lists details of unhidden files al: lists details of both hidden and unhidden files  cd &lt;path&gt;: change directory to path  cd &lt;blank&gt;: go to home directory cd .
-  
-  <a href="/post/the-data-scientist-s-toolbox-coursera/" class="summary-more">READ MORE</a>
-  
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/the-data-scientist-s-toolbox-coursera/">The Data Scientist&#39;s Toolbox (Coursera)</a></h4>
+    <h5>April 7, 2018</h5>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/mooc"><kbd class="item-tag">mooc</kbd></a>
+    
+    <a href="/tags/coursera"><kbd class="item-tag">coursera</kbd></a>
+    
+
 </div>
-  <hr class="summary-sep" />
+  <div class="item">
 
-  <a href="/post/data-quality/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>05 Apr 2018, 21:15</time>
-      <h1>Data Quality</h1>
-    </div>
-  </div>
-</a>
-<div class="summary-content">
-  HBR - If your data is bad your machine learning tools are useless  Link: https://hbr.org/2018/04/if-your-data-is-bad-your-machine-learning-tools-are-useless &ldquo;Garbage-in garbage-out&rdquo; adage is equally applicable to machine learning. The quality demands of machine learning are steep - both at the training stage and when using the model in production. To properly train a predictive model, historical data must meet exceptionally broad and high quality standards:  The data must be correct, properly labelled, deduped etc.
-  
-  <a href="/post/data-quality/" class="summary-more">READ MORE</a>
-  
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/data-quality/">Data Quality</a></h4>
+    <h5>April 5, 2018</h5>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+    <a href="/tags/dataquality"><kbd class="item-tag">dataquality</kbd></a>
+    
+
 </div>
-  <hr class="summary-sep" />
+  <div class="item">
 
-  <a href="/post/data-framed/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>04 Apr 2018, 06:40</time>
-      <h1>Data Framed</h1>
-    </div>
-  </div>
-</a>
-<div class="summary-content">
-  Data Framed is a great podcast at DataCamp hosted by Hugo Bowne-Anderson and can be found here. Each week, he invites working data scientists from various backgrounds onto his podcast to talk about their own experiences; how they got to where they are; and all other things data. For me, it&rsquo;s inspiring to hear about all the great work that is being done in the industry and also comforting to know that others have often taken a meandering path by following their interests to get to where they are.
-  
-  <a href="/post/data-framed/" class="summary-more">READ MORE</a>
-  
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/data-framed/">Data Framed</a></h4>
+    <h5>April 4, 2018</h5>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+    <a href="/tags/podcast"><kbd class="item-tag">podcast</kbd></a>
+    
+
 </div>
-  <hr class="summary-sep" />
+  <div class="item">
 
-  <a href="/post/doing-data-science-book/">
-  <div class="post-title">
-    <img src="/images/post-title-icon.png" />
-    <div class="post-meta">
-      <time>01 Apr 2018, 17:30</time>
-      <h1>Doing Data Science (Book)</h1>
-    </div>
-  </div>
-</a>
-<div class="summary-content">
-  With years of experience in both academia and industry, authors Cathy O&rsquo;Neil &amp; Rachel Schutt look beyond the hype to explore what the data science discipline entails and looks like in practice.
-They also explore an idea that is often overlooked when speaking about data science - that building models and working with data is not value-neutral. You choose the problems you will work on, you make assumptions in those models, you choose metrics, and you design the algorithms.
-  
-  <a href="/post/doing-data-science-book/" class="summary-more">READ MORE</a>
-  
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/doing-data-science-book/">Doing Data Science (Book)</a></h4>
+    <h5>April 1, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+
 </div>
-  <hr class="summary-sep" />
+ 
+
+</main>
 
 
-<div class="paging">
-  
-  PAGE 1 / 1
-  
-</div>
 
-<footer class="footer">
-  COPYRIGHT (C) <a href="https://blog.lulab.net">DONGGEUN,BANG</a>. ALL RIGHTS RESERVED.
-</footer>
+        <footer>
 
-</body>
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
 </html>
 

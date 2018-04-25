@@ -11,11 +11,18 @@ tags:
   - resources
 ---
 
+# Articles To Read
+- https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
+- https://www.propublica.org/article/politic-il-insider-chicago-gang-database
+- https://medium.com/the-mission/the-best-books-to-understand-complex-systems-eb186610dff7
+
 #### Blogs
 - <a href="https://mathbabe.org/" target="_blank">Cathy O'Neil Blog</a>
 - <a href="https://www.datasciencecentral.com/" target="_blank">Data Science Central</a>
 - http://www.bytemining.com/
 - http://www.datascience.university/
+- https://www.r-bloggers.com/
+- http://www.statsoc.org.au/
 
 #### Online Courses
 - <a href="https://medium.freecodecamp.org/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0" target="_blank">List of Machine Learning Courses</a>

@@ -1,7 +1,7 @@
 ---
 title: R Programming
 author: jonthelaion
-date: '2018-04-15 19:00:00'
+date: '2018-04-25 18:00:00'
 slug: r-programming
 categories:
   - R
@@ -106,3 +106,22 @@ levels(x)
 - Missing values are denoted by `NA` or `NaN` for undefined mathematical operations.
 - `is.na()` is used to test objects if they are `NA`.
 - `is.nan()` is used to test for `NaN`.
+
+# User-Defined Functions
+
+```{r}
+# myfunction <- function(argument1, argument2, ...){
+#     statements
+#     return(object)
+# }
+```
+
+```{r}
+hypotenuse <- function(a, b){
+    hyp <- sqrt(a^2 + b^2)
+    return(hyp)
+}
+
+hypotenuse(3, 4)
+```
+
