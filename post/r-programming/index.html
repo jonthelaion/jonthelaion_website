@@ -177,17 +177,21 @@
 
 <h1 id="vectors">Vectors</h1>
 
-<p><strong>Vectors</strong> can be created with either <code>vector()</code> or <code>c()</code>.</p>
+<ul>
+<li><strong>Vectors</strong> can be created with either <code>c()</code> or <code>vector()</code>.</li>
+</ul>
 
 <pre><code class="language-r"># c() is commonly used to create vectors.
-print(v1 &lt;- c(1,2,3))
+v1 &lt;- c(1,2,3)
+v1
 </code></pre>
 
 <pre><code>## [1] 1 2 3
 </code></pre>
 
 <pre><code class="language-r"># vector() function can be used to initialise vectors.
-print(v2 &lt;- vector(&quot;numeric&quot;, length = 10))
+v2 &lt;- vector(&quot;numeric&quot;, length = 10)
+v2
 </code></pre>
 
 <pre><code>##  [1] 0 0 0 0 0 0 0 0 0 0
@@ -201,7 +205,9 @@ print(v2 &lt;- vector(&quot;numeric&quot;, length = 10))
 
 <h1 id="matrices">Matrices</h1>
 
-<p><strong>Matrices</strong> are vectors with a dimension attribute that are constructed column-wise by default.</p>
+<ul>
+<li><strong>Matrices</strong> are vectors with a dimension attribute that are constructed column-wise by default.</li>
+</ul>
 
 <pre><code class="language-r">print(m1 &lt;- matrix(1:6, nrow=2, ncol=3))
 </code></pre>
@@ -224,7 +230,9 @@ print(v2 &lt;- vector(&quot;numeric&quot;, length = 10))
 ## [1] 2 3
 </code></pre>
 
-<p>Matrices can also be created directly from vectors by adding a dimension attribute.</p>
+<ul>
+<li>Matrices can also be created directly from vectors by adding a dimension attribute.</li>
+</ul>
 
 <pre><code class="language-r">m2 &lt;- 1:10
 dim(m2) &lt;- c(2,5)
@@ -236,7 +244,9 @@ m2
 ## [2,]    2    4    6    8   10
 </code></pre>
 
-<p>Matrices can also be created by using <code>cbind()</code> and <code>rbind()</code>.</p>
+<ul>
+<li>Matrices can also be created by using <code>cbind()</code> and <code>rbind()</code>.</li>
+</ul>
 
 <pre><code class="language-r">x &lt;- 1:3
 y &lt;- 10:12
@@ -328,11 +338,15 @@ x
 
 <h1 id="user-defined-functions">User-Defined Functions</h1>
 
+<p>Functions in R have the following general syntax:</p>
+
 <pre><code class="language-r"># myfunction &lt;- function(argument1, argument2, ...){
 #     statements
 #     return(object)
 # }
 </code></pre>
+
+<p>An example of a simple function to find the hypotenuse of a right-angled triangle given the other two sides, <code>a</code> and <code>b</code>:</p>
 
 <pre><code class="language-r">hypotenuse &lt;- function(a, b){
     hyp &lt;- sqrt(a^2 + b^2)

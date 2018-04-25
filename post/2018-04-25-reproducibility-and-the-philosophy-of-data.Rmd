@@ -10,10 +10,9 @@ tags:
   - podcast
   - twimlai
 ---
+**Guest:** Clare Gollnick
 
-Guest: Clare Gollnick
-
-Link: <a href="https://twimlai.com/twiml-talk-121-reproducibility-philosophy-data-clare-gollnick/" target="_blank">TWIMLAI Talk #121</a>
+**Link:** <a href="https://twimlai.com/twiml-talk-121-reproducibility-philosophy-data-clare-gollnick/" target="_blank">TWIMLAI Talk #121</a>
 
 A very interesting talk about the reproducibility controversy that is rocking the scientific community. A "Nature" survey in 2016 showed that more than 70% of researchers have tried and failed to reproduce another scientist's experiments, and more than half have failed to reproduce their own experiments.
 

@@ -141,7 +141,7 @@
     
 
     <h4><a href="/post/reproducibility-and-the-philosophy-of-data/">Reproducibility and the Philosophy of Data</a></h4>
-    <h5>April 25, 2018</h5>
+    <h5>April 26, 2018</h5>
     
     <a href="/tags/podcast"><kbd class="item-tag">podcast</kbd></a>
     
@@ -151,13 +151,31 @@
 </div>
 
 
-    <br> <div class="text-justify"><p>Guest: Clare Gollnick</p>
-<p>Link: <a href="https://twimlai.com/twiml-talk-121-reproducibility-philosophy-data-clare-gollnick/" target="_blank">TWIMLAI Talk #121</a></p>
-<p>A very interesting talk about the reproducibility controversy that is rocking the scientific community. A “Nature” survey in 2016 showed that more than 70% of researchers have tried and failed to reproduce another scientist’s experiments, and more than half have failed to reproduce their own experiments.</p>
-<p>To a certain extent, this could be a result of the reliance on the p-value as the test of statistical significance in scientific studies. This reliance exposes studies to the risk of “p-hacking”, where scientists re-run and re-analyse data until a sufficiently low p-value is obtained.</p>
-<p>Interestingly, this iterative process parallels the way that data science is often used to generate predictive models. Overfitting on the test set in data science is the equivalent to p-hacking in scientific studies. However, the cross-validation step of testing the predictive model against a validation data set that is completely separate to the training data is a key step to help mitigate this risk.</p>
-<p>There is a field of study known as the philosphy of data which explores why it is that we believe we can learn from data. Because 100% of the data we collect is data about the past, one implicit assumption that we make is that there is a set of shared rules about the past and the future i.e. that due to these shared rules, data about the past can be generalised and used to predict the future. If data from the past was due to random chance, then it would not be of any use for understanding or predicting the future.</p>
-<p>In practice, it is important to think about this core assumption when “framing the problem”.</p>
+    <br> <div class="text-justify"><p><strong>Guest:</strong> Clare Gollnick</p>
+
+<p><strong>Link:</strong> <a href="https://twimlai.com/twiml-talk-121-reproducibility-philosophy-data-clare-gollnick/" target="_blank">TWIMLAI Talk #121</a></p>
+
+<p>A very interesting talk about the reproducibility controversy that is rocking the scientific community. A &ldquo;Nature&rdquo; survey in 2016 showed that more than 70% of researchers have tried and failed to reproduce another scientist&rsquo;s experiments, and more than half have failed to reproduce their own experiments.</p>
+
+<p>To a certain extent, this could be a result of the reliance on the p-value as the test of statistical significance in scientific studies. This reliance exposes studies to the risk of &ldquo;p-hacking&rdquo;, where scientists re-run and re-analyse data until a sufficiently low p-value is obtained.</p>
+
+<p>Interestingly, this iterative process parallels the way that data science is used to generate predictive models. To mitigate this risk, the data science process includes a cross-validation step which tests the model against a data set that was not used in the construction of the model. While this does not completely eliminate the risk, it should go a long way towards minimising this risk. Overfitting on test sets in data science is the equivalent to p-hacking in scientific studies.</p>
+
+<p>There is a field of study known as the <strong>philosphy of data</strong> which explores why it is that we believe we can learn from data. Because all the data we collect is data about the past, one implicit assumption that we make is that there is a set of shared rules about the past and the future. We are assuming that due to these shared rules, data about the past can be generalised and used to predict the future. If data from the past was due to random chance, then there would be no point in using it to try to understand or predict the future.</p>
+
+<p>In practice, it is important to think about this core assumption when &ldquo;framing the problem&rdquo;. Machine learning solutions tend to work better when there is a set of clear rules and it is important to frame the problem in that way if possible. This will invovle domain expertise to understand the assumptions/rules in for example, feature selection.</p>
+
+<p>To understand the philosophy of data further:</p>
+
+<ul>
+<li>David Hume: The problem of induction</li>
+<li>Karl Popper: Falsifiability, you never prove anything is true, just demonstrate that the best idea you have is not yet false</li>
+<li>Infinite monkey thought experiment</li>
+</ul>
+
+<p>When making a strategic investment into a data solution, the general rule is to invest into the solution that describes how they approached/reframed the question rather than the one that simply picked the best model out of all the ones that they run. The former approach usually generates a model that has a higher likelihood of being able to be generalised once put into production.</p>
+
+<p>Decisions in practice are made based on expected outcomes rather than probabilities. There may be diminishing returns in the last 90%-95% of tuning a model, but if the consequences of getting it wrong will be catastrophic, then it will be worthwhile investing the time to increase the accuracy. The first step should still involve building a model with an understanding of the problem.</p>
 </div>
 
     

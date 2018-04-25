@@ -22,7 +22,7 @@
 Numerics are generally treated as double precision real numbers.
 Integers are obtained by specifying the L suffix (e.g. 1L).
 There is also a special number Inf which represents infinity and NaN represents an undefined value.
-Vectors Vectors can be created with either vector() or c().</description>
+Vectors  Vectors can be created with either c() or vector().</description>
     </item>
     
     <item>
