@@ -90,3 +90,9 @@ tags:
 #### Experimental Design
 - Field Experiments - Alan S. Gerber and Donald P. Green (Norton)
 - Statistics for Experimenters: Design, Innovation, and Discovery - George E. P. Box (Wiley-Interscience)
+
+#### Growth
+- Grit: The Power of Passion and Perseverance, Dr ANgela Duckworth
+- Focus: The Hidden Driver of Excellence, Daniel Goleman
+- Emotional Intelligence, Daniel Goleman
+- Maximise your potential, Joshua Foer

@@ -6,9 +6,19 @@
     <description>Recent content in Categories on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 27 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Book</title>
+      <link>/categories/book/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/book/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Coursera</title>
@@ -20,9 +30,18 @@
     </item>
     
     <item>
+      <title>Datacamp</title>
+      <link>/categories/datacamp/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/datacamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Datascience</title>
       <link>/categories/datascience/</link>
-      <pubDate>Sat, 07 Apr 2018 20:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/datascience/</guid>
       <description></description>
@@ -49,7 +68,7 @@
     <item>
       <title>Machinelearning</title>
       <link>/categories/machinelearning/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/machinelearning/</guid>
       <description></description>
@@ -85,9 +104,18 @@
     <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Wed, 25 Apr 2018 18:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reproducibility</title>
+      <link>/categories/reproducibility/</link>
+      <pubDate>Thu, 26 Apr 2018 07:03:00 +0000</pubDate>
+      
+      <guid>/categories/reproducibility/</guid>
       <description></description>
     </item>
     

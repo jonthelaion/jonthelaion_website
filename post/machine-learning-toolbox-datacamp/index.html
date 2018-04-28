@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Machine Learning Toolbox (DataCamp)</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: red;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script> 
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.37.1" />
+        
+
+        
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116669869-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments)};
+          gtag('js', new Date());
+
+          gtag('config', 'UA-116669869-1');
+        </script>
+        
+    </head>
+
+    
+    
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    
+
+    <body>
+         
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand visible-xs" href="#">Machine Learning Toolbox (DataCamp)</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/post/profile">About Me</a></li>
+                            
+                                <li><a href="/post/">All Posts</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:jonthelaion@icloud.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.instagram.com/jonthelaion/"><i class="fa fa-instagram"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+<main>
+
+    <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/machine-learning-toolbox-datacamp/">Machine Learning Toolbox (DataCamp)</a></h4>
+    <h5>April 28, 2018</h5>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+    <a href="/tags/machinelearning"><kbd class="item-tag">machinelearning</kbd></a>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/datacamp"><kbd class="item-tag">datacamp</kbd></a>
+    
+
+</div>
+
+
+    <br> <div class="text-justify">
+
+<h1 id="supervised-learning">Supervised Learning</h1>
+
+<ul>
+<li>The <code>caret</code> package in R automates supervised learning (a.k.a. predictive modelling) where the target variable is available.</li>
+<li>There are two types of predictive models:
+
+<ul>
+<li>Classification: Qualitative target variable</li>
+<li>Regression: Quantitative target variable</li>
+</ul></li>
+<li>An important step for both classification and regression models is to use quantifiable and objectic metrics to evaluate the accuracy of the model.</li>
+</ul>
+
+<h2 id="regression">Regression</h2>
+
+<ul>
+<li>Root Mean Squared Error (RMSE) is a common metric used for regression (e.g. <code>lm()</code>)</li>
+<li>Common to evaluate in-sample RMSE, but this leads to overfitting</li>
+<li>Better to calculate out-of-sample error (<code>caret</code>), which simulates real-world usage and helps avoid overfitting.</li>
+</ul>
+
+<h4 id="example-in-sample-error">Example: In-Sample Error</h4>
+
+<pre><code class="language-r">data(mtcars)
+model &lt;- lm(mpg ~ hp, mtcars[1:20, ])
+
+predicted &lt;- predict(model, mtcars[1:20, ], type='response')
+
+RMSE &lt;- sqrt(mean((predicted - mtcars$mpg[1:20])^2))
+RMSE
+</code></pre>
+
+<pre><code>## [1] 3.172132
+</code></pre>
+
+<h4 id="example-out-of-sample-error">Example: Out-of-Sample Error</h4>
+
+<pre><code class="language-r">data(mtcars)
+model &lt;- lm(mpg ~ hp, mtcars[1:20, ])
+
+predicted &lt;- predict(model, mtcars[21:32, ], type='response')
+
+RMSE &lt;- sqrt(mean((predicted - mtcars$mpg[21:32])^2))
+RMSE
+</code></pre>
+
+<pre><code>## [1] 5.507236
+</code></pre>
+
+<ul>
+<li>We can see that the linear model has not generalised as well to data that was not used in training the original model.</li>
+<li>Sometimes data is sorted according to a particular variable (e.g. <code>mpg</code> from lowest to highest) so it is better to shuffle the order of the rows first before splitting.</li>
+</ul>
+
+<h4 id="example-single-train-test-split-error">Example: Single Train/Test Split Error</h4>
+
+<pre><code class="language-r"># Shuffle the data
+set.seed(42)
+rows &lt;- sample(nrow(mtcars))
+mtcars2 &lt;- mtcars[rows, ]
+splitrow &lt;- round(nrow(mtcars2) * 0.80)
+train &lt;- mtcars2[1:splitrow, ]
+test &lt;- mtcars2[(splitrow+1):nrow(mtcars2), ]
+
+model &lt;- lm(mpg ~ ., train)
+predicted &lt;- predict(model, test)
+RMSE &lt;- sqrt(mean((predicted - test$mpg)^2))
+RMSE
+</code></pre>
+
+<pre><code>## [1] 3.306442
+</code></pre>
+
+<h3 id="cross-validation">Cross Validation</h3>
+
+<ul>
+<li>Cross validation invovles re-arranging the full data set into multiple configuration (or folds), with each point in the original data set appearing once within each fold.</li>
+<li>Training is performed across all folds and then the model is fit onto the full dataset.</li>
+<li>THis makes CV very expensive - it is effectively 11x as expensive as fitting a single model for 10-fold CV.</li>
+<li>You can also do multiple iterations of CV (e.g. 5 x 5-fold CV) by using the <code>repeats</code> argument.</li>
+<li><code>caret</code> package uses bootstrapping as an alternate method to CV, with similar results.</li>
+</ul>
+
+<pre><code class="language-r">library(caret)
+</code></pre>
+
+<pre><code>## Loading required package: lattice
+</code></pre>
+
+<pre><code>## Loading required package: ggplot2
+</code></pre>
+
+<pre><code class="language-r">data(mtcars)
+set.seed(42)
+
+model &lt;- train(mpg ~ ., mtcars,
+               method = &quot;lm&quot;,
+               trControl = trainControl(
+                   method = &quot;cv&quot;, number = 5, repeats = 5,
+                   verboseIter = TRUE
+               )
+)
+</code></pre>
+
+<pre><code>## Warning: `repeats` has no meaning for this resampling method.
+</code></pre>
+
+<pre><code>## + Fold1: intercept=TRUE 
+## - Fold1: intercept=TRUE 
+## + Fold2: intercept=TRUE 
+## - Fold2: intercept=TRUE 
+## + Fold3: intercept=TRUE 
+## - Fold3: intercept=TRUE 
+## + Fold4: intercept=TRUE 
+## - Fold4: intercept=TRUE 
+## + Fold5: intercept=TRUE 
+## - Fold5: intercept=TRUE 
+## Aggregating results
+## Fitting final model on full training set
+</code></pre>
+
+<pre><code class="language-r">model
+</code></pre>
+
+<pre><code>## Linear Regression 
+## 
+## 32 samples
+## 10 predictors
+## 
+## No pre-processing
+## Resampling: Cross-Validated (5 fold) 
+## Summary of sample sizes: 26, 25, 27, 25, 25 
+## Resampling results:
+## 
+##   RMSE      Rsquared   MAE     
+##   3.368744  0.7407024  2.810291
+## 
+## Tuning parameter 'intercept' was held constant at a value of TRUE
+</code></pre>
+
+<pre><code class="language-r">predicted &lt;- predict(model, mtcars)
+
+RMSE &lt;- sqrt(mean((predicted - mtcars$mpg)^2))
+RMSE
+</code></pre>
+
+<pre><code>## [1] 2.146905
+</code></pre>
+
+<h2 id="classification">Classification</h2>
+
+<ul>
+<li>Categorical (i.e. qualitative) target variable</li>
+<li>Example: will a loan default?</li>
+<li>Still a form of supervised learning</li>
+<li>Use a train/test split to evaluate performance</li>
+<li>A common dataset for classification problems is the <code>Sonar</code> dataset from the <code>mlbench</code> package which can be used to train a model to distinguish rocks (R) from mines (M).</li>
+</ul>
+
+<h3 id="confusion-matrix">Confusion Matrix</h3>
+
+<ul>
+<li>A very useful tool for evaluating the effectiveness of models with binary outcomes.</li>
+<li>The columns (Reference) represent the true outcomes while the rows (Prediction) represent the predicted outcomes.</li>
+<li>The main diagonal are the cases where the model is correct (true positive and true negative) and the other diagonal are the cases where the model is incorrect (false positive and false negative).</li>
+<li>The threshold can be tweaks to adjust the probabilities of true positive (higher chance of predicting it is a mine) and true negatives (higher chance of correctly predicting it is a rock). This is a cost-benefit question that can often be solved only by building a confusion matrix and adjusting the threshold to test.</li>
+</ul>
+
+<p><img src="/img/confusion_matrix.jpg" alt=""></p>
+
+<h4 id="example-building-glm-classification-model-and-confusion-matrix">Example: Building glm() classification model and confusion matrix</h4>
+
+<pre><code class="language-r">library(mlbench)
+data(Sonar)
+
+# Have a look at the Sonar data
+Sonar[1:10, c(1:5, 61)]
+</code></pre>
+
+<pre><code>##        V1     V2     V3     V4     V5 Class
+## 1  0.0200 0.0371 0.0428 0.0207 0.0954     R
+## 2  0.0453 0.0523 0.0843 0.0689 0.1183     R
+## 3  0.0262 0.0582 0.1099 0.1083 0.0974     R
+## 4  0.0100 0.0171 0.0623 0.0205 0.0205     R
+## 5  0.0762 0.0666 0.0481 0.0394 0.0590     R
+## 6  0.0286 0.0453 0.0277 0.0174 0.0384     R
+## 7  0.0317 0.0956 0.1321 0.1408 0.1674     R
+## 8  0.0519 0.0548 0.0842 0.0319 0.1158     R
+## 9  0.0223 0.0375 0.0484 0.0475 0.0647     R
+## 10 0.0164 0.0173 0.0347 0.0070 0.0187     R
+</code></pre>
+
+<pre><code class="language-r"># Shuffle the rows
+mixed_rows &lt;- sample(nrow(Sonar))
+Sonar2 &lt;- Sonar[mixed_rows, ]
+
+# Have a look at the shuffled Sonar data
+Sonar2[1:10, c(1:5, 61)]
+</code></pre>
+
+<pre><code>##         V1     V2     V3     V4     V5 Class
+## 69  0.0195 0.0142 0.0181 0.0406 0.0391     R
+## 10  0.0164 0.0173 0.0347 0.0070 0.0187     R
+## 42  0.0093 0.0185 0.0056 0.0064 0.0260     R
+## 142 0.0707 0.1252 0.1447 0.1644 0.1693     M
+## 170 0.0130 0.0120 0.0436 0.0624 0.0428     M
+## 106 0.0116 0.0179 0.0449 0.1096 0.1913     M
+## 155 0.0117 0.0069 0.0279 0.0583 0.0915     M
+## 185 0.0269 0.0383 0.0505 0.0707 0.1313     M
+## 161 0.0258 0.0433 0.0547 0.0681 0.0784     M
+## 101 0.0629 0.1065 0.1526 0.1229 0.1437     M
+</code></pre>
+
+<pre><code class="language-r"># Splitting into train/test sets in 60/40
+split_row &lt;- round(nrow(Sonar2) * 0.60)
+train &lt;- Sonar2[1:split_row, ]
+test &lt;- Sonar2[(split_row + 1):nrow(Sonar2), ]
+
+# Training model and generating predictions
+model &lt;- glm(Class ~ ., family=binomial(link = &quot;logit&quot;), train)
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+</code></pre>
+
+<pre><code>## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code class="language-r">predicted &lt;- predict(model, test, type=&quot;response&quot;)
+
+# View summary
+summary(predicted)
+</code></pre>
+
+<pre><code>##      Min.   1st Qu.    Median      Mean   3rd Qu.      Max. 
+## 0.0000000 0.0000000 0.0000001 0.3759165 1.0000000 1.0000000
+</code></pre>
+
+<pre><code class="language-r"># Turn probabilities into classes and look at their frequencies
+p_class &lt;- ifelse(predicted &gt; 0.50, &quot;M&quot;, &quot;R&quot;)
+table(p_class)
+</code></pre>
+
+<pre><code>## p_class
+##  M  R 
+## 31 52
+</code></pre>
+
+<pre><code class="language-r"># Use caret's helper function to calculate additional statistics
+confusionMatrix(p_class, test[[&quot;Class&quot;]])
+</code></pre>
+
+<pre><code>## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction  M  R
+##          M  8 23
+##          R 39 13
+##                                           
+##                Accuracy : 0.253           
+##                  95% CI : (0.1639, 0.3604)
+##     No Information Rate : 0.5663          
+##     P-Value [Acc &gt; NIR] : 1.00000         
+##                                           
+##                   Kappa : -0.4455         
+##  Mcnemar's Test P-Value : 0.05678         
+##                                           
+##             Sensitivity : 0.17021         
+##             Specificity : 0.36111         
+##          Pos Pred Value : 0.25806         
+##          Neg Pred Value : 0.25000         
+##              Prevalence : 0.56627         
+##          Detection Rate : 0.09639         
+##    Detection Prevalence : 0.37349         
+##       Balanced Accuracy : 0.26566         
+##                                           
+##        'Positive' Class : M               
+## 
+</code></pre>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/the-art-of-data-science-book/">The Art of Data Science (Book)</a></h4>
+    <h5>April 27, 2018</h5>
+    
+    <a href="/tags/book"><kbd class="item-tag">book</kbd></a>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/reproducibility-and-the-philosophy-of-data/">Reproducibility and the Philosophy of Data</a></h4>
+    <h5>April 26, 2018</h5>
+    
+    <a href="/tags/podcast"><kbd class="item-tag">podcast</kbd></a>
+    
+    <a href="/tags/twimlai"><kbd class="item-tag">twimlai</kbd></a>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+    <a href="/tags/reproducibility"><kbd class="item-tag">reproducibility</kbd></a>
+    
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/r-programming/">R Programming</a></h4>
+    <h5>April 25, 2018</h5>
+    
+    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    
+    <a href="/tags/coursera"><kbd class="item-tag">coursera</kbd></a>
+    
+    <a href="/tags/mooc"><kbd class="item-tag">mooc</kbd></a>
+    
+
+</div>
+ 
+
+    
+
+    
+
+        <h4 class="page-header">Comments</h4>
+
+        <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "jonthelaion" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    
+
+</main>
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a></p>
+
+        </footer>
+       
+    </body>
+
+</html>
+

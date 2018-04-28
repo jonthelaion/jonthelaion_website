@@ -64,7 +64,28 @@ tags:
  - There are no parameters to the scriptx
  - In some cases, it will not be possible to script every step. In those situations, it is important to be as explicit and detailed as possible, including version numbers, parameter values etc.
 
-# Downloading Files
+# Getting Data
+
+- There are a few principal functions for reading data into R:
+ - `read.table()`, `read.csv()`: for reading tabular data
+ - `readLines()`: for reading lines of a text file
+ - `source()`: for reading in R code files (inverse of `dump()`)
+ - `dget()`: for reading R code files (inverse of `dput()`)
+ - `load()`: for reading in saved workspaces
+ - `unserialize()`: for reading single R objects in binary form
+- In general, when using R with larger datasets, it's useful to know a few things about your system:
+ - How much memory is available?
+ - What other applications are in use?
+ - Are there any other users logged into the same system?
+ - What operating system?
+ - Is it OS 32 or 64 bit?
+- Calculating memory requirements:
+ - Data frame with 1.5 million rows and 120 columns, all of which are numeric data. Roughly, how much memory is required to store this data frame? 1,500,000 x 120 x 8 bytes/numeric = 11,440,000,000bytes / 220bytes/MB = 1,373.29MB = 1.34GB
+ - Rule of thumb is that you will need rougly twice as much RAM.
+
+
+
+## Downloading Files
 
 - A basic component of working with data is getting/setting your working directory.
 - `getwd()` and `setwd()` are two functions that do this.
@@ -72,9 +93,9 @@ tags:
  - Relative: `setwd("./data")`, `setwd("../")`
  - Absolute: `setwd("/Users/Jon/data")`, `setwd("C:\\Users\\Jon\\Downloads")`
  
-## Example: Checking to see if directory exists and creating it if it doesn't
+### Example: Checking to see if directory exists and creating it if it doesn't
 
-```{r prompt=TRUE}
+```{r}
 # if (!file.exists("data")) {
 #    dir.create("data")
 # }
@@ -83,7 +104,7 @@ tags:
 - While you can right-click and save to download a file, using a script (e.g. the `download.file()` function) will aid in reproducibility.
 - Important parameters are `url`, `destfile` and `method`.
 
-## Example: Downloading files using script
+### Example: Downloading files using script
 
 ```{r prompt=TRUE}
 # fileUrl <- "https://data.gov.au/dataset/f2b7c2c1-f4ef-4ae9-aba5-45c19e4d3038/resource/2156cb99-3358-4847-8b5b-fcd2f0d3c4e2/download/financialadvisers201804.xlsx"
@@ -94,16 +115,39 @@ tags:
 # dateDownloaded
 ```
 
-# Reading local flat files
+## Reading local flat files
 
 - `read.table()` is the main function for reading data into R.
 - It is flexible and robust but requires more parameters.
-- It reads data into RAM so big datasets can cause problems.
-- Important parameters: `file`, `header`, `sep`, `row.names`, `nrows`, `skip`, `quote`, `na.strings`
+- Important parameters:
+ - `file`: the name of a file or a connection
+ - `header`: logical indicating if the file has a header line
+ - `sep`: a string indicating how the columns are separated
+ - `row.names`
+ - `colClasses`: a character vector indicating the class of each column in the dataset
+ - `nrows`: the number of rows in the dataset
+ - `comment.char`: a character string indicating the comment character
+ - `skip`: the number of lines to skip from the beginning
+ - `quote`: one of the biggest troubles with reading flat files are quotation marks ' or " placed in data values, setting `quote=""` often resolves this
+ - `na.strings`
+ - `stringAsFactors`: should character variables be coded as factors? Default is 'TRUE'.
 - Related: `read.csv()`, `read.csv2()`
-- Often, the biggest trouble with reading flat files are quotation marks ' or " placed in data values, setting quote="" often resolves this.
+- It reads data into RAM so big datasets can cause problems.
+- For larger datasets, doing the following things will make your life easier and will prevent R from choking:
+ - Read the help page for `read.table()`, which contains many hints.
+ - Make a rough calculation of the memory required to store your dataset. If the dataset is larger than the amount of RAM on your computer, you can probably stop right here.
+ - Set `comment.char = ""` if there are no commented lines in your file.
+ - Set `nrows`. Thi sdoesn't make R run faster, but it helps with memory usage. A mild overestimate is OK. You can use the Unix tool `wc` to calculate the number of lines in a file.
+ - Use the `colClasses` argument. Specifying this option instead of using the default can make `read.table()` run MUCH faster, often twice as fast. In order to use this option, you have to know the class of each column in your data frame. If all of the columns are "numeric", for example, then you can just set `colClasses = "numeric"`. A quick and dirty way to figure out the classes of each column is the following:
  
-# Reading Excel files
+```{r}
+# initial <- read.table("datatable.txt", nrows = 100)
+# classes <- sapply(initial, class)
+# tabAll <- read.table("datatable.txt", colClasses = classes)
+```
+
+ 
+## Reading Excel files
  
 - Still most widely used format for sharing data
 - In the `xlsx` package, use the `read.xlsx()`, `read.xlsx2()` functions.
@@ -115,9 +159,32 @@ tags:
 - The **XLConnect vignette** is a good place to start for that package.
 - In general, it is advised to store your data in either a database or in comma separated files (.csv) or tab separated (.tab/.txt) as they are easier to distribute.
  
-# Reading XML
+## Reading XML
 
 - f
  
- 
- 
+# Writing Data
+
+- There are analogous functions for writing data to files:
+ - `write.table()`
+ - `writeLines()`
+ - `dump()`
+ - `dput()`
+ - `save()`
+ - `serialize()`
+- `dump()` and `dput()` are useful because the resulting textual format is edit-able, and in the case of corruption, potentially recoverable
+- Unlike writin gout a table or csv file, these functions preserve the metadata (sacrificing some readibility) so that the user doesn't have to specify it all over again
+- Textual formats can work much better with version control programs like subversion or git which can only track changes meaningfully in text files.
+- Textual formats adhere to the "UNIX philosophy".
+- The downside is that the format is not very space efficient.
+
+**Example:** `dput()`
+
+```{r}
+# y <- data.frame(a=1, b="a")
+# dput(y)
+# dput(y, file="y.R")
+# new.y <- dget("y.R")
+# new.y
+```
+

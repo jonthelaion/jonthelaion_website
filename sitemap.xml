@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/machine-learning-toolbox-datacamp/</loc>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/the-art-of-data-science-book/</loc>
+    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/reproducibility-and-the-philosophy-of-data/</loc>
     <lastmod>2018-04-26T07:03:00+00:00</lastmod>
   </url>
@@ -58,17 +68,25 @@
   </url>
   
   <url>
-    <loc>/post/hello-world/</loc>
-    <lastmod>2018-03-31T20:33:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/profile/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/book/</loc>
+    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/book/</loc>
+    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -85,6 +103,18 @@
   </url>
   
   <url>
+    <loc>/tags/datacamp/</loc>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/datacamp/</loc>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/dataquality/</loc>
     <lastmod>2018-04-05T21:15:00+00:00</lastmod>
     <priority>0</priority>
@@ -92,13 +122,13 @@
   
   <url>
     <loc>/tags/datascience/</loc>
-    <lastmod>2018-04-07T20:00:00+00:00</lastmod>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/datascience/</loc>
-    <lastmod>2018-04-07T20:00:00+00:00</lastmod>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -134,13 +164,13 @@
   
   <url>
     <loc>/tags/machinelearning/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/machinelearning/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -170,7 +200,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -188,13 +218,25 @@
   
   <url>
     <loc>/tags/r/</loc>
-    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/r/</loc>
-    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/reproducibility/</loc>
+    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/reproducibility/</loc>
+    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -224,7 +266,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
+    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -242,7 +284,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
+    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

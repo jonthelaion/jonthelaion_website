@@ -6,10 +6,19 @@
     <description>Recent content in R on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Apr 2018 18:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Machine Learning Toolbox (DataCamp)</title>
+      <link>/post/machine-learning-toolbox-datacamp/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/machine-learning-toolbox-datacamp/</guid>
+      <description>Supervised Learning  The caret package in R automates supervised learning (a.k.a. predictive modelling) where the target variable is available. There are two types of predictive models:  Classification: Qualitative target variable Regression: Quantitative target variable  An important step for both classification and regression models is to use quantifiable and objectic metrics to evaluate the accuracy of the model.  Regression  Root Mean Squared Error (RMSE) is a common metric used for regression (e.</description>
+    </item>
     
     <item>
       <title>R Programming</title>

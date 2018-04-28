@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book on jonthelaion</title>
+    <link>/tags/book/</link>
+    <description>Recent content in Book on jonthelaion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Art of Data Science (Book)</title>
+      <link>/post/the-art-of-data-science-book/</link>
+      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/the-art-of-data-science-book/</guid>
+      <description>Data Analysis as Art  Data analysts have many tools at their disposal, from linear regression to classification trees and even deep learning, but ultimately, a data analyst must find a way to assemble all the tools available and apply them to data to answer a relevant question - a question of interest to people.  Epicycles of Analysis  Data analysis is a highly iterative and non-linear process, better reflected as a series of epicycles, in which information is learned at each step, which then informs whether (and how) to refine, and redo, the step that was just performed, or whether (and how) to proceed to the next step.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reproducibility on jonthelaion</title>
+    <link>/categories/reproducibility/</link>
+    <description>Recent content in Reproducibility on jonthelaion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Apr 2018 07:03:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/reproducibility/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reproducibility and the Philosophy of Data</title>
+      <link>/post/reproducibility-and-the-philosophy-of-data/</link>
+      <pubDate>Thu, 26 Apr 2018 07:03:00 +0000</pubDate>
+      
+      <guid>/post/reproducibility-and-the-philosophy-of-data/</guid>
+      <description>Guest: Clare Gollnick
+Link: TWIMLAI Talk #121
+A very interesting talk about the reproducibility controversy that is rocking the scientific community. A &amp;ldquo;Nature&amp;rdquo; survey in 2016 showed that more than 70% of researchers have tried and failed to reproduce another scientist&amp;rsquo;s experiments, and more than half have failed to reproduce their own experiments.
+To a certain extent, this could be a result of the reliance on the p-value as the test of statistical significance in scientific studies.</description>
+    </item>
+    
+  </channel>
+</rss>

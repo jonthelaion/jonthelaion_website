@@ -107,7 +107,9 @@
                             
                                 <li><a href="/">Home</a></li>
                             
-                                <li><a href="/post/">Posts</a></li>
+                                <li><a href="/post/profile">About Me</a></li>
+                            
+                                <li><a href="/post/">All Posts</a></li>
                             
                         </ul>
                     
@@ -237,7 +239,37 @@
 </ul></li>
 </ul>
 
-<h1 id="downloading-files">Downloading Files</h1>
+<h1 id="getting-data">Getting Data</h1>
+
+<ul>
+<li>There are a few principal functions for reading data into R:
+
+<ul>
+<li><code>read.table()</code>, <code>read.csv()</code>: for reading tabular data</li>
+<li><code>readLines()</code>: for reading lines of a text file</li>
+<li><code>source()</code>: for reading in R code files (inverse of <code>dump()</code>)</li>
+<li><code>dget()</code>: for reading R code files (inverse of <code>dput()</code>)</li>
+<li><code>load()</code>: for reading in saved workspaces</li>
+<li><code>unserialize()</code>: for reading single R objects in binary form</li>
+</ul></li>
+<li>In general, when using R with larger datasets, it&rsquo;s useful to know a few things about your system:
+
+<ul>
+<li>How much memory is available?</li>
+<li>What other applications are in use?</li>
+<li>Are there any other users logged into the same system?</li>
+<li>What operating system?</li>
+<li>Is it OS 32 or 64 bit?</li>
+</ul></li>
+<li>Calculating memory requirements:
+
+<ul>
+<li>Data frame with 1.5 million rows and 120 columns, all of which are numeric data. Roughly, how much memory is required to store this data frame? 1,500,000 x 120 x 8 bytes/numeric = 11,440,000,000bytes / 220bytes/MB = 1,373.29MB = 1.34GB</li>
+<li>Rule of thumb is that you will need rougly twice as much RAM.</li>
+</ul></li>
+</ul>
+
+<h2 id="downloading-files">Downloading Files</h2>
 
 <ul>
 <li>A basic component of working with data is getting/setting your working directory.</li>
@@ -250,11 +282,11 @@
 </ul></li>
 </ul>
 
-<h2 id="example-checking-to-see-if-directory-exists-and-creating-it-if-it-doesn-t">Example: Checking to see if directory exists and creating it if it doesn&rsquo;t</h2>
+<h3 id="example-checking-to-see-if-directory-exists-and-creating-it-if-it-doesn-t">Example: Checking to see if directory exists and creating it if it doesn&rsquo;t</h3>
 
-<pre><code class="language-r">&gt; # if (!file.exists(&quot;data&quot;)) {
-&gt; #    dir.create(&quot;data&quot;)
-&gt; # }
+<pre><code class="language-r"># if (!file.exists(&quot;data&quot;)) {
+#    dir.create(&quot;data&quot;)
+# }
 </code></pre>
 
 <ul>
@@ -262,7 +294,7 @@
 <li>Important parameters are <code>url</code>, <code>destfile</code> and <code>method</code>.</li>
 </ul>
 
-<h2 id="example-downloading-files-using-script">Example: Downloading files using script</h2>
+<h3 id="example-downloading-files-using-script">Example: Downloading files using script</h3>
 
 <pre><code class="language-r">&gt; # fileUrl &lt;- &quot;https://data.gov.au/dataset/f2b7c2c1-f4ef-4ae9-aba5-45c19e4d3038/resource/2156cb99-3358-4847-8b5b-fcd2f0d3c4e2/download/financialadvisers201804.xlsx&quot;
 &gt; # download.file(fileUrl, destfile=&quot;./data/financialadvisers201804.xlsx&quot;, method=&quot;curl&quot;)
@@ -272,18 +304,45 @@
 &gt; # dateDownloaded
 </code></pre>
 
-<h1 id="reading-local-flat-files">Reading local flat files</h1>
+<h2 id="reading-local-flat-files">Reading local flat files</h2>
 
 <ul>
 <li><code>read.table()</code> is the main function for reading data into R.</li>
 <li>It is flexible and robust but requires more parameters.</li>
-<li>It reads data into RAM so big datasets can cause problems.</li>
-<li>Important parameters: <code>file</code>, <code>header</code>, <code>sep</code>, <code>row.names</code>, <code>nrows</code>, <code>skip</code>, <code>quote</code>, <code>na.strings</code></li>
+<li>Important parameters:
+
+<ul>
+<li><code>file</code>: the name of a file or a connection</li>
+<li><code>header</code>: logical indicating if the file has a header line</li>
+<li><code>sep</code>: a string indicating how the columns are separated</li>
+<li><code>row.names</code></li>
+<li><code>colClasses</code>: a character vector indicating the class of each column in the dataset</li>
+<li><code>nrows</code>: the number of rows in the dataset</li>
+<li><code>comment.char</code>: a character string indicating the comment character</li>
+<li><code>skip</code>: the number of lines to skip from the beginning</li>
+<li><code>quote</code>: one of the biggest troubles with reading flat files are quotation marks &lsquo; or &ldquo; placed in data values, setting <code>quote=&quot;&quot;</code> often resolves this</li>
+<li><code>na.strings</code></li>
+<li><code>stringAsFactors</code>: should character variables be coded as factors? Default is &lsquo;TRUE&rsquo;.</li>
+</ul></li>
 <li>Related: <code>read.csv()</code>, <code>read.csv2()</code></li>
-<li>Often, the biggest trouble with reading flat files are quotation marks &lsquo; or &ldquo; placed in data values, setting quote=&rdquo;&rdquo; often resolves this.</li>
+<li>It reads data into RAM so big datasets can cause problems.</li>
+<li>For larger datasets, doing the following things will make your life easier and will prevent R from choking:
+
+<ul>
+<li>Read the help page for <code>read.table()</code>, which contains many hints.</li>
+<li>Make a rough calculation of the memory required to store your dataset. If the dataset is larger than the amount of RAM on your computer, you can probably stop right here.</li>
+<li>Set <code>comment.char = &quot;&quot;</code> if there are no commented lines in your file.</li>
+<li>Set <code>nrows</code>. Thi sdoesn&rsquo;t make R run faster, but it helps with memory usage. A mild overestimate is OK. You can use the Unix tool <code>wc</code> to calculate the number of lines in a file.</li>
+<li>Use the <code>colClasses</code> argument. Specifying this option instead of using the default can make <code>read.table()</code> run MUCH faster, often twice as fast. In order to use this option, you have to know the class of each column in your data frame. If all of the columns are &ldquo;numeric&rdquo;, for example, then you can just set <code>colClasses = &quot;numeric&quot;</code>. A quick and dirty way to figure out the classes of each column is the following:</li>
+</ul></li>
 </ul>
 
-<h1 id="reading-excel-files">Reading Excel files</h1>
+<pre><code class="language-r"># initial &lt;- read.table(&quot;datatable.txt&quot;, nrows = 100)
+# classes &lt;- sapply(initial, class)
+# tabAll &lt;- read.table(&quot;datatable.txt&quot;, colClasses = classes)
+</code></pre>
+
+<h2 id="reading-excel-files">Reading Excel files</h2>
 
 <ul>
 <li>Still most widely used format for sharing data</li>
@@ -297,11 +356,40 @@
 <li>In general, it is advised to store your data in either a database or in comma separated files (.csv) or tab separated (.tab/.txt) as they are easier to distribute.</li>
 </ul>
 
-<h1 id="reading-xml">Reading XML</h1>
+<h2 id="reading-xml">Reading XML</h2>
 
 <ul>
 <li>f</li>
 </ul>
+
+<h1 id="writing-data">Writing Data</h1>
+
+<ul>
+<li>There are analogous functions for writing data to files:
+
+<ul>
+<li><code>write.table()</code></li>
+<li><code>writeLines()</code></li>
+<li><code>dump()</code></li>
+<li><code>dput()</code></li>
+<li><code>save()</code></li>
+<li><code>serialize()</code></li>
+</ul></li>
+<li><code>dump()</code> and <code>dput()</code> are useful because the resulting textual format is edit-able, and in the case of corruption, potentially recoverable</li>
+<li>Unlike writin gout a table or csv file, these functions preserve the metadata (sacrificing some readibility) so that the user doesn&rsquo;t have to specify it all over again</li>
+<li>Textual formats can work much better with version control programs like subversion or git which can only track changes meaningfully in text files.</li>
+<li>Textual formats adhere to the &ldquo;UNIX philosophy&rdquo;.</li>
+<li>The downside is that the format is not very space efficient.</li>
+</ul>
+
+<p><strong>Example:</strong> <code>dput()</code></p>
+
+<pre><code class="language-r"># y &lt;- data.frame(a=1, b=&quot;a&quot;)
+# dput(y)
+# dput(y, file=&quot;y.R&quot;)
+# new.y &lt;- dget(&quot;y.R&quot;)
+# new.y
+</code></pre>
 </div>
 
     
@@ -320,35 +408,17 @@
     
     
 
-    <h4><a href="/post/r-programming/">R Programming</a></h4>
-    <h5>April 25, 2018</h5>
+    <h4><a href="/post/machine-learning-toolbox-datacamp/">Machine Learning Toolbox (DataCamp)</a></h4>
+    <h5>April 28, 2018</h5>
     
-    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
-    
-    <a href="/tags/coursera"><kbd class="item-tag">coursera</kbd></a>
-    
-    <a href="/tags/mooc"><kbd class="item-tag">mooc</kbd></a>
-    
-
-</div>
-  <div class="item">
-
-    
-    
-    
-
-    
-    
-
-    <h4><a href="/post/islr-book/">ISLR (Book)</a></h4>
-    <h5>April 20, 2018</h5>
-    
-    <a href="/tags/statistics"><kbd class="item-tag">statistics</kbd></a>
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
     
     <a href="/tags/machinelearning"><kbd class="item-tag">machinelearning</kbd></a>
     
     <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
     
+    <a href="/tags/datacamp"><kbd class="item-tag">datacamp</kbd></a>
+    
 
 </div>
   <div class="item">
@@ -360,14 +430,34 @@
     
     
 
-    <h4><a href="/post/data-visualisation-in-r/">Data Visualisation in R</a></h4>
-    <h5>April 8, 2018</h5>
+    <h4><a href="/post/the-art-of-data-science-book/">The Art of Data Science (Book)</a></h4>
+    <h5>April 27, 2018</h5>
     
-    <a href="/tags/r"><kbd class="item-tag">R</kbd></a>
+    <a href="/tags/book"><kbd class="item-tag">book</kbd></a>
     
-    <a href="/tags/dataviz"><kbd class="item-tag">dataviz</kbd></a>
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
     
-    <a href="/tags/ggplot2"><kbd class="item-tag">ggplot2</kbd></a>
+
+</div>
+  <div class="item">
+
+    
+    
+    
+
+    
+    
+
+    <h4><a href="/post/reproducibility-and-the-philosophy-of-data/">Reproducibility and the Philosophy of Data</a></h4>
+    <h5>April 26, 2018</h5>
+    
+    <a href="/tags/podcast"><kbd class="item-tag">podcast</kbd></a>
+    
+    <a href="/tags/twimlai"><kbd class="item-tag">twimlai</kbd></a>
+    
+    <a href="/tags/datascience"><kbd class="item-tag">datascience</kbd></a>
+    
+    <a href="/tags/reproducibility"><kbd class="item-tag">reproducibility</kbd></a>
     
 
 </div>
