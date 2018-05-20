@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on jonthelaion</title>
+    <link>/categories/productivity/</link>
+    <description>Recent content in Productivity on jonthelaion</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 May 2018 07:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Ivy Lee Method</title>
+      <link>/post/the-ivy-lee-method/</link>
+      <pubDate>Sat, 05 May 2018 07:00:00 +0000</pubDate>
+      
+      <guid>/post/the-ivy-lee-method/</guid>
+      <description>At the end of each work day, write down the six most important things you need to accomplish tomorrow. Do not write down more than six tasks. Prioritise these six items in order of their true importance. When you arrive tomorrow, concentrate only on the first task. Work until the first task is finished before moving on to the second task. Approach the rest of your list in the same fashion.</description>
+    </item>
+    
+  </channel>
+</rss>

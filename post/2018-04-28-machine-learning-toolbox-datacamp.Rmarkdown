@@ -114,7 +114,17 @@ RMSE
 - A very useful tool for evaluating the effectiveness of models with binary outcomes.
 - The columns (Reference) represent the true outcomes while the rows (Prediction) represent the predicted outcomes.
 - The main diagonal are the cases where the model is correct (true positive and true negative) and the other diagonal are the cases where the model is incorrect (false positive and false negative).
-- The threshold can be tweaks to adjust the probabilities of true positive (higher chance of predicting it is a mine) and true negatives (higher chance of correctly predicting it is a rock). This is a cost-benefit question that can often be solved only by building a confusion matrix and adjusting the threshold to test.
+- The threshold can be tweaks to adjust the probabilities of true positive (higher chance of predicting it is a mine) and true negatives (higher chance of correctly predicting it is a rock). 
+- This is a cost-benefit question and a ROC curve is a tool that is often used to find the desired threshold.
+- A ROC curve plots true/false positive at every possible threshold and allows for visualisation of tradeoff between the two extremes.
+- The Area under the Curve (AUC) is a single number summary of model accuracy. It summarises performance across all thresholds and can be used to rank different models within the same dataset.
+- AUC range from 0 to 1:
+ - 0.5 = random guessing
+ - 1 = model is always right
+ - 0 = model is always wrong
+- Rule of thumb is that AUC can be thought of as a letter grade:
+ - 0.9 = "A"
+ - 0.8 = "B"
 
 <img src="/img/confusion_matrix.jpg" alt="">
 
@@ -122,6 +132,7 @@ RMSE
 
 ```{r}
 library(mlbench)
+library(caTools)
 data(Sonar)
 
 # Have a look at the Sonar data
@@ -152,5 +163,44 @@ table(p_class)
 
 # Use caret's helper function to calculate additional statistics
 confusionMatrix(p_class, test[["Class"]])
+
+# colAUC() function to generate ROC curve
+colAUC(predicted, test$Class, plotROC = TRUE)
+
+# Create trainControl object: myControl
+myControl <- trainControl(
+  method = "cv",
+  number = 10,
+  summaryFunction = twoClassSummary,
+  classProbs = TRUE, # IMPORTANT!
+  verboseIter = TRUE
+)
+
+# Train glm with custom trainControl: model
+model <- train(Class ~ ., Sonar, method = "glm", trControl = myControl)
+
+# Print model to console
+model
+```
+
+## Random Forests
+
+- Random forests are a popular type of machine learning model that is good for beginners. They are robust to overfitting and can yield very accurate, non-linear models.
+- Unlike linear models, they have hyperparameters which require manual specification. This can impact model fit and vary from dataset to dataset. Default values are often OK, but occassionally they will require adjustment.
+- Random forests start with simple decision trees and then improve accuracy by fitting many trees. Each one is fit to a bootstrap sample of data (a.k.a. bootstrap aggregation or bagging).
+- Randomly sample columns at each split.
+
+```{r}
+library(ranger)
+set.seed(42)
+
+# Fit random forest: model
+model <- train(Class~., Sonar, method = "ranger", trControl = trainControl(method = "cv", number = 5, verboseIter = TRUE))
+
+# Print model to console
+model
+
+# Plot model
+plot(model)
 ```
 

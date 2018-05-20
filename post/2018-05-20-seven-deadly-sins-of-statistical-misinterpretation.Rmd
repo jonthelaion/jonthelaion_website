@@ -1,0 +1,47 @@
+---
+title: Seven deadly sins of statistical misinterpretation
+author: jonthelaion
+date: '2018-05-20'
+slug: seven-deadly-sins-of-statistical-misinterpretation
+categories:
+  - statistics
+tags:
+  - statistics
+---
+
+**Source:** <a href="https://theconversation.com/the-seven-deadly-sins-of-statistical-misinterpretation-and-how-to-avoid-them-74306" target="_blank">https://theconversation.com/the-seven-deadly-sins-of-statistical-misinterpretation-and-how-to-avoid-them-74306</a>
+
+**1. Assuming small differences are meaningful**
+
+- Sometimes small differences are simply due to chance rather than indicative of a larger trend.
+- **Remember:** Look at the "margin of error" relating to the numbers and compare it with the difference observed.
+
+**2. Equating statistical significance with real-world significance**
+
+- Understanding the "effect size", how much the average of one group differs from the average of another, and variation between the groups will help with understanding the real-world significance of a particular conclusion.
+
+**3. Neglecting to look at extremes**
+
+- When performance is normally distributed (on a bell curve), differences are more apparent at the extremes (less overlap) than for average people (who mostly overlap).
+- **Remember:** Try to understand where the person / thing you are focusing on lies - near the average or at the extremes.
+
+**4. Trusting coincidence**
+
+- Just because two things change at the same time in similar directions does not mean they are related. If you look hard enough you can find interesting patterns and correlations that are merely due to coincidence.
+- There is a great website that provides examples of <a href="http://www.tylervigen.com/spurious-correlations" target="_blank">spurious correlations</a> which illustrates this concept brilliantly.
+- **Remember:** Ask yourself how reliable the observed association is. Is it a one-off, or has it happened multiple times? Can future associations be predicted? If you have only seen it once, then it is likely to be due to random chance.
+
+**5. Getting causation backwards**
+
+- Correlation does not equal causation.
+- **Remember:** Think about reverse causality when you see an association. Could the influence go the other way? Or could it go both ways, creating a feedback loop?
+
+**6. Forgetting to consider outside causes**
+
+- There might be an association between eating at restaurants and better cardiovascular health. However, the third factor / outside cause might be the socio-economic status of the individual. Richer individuals would be more likely to afford eating at restaurants and take care of their health through private health care, gym memberships etc.
+- **Remember:** When exploring correlations, always consider whether there might be an outside cause of the potential correlation that is observed.
+
+**7. Deceptive graphs**
+
+- A common example of this is adjusting the starting point of the y-axis to make differences appear larger than they actually are.
+- **Remember:** Check the axes and scales being used in graphs.

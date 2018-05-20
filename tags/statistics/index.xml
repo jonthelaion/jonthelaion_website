@@ -6,10 +6,22 @@
     <description>Recent content in Statistics on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Seven deadly sins of statistical misinterpretation</title>
+      <link>/post/seven-deadly-sins-of-statistical-misinterpretation/</link>
+      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/seven-deadly-sins-of-statistical-misinterpretation/</guid>
+      <description>Source: https://theconversation.com/the-seven-deadly-sins-of-statistical-misinterpretation-and-how-to-avoid-them-74306
+1. Assuming small differences are meaningful
+Sometimes small differences are simply due to chance rather than indicative of a larger trend.Remember: Look at the “margin of error” relating to the numbers and compare it with the difference observed.2. Equating statistical significance with real-world significance
+Understanding the “effect size”, how much the average of one group differs from the average of another, and variation between the groups will help with understanding the real-world significance of a particular conclusion.</description>
+    </item>
     
     <item>
       <title>ISLR (Book)</title>

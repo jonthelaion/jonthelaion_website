@@ -15,6 +15,7 @@ tags:
 - https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing
 - https://www.propublica.org/article/politic-il-insider-chicago-gang-database
 - https://medium.com/the-mission/the-best-books-to-understand-complex-systems-eb186610dff7
+- Datasets for teaching data science [https://simplystatistics.org/2018/01/22/the-dslabs-package-provides-datasets-for-teaching-data-science/]
 
 #### Blogs
 - <a href="https://mathbabe.org/" target="_blank">Cathy O'Neil Blog</a>
@@ -23,6 +24,7 @@ tags:
 - http://www.datascience.university/
 - https://www.r-bloggers.com/
 - http://www.statsoc.org.au/
+- http://moderndive.com/
 
 #### Online Courses
 - <a href="https://medium.freecodecamp.org/every-single-machine-learning-course-on-the-internet-ranked-by-your-reviews-3c4a7b8026c0" target="_blank">List of Machine Learning Courses</a>
@@ -86,6 +88,10 @@ tags:
 - Artificial Intelligence: A Modern Approach - Stuart Russell and Peter Norvig (Prentice Hall)
 - Foundations of Machine Learning - Mehryar Mohri, Afshin Rostamizadeh and Ameet Talwalkar (MIT Press)
 - Introduction to Machine Learning (Adaptive COmputation and Machine Learning) - Ethem Alpaydin (MIT Press)
+- Handbook of Neural Computation (1st Edition) [https://www.elsevier.com/books/handbook-of-neural-computation/samui/978-0-12-811318-9]
+- Recommenders [https://www.datasciencecentral.com/profiles/blogs/recommenders-packaged-solutions-or-home-grown]
+- Unsupervised Learning [https://www.datasciencecentral.com/profiles/blogs/unsupervised-learning-an-angle-for-unlabelled-data-world]
+- Gradient Descent [https://www.datacamp.com/community/news/gradient-descent-a-simple-way-to-understand-05vqdft732w4]
 
 #### Experimental Design
 - Field Experiments - Alan S. Gerber and Donald P. Green (Norton)

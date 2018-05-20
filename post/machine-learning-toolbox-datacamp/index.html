@@ -324,7 +324,23 @@ RMSE
 <li>A very useful tool for evaluating the effectiveness of models with binary outcomes.</li>
 <li>The columns (Reference) represent the true outcomes while the rows (Prediction) represent the predicted outcomes.</li>
 <li>The main diagonal are the cases where the model is correct (true positive and true negative) and the other diagonal are the cases where the model is incorrect (false positive and false negative).</li>
-<li>The threshold can be tweaks to adjust the probabilities of true positive (higher chance of predicting it is a mine) and true negatives (higher chance of correctly predicting it is a rock). This is a cost-benefit question that can often be solved only by building a confusion matrix and adjusting the threshold to test.</li>
+<li>The threshold can be tweaks to adjust the probabilities of true positive (higher chance of predicting it is a mine) and true negatives (higher chance of correctly predicting it is a rock).</li>
+<li>This is a cost-benefit question and a ROC curve is a tool that is often used to find the desired threshold.</li>
+<li>A ROC curve plots true/false positive at every possible threshold and allows for visualisation of tradeoff between the two extremes.</li>
+<li>The Area under the Curve (AUC) is a single number summary of model accuracy. It summarises performance across all thresholds and can be used to rank different models within the same dataset.</li>
+<li>AUC range from 0 to 1:
+
+<ul>
+<li>0.5 = random guessing</li>
+<li>1 = model is always right</li>
+<li>0 = model is always wrong</li>
+</ul></li>
+<li>Rule of thumb is that AUC can be thought of as a letter grade:
+
+<ul>
+<li>0.9 = &ldquo;A&rdquo;</li>
+<li>0.8 = &ldquo;B&rdquo;</li>
+</ul></li>
 </ul>
 
 <p><img src="/img/confusion_matrix.jpg" alt=""></p>
@@ -332,6 +348,7 @@ RMSE
 <h4 id="example-building-glm-classification-model-and-confusion-matrix">Example: Building glm() classification model and confusion matrix</h4>
 
 <pre><code class="language-r">library(mlbench)
+library(caTools)
 data(Sonar)
 
 # Have a look at the Sonar data
@@ -438,6 +455,267 @@ confusionMatrix(p_class, test[[&quot;Class&quot;]])
 ##        'Positive' Class : M               
 ## 
 </code></pre>
+
+<pre><code class="language-r"># colAUC() function to generate ROC curve
+colAUC(predicted, test$Class, plotROC = TRUE)
+</code></pre>
+
+<p><img src="/post/2018-04-28-machine-learning-toolbox-datacamp_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+
+<pre><code>##              [,1]
+## M vs. R 0.7375887
+</code></pre>
+
+<pre><code class="language-r"># Create trainControl object: myControl
+myControl &lt;- trainControl(
+  method = &quot;cv&quot;,
+  number = 10,
+  summaryFunction = twoClassSummary,
+  classProbs = TRUE, # IMPORTANT!
+  verboseIter = TRUE
+)
+
+# Train glm with custom trainControl: model
+model &lt;- train(Class ~ ., Sonar, method = &quot;glm&quot;, trControl = myControl)
+</code></pre>
+
+<pre><code>## Warning in train.default(x, y, weights = w, ...): The metric &quot;Accuracy&quot; was
+## not in the result set. ROC will be used instead.
+</code></pre>
+
+<pre><code>## + Fold01: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold01: parameter=none 
+## + Fold02: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold02: parameter=none 
+## + Fold03: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold03: parameter=none 
+## + Fold04: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold04: parameter=none 
+## + Fold05: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold05: parameter=none 
+## + Fold06: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold06: parameter=none 
+## + Fold07: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold07: parameter=none 
+## + Fold08: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold08: parameter=none 
+## + Fold09: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold09: parameter=none 
+## + Fold10: parameter=none
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code>## - Fold10: parameter=none 
+## Aggregating results
+## Fitting final model on full training set
+</code></pre>
+
+<pre><code>## Warning: glm.fit: algorithm did not converge
+
+## Warning: glm.fit: fitted probabilities numerically 0 or 1 occurred
+</code></pre>
+
+<pre><code class="language-r"># Print model to console
+model
+</code></pre>
+
+<pre><code>## Generalized Linear Model 
+## 
+## 208 samples
+##  60 predictor
+##   2 classes: 'M', 'R' 
+## 
+## No pre-processing
+## Resampling: Cross-Validated (10 fold) 
+## Summary of sample sizes: 187, 186, 187, 188, 188, 187, ... 
+## Resampling results:
+## 
+##   ROC        Sens       Spec     
+##   0.7201768  0.7295455  0.6688889
+</code></pre>
+
+<h2 id="random-forests">Random Forests</h2>
+
+<ul>
+<li>Random forests are a popular type of machine learning model that is good for beginners. They are robust to overfitting and can yield very accurate, non-linear models.</li>
+<li>Unlike linear models, they have hyperparameters which require manual specification. This can impact model fit and vary from dataset to dataset. Default values are often OK, but occassionally they will require adjustment.</li>
+<li>Random forests start with simple decision trees and then improve accuracy by fitting many trees. Each one is fit to a bootstrap sample of data (a.k.a. bootstrap aggregation or bagging).</li>
+<li>Randomly sample columns at each split.</li>
+</ul>
+
+<pre><code class="language-r">library(ranger)
+set.seed(42)
+
+# Fit random forest: model
+model &lt;- train(Class~., Sonar, method = &quot;ranger&quot;, trControl = trainControl(method = &quot;cv&quot;, number = 5, verboseIter = TRUE))
+</code></pre>
+
+<pre><code>## + Fold1: mtry= 2, min.node.size=1, splitrule=gini 
+## - Fold1: mtry= 2, min.node.size=1, splitrule=gini 
+## + Fold1: mtry=31, min.node.size=1, splitrule=gini 
+## - Fold1: mtry=31, min.node.size=1, splitrule=gini 
+## + Fold1: mtry=60, min.node.size=1, splitrule=gini 
+## - Fold1: mtry=60, min.node.size=1, splitrule=gini 
+## + Fold1: mtry= 2, min.node.size=1, splitrule=extratrees 
+## - Fold1: mtry= 2, min.node.size=1, splitrule=extratrees 
+## + Fold1: mtry=31, min.node.size=1, splitrule=extratrees 
+## - Fold1: mtry=31, min.node.size=1, splitrule=extratrees 
+## + Fold1: mtry=60, min.node.size=1, splitrule=extratrees 
+## - Fold1: mtry=60, min.node.size=1, splitrule=extratrees 
+## + Fold2: mtry= 2, min.node.size=1, splitrule=gini 
+## - Fold2: mtry= 2, min.node.size=1, splitrule=gini 
+## + Fold2: mtry=31, min.node.size=1, splitrule=gini 
+## - Fold2: mtry=31, min.node.size=1, splitrule=gini 
+## + Fold2: mtry=60, min.node.size=1, splitrule=gini 
+## - Fold2: mtry=60, min.node.size=1, splitrule=gini 
+## + Fold2: mtry= 2, min.node.size=1, splitrule=extratrees 
+## - Fold2: mtry= 2, min.node.size=1, splitrule=extratrees 
+## + Fold2: mtry=31, min.node.size=1, splitrule=extratrees 
+## - Fold2: mtry=31, min.node.size=1, splitrule=extratrees 
+## + Fold2: mtry=60, min.node.size=1, splitrule=extratrees 
+## - Fold2: mtry=60, min.node.size=1, splitrule=extratrees 
+## + Fold3: mtry= 2, min.node.size=1, splitrule=gini 
+## - Fold3: mtry= 2, min.node.size=1, splitrule=gini 
+## + Fold3: mtry=31, min.node.size=1, splitrule=gini 
+## - Fold3: mtry=31, min.node.size=1, splitrule=gini 
+## + Fold3: mtry=60, min.node.size=1, splitrule=gini 
+## - Fold3: mtry=60, min.node.size=1, splitrule=gini 
+## + Fold3: mtry= 2, min.node.size=1, splitrule=extratrees 
+## - Fold3: mtry= 2, min.node.size=1, splitrule=extratrees 
+## + Fold3: mtry=31, min.node.size=1, splitrule=extratrees 
+## - Fold3: mtry=31, min.node.size=1, splitrule=extratrees 
+## + Fold3: mtry=60, min.node.size=1, splitrule=extratrees 
+## - Fold3: mtry=60, min.node.size=1, splitrule=extratrees 
+## + Fold4: mtry= 2, min.node.size=1, splitrule=gini 
+## - Fold4: mtry= 2, min.node.size=1, splitrule=gini 
+## + Fold4: mtry=31, min.node.size=1, splitrule=gini 
+## - Fold4: mtry=31, min.node.size=1, splitrule=gini 
+## + Fold4: mtry=60, min.node.size=1, splitrule=gini 
+## - Fold4: mtry=60, min.node.size=1, splitrule=gini 
+## + Fold4: mtry= 2, min.node.size=1, splitrule=extratrees 
+## - Fold4: mtry= 2, min.node.size=1, splitrule=extratrees 
+## + Fold4: mtry=31, min.node.size=1, splitrule=extratrees 
+## - Fold4: mtry=31, min.node.size=1, splitrule=extratrees 
+## + Fold4: mtry=60, min.node.size=1, splitrule=extratrees 
+## - Fold4: mtry=60, min.node.size=1, splitrule=extratrees 
+## + Fold5: mtry= 2, min.node.size=1, splitrule=gini 
+## - Fold5: mtry= 2, min.node.size=1, splitrule=gini 
+## + Fold5: mtry=31, min.node.size=1, splitrule=gini 
+## - Fold5: mtry=31, min.node.size=1, splitrule=gini 
+## + Fold5: mtry=60, min.node.size=1, splitrule=gini 
+## - Fold5: mtry=60, min.node.size=1, splitrule=gini 
+## + Fold5: mtry= 2, min.node.size=1, splitrule=extratrees 
+## - Fold5: mtry= 2, min.node.size=1, splitrule=extratrees 
+## + Fold5: mtry=31, min.node.size=1, splitrule=extratrees 
+## - Fold5: mtry=31, min.node.size=1, splitrule=extratrees 
+## + Fold5: mtry=60, min.node.size=1, splitrule=extratrees 
+## - Fold5: mtry=60, min.node.size=1, splitrule=extratrees 
+## Aggregating results
+## Selecting tuning parameters
+## Fitting mtry = 31, splitrule = extratrees, min.node.size = 1 on full training set
+</code></pre>
+
+<pre><code class="language-r"># Print model to console
+model
+</code></pre>
+
+<pre><code>## Random Forest 
+## 
+## 208 samples
+##  60 predictor
+##   2 classes: 'M', 'R' 
+## 
+## No pre-processing
+## Resampling: Cross-Validated (5 fold) 
+## Summary of sample sizes: 167, 167, 167, 166, 165 
+## Resampling results across tuning parameters:
+## 
+##   mtry  splitrule   Accuracy   Kappa    
+##    2    gini        0.8322394  0.6583449
+##    2    extratrees  0.8422224  0.6784738
+##   31    gini        0.7886800  0.5700028
+##   31    extratrees  0.8557167  0.7073684
+##   60    gini        0.7791508  0.5514736
+##   60    extratrees  0.8363207  0.6671766
+## 
+## Tuning parameter 'min.node.size' was held constant at a value of 1
+## Accuracy was used to select the optimal model using the largest value.
+## The final values used for the model were mtry = 31, splitrule =
+##  extratrees and min.node.size = 1.
+</code></pre>
+
+<pre><code class="language-r"># Plot model
+plot(model)
+</code></pre>
+
+<p><img src="/post/2018-04-28-machine-learning-toolbox-datacamp_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 </div>
 
     

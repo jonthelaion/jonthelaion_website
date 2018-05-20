@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/seven-deadly-sins-of-statistical-misinterpretation/</loc>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/the-ivy-lee-method/</loc>
+    <lastmod>2018-05-05T07:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/machine-learning-toolbox-datacamp/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
   </url>
@@ -200,7 +210,19 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/productivity/</loc>
+    <lastmod>2018-05-05T07:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/productivity/</loc>
+    <lastmod>2018-05-05T07:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -254,13 +276,13 @@
   
   <url>
     <loc>/tags/statistics/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/statistics/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -284,7 +306,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
