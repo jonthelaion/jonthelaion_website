@@ -3,310 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/seven-deadly-sins-of-statistical-misinterpretation/</loc>
-    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <loc>/2018/08/09/2018-08-09-hello-world/</loc>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/the-ivy-lee-method/</loc>
-    <lastmod>2018-05-05T07:00:00+00:00</lastmod>
+    <loc>/2016/12/30/2016-12-30-hello-markdown/</loc>
+    <lastmod>2016-12-30T21:49:57-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/machine-learning-toolbox-datacamp/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+    <loc>/about/</loc>
+    <lastmod>2016-05-05T21:48:51-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/the-art-of-data-science-book/</loc>
-    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
+    <loc>/2015/07/23/2015-07-23-r-rmarkdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/reproducibility-and-the-philosophy-of-data/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
+    <loc>/2015/01/01/2015-01-01-lorem-ipsum/</loc>
+    <lastmod>2015-01-01T13:09:13-06:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/r-programming/</loc>
-    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/the-art-of-possibility-book/</loc>
-    <lastmod>2018-04-23T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/islr-book/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/data-visualisation-in-r/</loc>
-    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/getting-and-cleaning-data/</loc>
-    <lastmod>2018-04-07T20:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/the-data-scientist-s-toolbox-coursera/</loc>
-    <lastmod>2018-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/data-quality/</loc>
-    <lastmod>2018-04-05T21:15:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/data-framed/</loc>
-    <lastmod>2018-04-04T06:40:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/doing-data-science-book/</loc>
-    <lastmod>2018-04-01T17:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/r-resources/</loc>
-    <lastmod>2018-03-31T21:53:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/profile/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/book/</loc>
-    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/book/</loc>
-    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/coursera/</loc>
-    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/coursera/</loc>
-    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/datacamp/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/datacamp/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/dataquality/</loc>
-    <lastmod>2018-04-05T21:15:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/datascience/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/datascience/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/dataviz/</loc>
-    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/dataviz/</loc>
-    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ggplot2/</loc>
-    <lastmod>2018-04-08T08:50:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/growth/</loc>
-    <lastmod>2018-04-23T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/growth/</loc>
-    <lastmod>2018-04-23T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/machinelearning/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/machinelearning/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mooc/</loc>
-    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/mooc/</loc>
-    <lastmod>2018-04-25T18:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/podcast/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/podcast/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
+    <loc>/tags/plot/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <lastmod>2018-08-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/productivity/</loc>
-    <lastmod>2018-05-05T07:00:00+00:00</lastmod>
+    <loc>/tags/r-markdown/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/productivity/</loc>
-    <lastmod>2018-05-05T07:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/profile/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/profile/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/reproducibility/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/reproducibility/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/resources/</loc>
-    <lastmod>2018-03-31T21:53:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/resources/</loc>
-    <lastmod>2018-03-31T21:53:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/statistics/</loc>
-    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/statistics/</loc>
-    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <loc>/tags/regression/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2018-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/twimlai/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/twimlai/</loc>
-    <lastmod>2018-04-26T07:03:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   

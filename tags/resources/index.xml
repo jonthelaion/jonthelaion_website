@@ -1,24 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Resources on jonthelaion</title>
-    <link>/tags/resources/</link>
-    <description>Recent content in Resources on jonthelaion</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 31 Mar 2018 21:53:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/resources/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>R Resources</title>
-      <link>/post/r-resources/</link>
-      <pubDate>Sat, 31 Mar 2018 21:53:00 +0000</pubDate>
-      
-      <guid>/post/r-resources/</guid>
-      <description>Articles To Readhttps://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencinghttps://www.propublica.org/article/politic-il-insider-chicago-gang-databasehttps://medium.com/the-mission/the-best-books-to-understand-complex-systems-eb186610dff7Datasets for teaching data science [https://simplystatistics.org/2018/01/22/the-dslabs-package-provides-datasets-for-teaching-data-science/]BlogsCathy O’Neil BlogData Science Centralhttp://www.bytemining.com/http://www.datascience.university/https://www.r-bloggers.com/http://www.statsoc.org.au/http://moderndive.com/Online CoursesList of Machine Learning CoursesBerkeleyX - Foundations of Data ScienceCoursera - John Hopkin’s University - Data Science SpecialisationThe Data Scientists’s Toolbox (Complete)R ProgrammingGetting and Cleaning DataExploratory Data AnalysisReproducible ResearchStatistical InferenceRegression ModelsPractical Machine LearningDeveloping Data ProductsR MarkdownCreating Websites with R Markdown (Currently Reading)R Markdown Reference GuideLaTeXGeneral Data ScienceDoing Data ScienceColumbia - Applied Data ScienceData for Good InitiativesDriven DataData KindLearning RThe Art of R Programming - Norman Matloff (No Starch Press)R for Everyone: Advanced Analytics and Graphics - Jared Lander (Addison-Wesley)R in a Nutshell - Joseph Adler (O’Reilly)Learning PythonLearning Python - Mark Lutz and David Ascher (O’Reilly)Python for Data Analysis - Wes McKinney (O’Reilly)MathLinear Algebra and Its Applications - Gilbert Strang (Cengage Learning)Convex Optimization - Stephen Boyd and Lieven Vandenberghe (Cambridge University Press)A First Course in Probability - Sheldon Ross (Academic Press)A career in statistics: beyond the numbers - Gerald J.</description>
-    </item>
-    
-  </channel>
-</rss>

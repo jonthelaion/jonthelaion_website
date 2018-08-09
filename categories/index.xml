@@ -6,152 +6,16 @@
     <description>Recent content in Categories on jonthelaion</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Book</title>
-      <link>/categories/book/</link>
-      <pubDate>Fri, 27 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/book/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Coursera</title>
-      <link>/categories/coursera/</link>
-      <pubDate>Wed, 25 Apr 2018 18:00:00 +0000</pubDate>
-      
-      <guid>/categories/coursera/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Datacamp</title>
-      <link>/categories/datacamp/</link>
-      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/datacamp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Datascience</title>
-      <link>/categories/datascience/</link>
-      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/datascience/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dataviz</title>
-      <link>/categories/dataviz/</link>
-      <pubDate>Sun, 08 Apr 2018 08:50:00 +0000</pubDate>
-      
-      <guid>/categories/dataviz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Growth</title>
-      <link>/categories/growth/</link>
-      <pubDate>Mon, 23 Apr 2018 09:00:00 +0000</pubDate>
-      
-      <guid>/categories/growth/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machinelearning</title>
-      <link>/categories/machinelearning/</link>
-      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/machinelearning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mooc</title>
-      <link>/categories/mooc/</link>
-      <pubDate>Wed, 25 Apr 2018 18:00:00 +0000</pubDate>
-      
-      <guid>/categories/mooc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Podcast</title>
-      <link>/categories/podcast/</link>
-      <pubDate>Thu, 26 Apr 2018 07:03:00 +0000</pubDate>
-      
-      <guid>/categories/podcast/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Productivity</title>
-      <link>/categories/productivity/</link>
-      <pubDate>Sat, 05 May 2018 07:00:00 +0000</pubDate>
-      
-      <guid>/categories/productivity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Profile</title>
-      <link>/categories/profile/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/profile/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
       <guid>/categories/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reproducibility</title>
-      <link>/categories/reproducibility/</link>
-      <pubDate>Thu, 26 Apr 2018 07:03:00 +0000</pubDate>
-      
-      <guid>/categories/reproducibility/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resources</title>
-      <link>/categories/resources/</link>
-      <pubDate>Sat, 31 Mar 2018 21:53:00 +0000</pubDate>
-      
-      <guid>/categories/resources/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Statistics</title>
-      <link>/categories/statistics/</link>
-      <pubDate>Sun, 20 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/statistics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Twimlai</title>
-      <link>/categories/twimlai/</link>
-      <pubDate>Thu, 26 Apr 2018 07:03:00 +0000</pubDate>
-      
-      <guid>/categories/twimlai/</guid>
       <description></description>
     </item>
     

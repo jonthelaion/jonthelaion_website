@@ -1,0 +1,16 @@
+---
+title: hello world
+author: jonthelaion
+date: '2018-08-09'
+slug: hello-world
+categories: []
+tags: []
+description: About the page
+---
+
+hello world.. testing.. 1, 2, 3
+
+```{r}
+1+2
+```
+
